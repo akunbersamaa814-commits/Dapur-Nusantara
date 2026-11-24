@@ -54,8 +54,8 @@ dan **membuka detail** resep (bahan + cara memasak) dengan mengklik card.
 - Chip kategori: Semua, Makanan Berat, Sup & Soto, Camilan, Minuman.
 - Diproses PHP lewat parameter `kategori` (bisa digabung dengan `q`).
 
-### F5 — Peta Daerah (JavaScript + Leaflet)
-- Peta interaktif Indonesia dengan penanda di setiap daerah asal masakan.
+### F5 — Peta Daerah (gambar SVG + JavaScript murni)
+- Peta Indonesia (SVG) dengan penanda di setiap daerah asal masakan, plus zoom sederhana (+, −, reset).
 - Klik penanda → muncul popup berisi masakan dari daerah itu; tombol **Lihat Resep** membuka detail resep.
 - Setiap card punya tombol **Lihat di Peta** yang membawa ke penanda daerahnya.
 - Penanda ikut tersaring oleh pencarian dan kategori (PHP).

@@ -7,12 +7,10 @@
 | **HTML5** | Struktur halaman (semantic: `header`, `main`, `section`, `article`, `dialog`/`div[role=dialog]`, `footer`) |
 | **CSS3** | Seluruh tampilan, ditulis manual (CSS variables, Grid, Flexbox, media query). Tanpa Bootstrap/Tailwind |
 | **JavaScript (vanilla)** | Membuka/menutup modal detail resep, menu navbar, dan Peta Daerah |
-| **PHP 8.x** | Membaca data JSON, merender card, memproses pencarian & filter kategori |
-| **Leaflet 1.9.4** (CDN) | Peta interaktif untuk fitur Peta Daerah, dengan ubin peta OpenStreetMap |
+| **PHP 8.x** | Membaca data JSON, merender card & penanda peta, memproses pencarian & filter kategori |
 
-Font & ikon boleh dari CDN (Google Fonts, ikon SVG inline). Satu-satunya library JS adalah
-**Leaflet**, dipakai khusus untuk Peta Daerah atas permintaan pengguna (mengikuti web referensi).
-File Leaflet dimuat dengan atribut `integrity` (SRI) agar aman.
+Font & ikon boleh dari CDN (Google Fonts, ikon SVG inline). Tidak memakai library JS —
+peta daerah dibuat dari gambar SVG + JavaScript murni.
 
 ## 2. Struktur Folder
 
@@ -87,14 +85,18 @@ Parameter URL:
 - Tombol hamburger (layar < 768px) membuka/menutup menu navbar dengan class `active` dan `aria-expanded`.
 
 ### Peta Daerah
-- PHP mencetak `<script id="data-peta">` berisi koordinat daerah (dari `KOORDINAT_DAERAH`)
-  yang muncul di hasil pencarian, jadi penanda di peta ikut tersaring oleh pencarian/kategori PHP.
-- `siapkanPeta()`: membuat peta Leaflet (pusat Indonesia, zoom scroll aktif setelah peta diklik,
-  tombol zoom di kanan bawah), lalu satu penanda per daerah. Penanda = SVG sepasang pria & wanita
-  berpakaian adat (warna bergantian), label nama daerah tampil saat disorot/difokus keyboard.
-- Klik/Enter pada penanda → popup berisi kartu setiap masakan dari daerah itu (foto, label daerah,
-  kredit foto, nama, deskripsi 3 baris, tombol **Lihat Resep** → `bukaModal(id, tombol)`).
-- Tombol **Lihat di Peta** di card → `tampilkanDiPeta(daerah)`: gulir ke peta, pusatkan ke daerah, buka popup.
+- Gambar peta: `assets/img/peta-indonesia.svg` (proyeksi equirectangular, batas di `BATAS_PETA`).
+- PHP mengubah koordinat daerah (`KOORDINAT_DAERAH`) menjadi posisi persen dengan `posisi_di_peta()`,
+  lalu mencetak satu `<button class="penanda">` per daerah yang ada di hasil pencarian — jadi penanda
+  ikut tersaring oleh pencarian/kategori PHP. Penanda = SVG sepasang pria & wanita berpakaian adat
+  (warna bergantian); label nama daerah tampil saat disorot/difokus keyboard.
+- Klik/Enter pada penanda → `bukaPopup()`: popup berisi kartu setiap masakan dari daerah itu (foto,
+  label daerah, kredit foto, nama, deskripsi 3 baris, tombol **Lihat Resep** → `bukaModal(id, tombol)`).
+  `posisikanPopup()` menaruh popup di atas / bawah / samping penanda (yang muat). Di layar < 560px
+  popup dipindah ke `#peta-panel` di bawah peta. Tutup: tombol ✕, `Escape`, klik area kosong peta.
+- Zoom sederhana `aturZoom()`: tombol +, −, reset (1×–4×). Lebar `#peta-lapisan` = lebar dasar × zoom;
+  penanda ikut karena posisinya persen; area `#peta-area` bisa di-scroll saat diperbesar.
+- Tombol **Lihat di Peta** di card → `tampilkanDiPeta(daerah)`: gulir ke peta, zoom 2× di daerahnya, buka popup.
 - Kotak cari di atas peta adalah form GET biasa (`q`), diproses PHP seperti form di hero.
 - Daerah "Nasional" (Nasi Goreng Kampung) tidak punya titik, jadi tidak ditandai; ada catatan di bawah peta.
 
