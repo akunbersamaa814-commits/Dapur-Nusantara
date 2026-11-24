@@ -75,68 +75,6 @@
         }
     },
     {
-        "id": "timphan",
-        "nama": "Kue Timphan",
-        "daerah": "Aceh",
-        "kategori": "Camilan",
-        "waktu": "60 menit",
-        "porsi": "15 buah",
-        "kesulitan": "Sedang",
-        "warna": "#6B8E23",
-        "gambar": "assets/img/timphan.jpg",
-        "deskripsi": "Kue basah dari labu kuning dan tepung ketan berisi srikaya santan, dibungkus daun pisang muda lalu dikukus. Biasa disajikan bersama kopi.",
-        "bahan": [
-            {
-                "grup": "Bahan isi",
-                "isi": [
-                    "1 sdm tepung terigu",
-                    "150 g gula pasir, bagi dua",
-                    "4 butir telur",
-                    "200 ml santan kental",
-                    "1/4 sdt adas manis",
-                    "1 lembar daun pandan, sobek-sobek"
-                ]
-            },
-            {
-                "grup": "Bahan kulit",
-                "isi": [
-                    "300 g labu kuning",
-                    "2 sdm gula pasir",
-                    "150 ml santan cair",
-                    "300 g tepung ketan, campur 1/4 sdt garam"
-                ]
-            },
-            {
-                "grup": "Pembungkus",
-                "isi": [
-                    "Daun pisang muda secukupnya",
-                    "Minyak secukupnya untuk mengoles daun"
-                ]
-            }
-        ],
-        "langkah": [
-            "Isi: campur tepung terigu dengan setengah bagian gula pasir, aduk rata.",
-            "Kocok telur dengan sisa gula sampai tercampur, lalu masukkan santan dan adas manis.",
-            "Pindahkan ke panci, masukkan daun pandan dan campuran tepung. Masak dengan api kecil sambil terus diaduk sampai kental, lalu dinginkan.",
-            "Kulit: masak labu kuning, gula, dan santan cair sampai labu hancur. Angkat dan dinginkan.",
-            "Masukkan tepung ketan sedikit demi sedikit ke adonan labu sambil diuleni sampai tidak lengket di tangan.",
-            "Olesi daun pisang dengan sedikit minyak. Ambil 1 sdm adonan kulit, ratakan di atas daun.",
-            "Beri 1 sdt adonan isi, gulung sampai isi tertutup kulit, lalu bungkus rapat dengan daun pisang.",
-            "Kukus selama 15 menit sampai matang, angkat, dan sajikan."
-        ],
-        "tips": [
-            "Masak isi dengan api kecil dan terus diaduk agar telur tidak menggumpal.",
-            "Pakai daun pisang muda agar mudah dibentuk dan tidak sobek."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "detikSumut",
-                "url": "https://www.detik.com/sumut/kuliner/d-6982014/resep-kue-timphan-khas-aceh-kudapan-yang-dihidangkan-bersama-kopi"
-            }
-        ],
-        "foto": null
-    },
-    {
         "id": "es-timun-serut",
         "nama": "Es Timun Serut",
         "daerah": "Aceh",
@@ -717,7 +655,13 @@
                 "url": "https://www.detik.com/sumut/kuliner/d-6888975/resep-es-laksamana-mengamuk-riau"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "anoldent",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/8563790@N08/50152539353",
+            "keterangan": "Foto ilustrasi: mangga dengan kuah santan"
+        }
     },
     {
         "id": "mie-lendir",
@@ -1419,7 +1363,12 @@
                 "url": "https://www.detik.com/sumbagsel/kuliner/d-7123938/mengenal-kue-bay-tat-dulu-disukai-para-raja-di-bengkulu"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "sabjanbadio",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/135134363@N02/19576322773"
+        }
     },
     {
         "id": "es-kalamansi",
@@ -1466,7 +1415,12 @@
                 "url": "https://www.detik.com/sumbagsel/wisata/d-6778493/8-oleh-oleh-khas-bengkulu-dari-kuliner-hingga-kerajinan-tangan"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "believekevin",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/63313714@N00/1237656225"
+        }
     },
     {
         "id": "seruit",
@@ -1634,7 +1588,13 @@
                 "url": "https://lampung.idntimes.com/food/dining-guide/mengenal-minuman-khas-lampung-serbat-kweni-dan-cara-buatnya-00-jf67w-w2jp3c"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "GinkgoTelegraph",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/40998509@N02/8397119665",
+            "keterangan": "Foto ilustrasi: jus mangga"
+        }
     },
     {
         "id": "lempah-kuning",
@@ -2475,7 +2435,13 @@
                 "url": "https://food.detik.com/info-kuliner/d-5217329/minuman-khas-banten-yang-langka-tapi-enak"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Prayitno / Thank you for (12 millions +) view",
+            "lisensi": "CC BY 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/34128007@N04/8524287175",
+            "keterangan": "Foto ilustrasi: es kelapa muda"
+        }
     },
     {
         "id": "garang-asem",
@@ -3270,7 +3236,13 @@
                 "url": "https://food.detik.com/kue/d-6986956/resep-jaje-laklak-serabi-khas-bali-yang-empuk-legit-yang-cocok-buat-ngopi"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "wiendietry",
+            "lisensi": "CC BY 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/53688900@N00/2694680281",
+            "keterangan": "Foto ilustrasi: serabi"
+        }
     },
     {
         "id": "loloh-cemcem",
@@ -3394,57 +3366,6 @@
         }
     },
     {
-        "id": "cerorot",
-        "nama": "Cerorot",
-        "daerah": "Nusa Tenggara Barat",
-        "kategori": "Camilan",
-        "waktu": "50 menit",
-        "porsi": "20 buah",
-        "kesulitan": "Sedang",
-        "warna": "#9C6B30",
-        "gambar": "assets/img/cerorot.jpg",
-        "deskripsi": "Kue manis dari tepung beras, gula merah, dan santan yang dikukus dalam corong janur kelapa. Dimakan dengan mendorong kue dari ujung bawah corong.",
-        "bahan": [
-            {
-                "grup": "Bahan utama",
-                "isi": [
-                    "200 g tepung beras",
-                    "150 g gula merah",
-                    "400 ml santan",
-                    "200 ml air",
-                    "1/2 sdt garam"
-                ]
-            },
-            {
-                "grup": "Pembungkus",
-                "isi": [
-                    "Janur kelapa secukupnya",
-                    "Lidi untuk menyemat"
-                ]
-            }
-        ],
-        "langkah": [
-            "Buat corong: pisahkan janur dari lidinya, gulung melingkar membentuk corong, dan semat dengan lidi. Pastikan ujung bawah tertutup rapat.",
-            "Larutkan tepung beras dengan sebagian air, lalu saring.",
-            "Rebus sisa air bersama gula merah dan garam sampai larut, lalu saring.",
-            "Campurkan santan ke larutan gula, lalu tuang ke adonan tepung dan aduk sampai rata.",
-            "Panaskan kukusan, berdirikan corong janur di dalamnya.",
-            "Isi corong dengan adonan sampai hampir penuh.",
-            "Kukus sekitar 20 menit sampai matang, lalu angkat dan dinginkan."
-        ],
-        "tips": [
-            "Sumber tidak mencantumkan takaran, jadi takaran di sini perkiraan untuk sekitar 20 buah.",
-            "Masyarakat Lombok biasa menambahkan daging buah rotan ke adonan agar lebih khas."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "IDN Times NTB",
-                "url": "https://ntb.idntimes.com/food/recipe/resep-membuat-cerorot-khas-lombok-super-enak-cocok-untuk-berbuka-puasa-00-lm183-cd0jvz"
-            }
-        ],
-        "foto": null
-    },
-    {
         "id": "es-poteng",
         "nama": "Es Poteng",
         "daerah": "Nusa Tenggara Barat",
@@ -3559,54 +3480,6 @@
             "situs": "Wikimedia Commons",
             "sumber": "https://commons.wikimedia.org/wiki/File:Sei_sapi_Pj_DSC_2925.jpg"
         }
-    },
-    {
-        "id": "kompiang",
-        "nama": "Kue Kompiang",
-        "daerah": "Nusa Tenggara Timur",
-        "kategori": "Camilan",
-        "waktu": "2,5 jam",
-        "porsi": "10 buah",
-        "kesulitan": "Mudah",
-        "warna": "#D2A86E",
-        "gambar": "assets/img/kompiang.jpg",
-        "deskripsi": "Roti bulat bertabur wijen khas Manggarai, Flores. Teksturnya padat, sedikit renyah di luar, dan gurih untuk teman minum teh atau kopi.",
-        "bahan": [
-            {
-                "grup": "Bahan utama",
-                "isi": [
-                    "200 g tepung terigu protein sedang",
-                    "3 g ragi instan",
-                    "30 g gula pasir",
-                    "100 ml susu UHT full cream hangat",
-                    "1 butir kuning telur",
-                    "20 g margarin",
-                    "1/4 sdt garam",
-                    "Biji wijen secukupnya",
-                    "Air secukupnya"
-                ]
-            }
-        ],
-        "langkah": [
-            "Campur semua bahan kecuali wijen dan air, aduk dan uleni sampai rata.",
-            "Tutup wadah dengan serbet bersih, diamkan 1 jam di suhu ruang sampai mengembang.",
-            "Bagi adonan menjadi bagian 40–50 g, lalu pipihkan sedikit dengan rolling pin.",
-            "Oles bagian atas adonan dengan air, lalu tekan ke biji wijen.",
-            "Tata di loyang beralas kertas roti yang diolesi margarin, diamkan lagi 1 jam.",
-            "Panaskan oven 10 menit, lalu panggang 175°C selama 20 menit.",
-            "Keluarkan dari loyang dan sajikan."
-        ],
-        "tips": [
-            "Bisa diberi isian keju parut, cokelat bubuk, atau ayam cincang tumis sebelum dipipihkan.",
-            "Kompiang tahan 3 hari di suhu ruang dan 7 hari di kulkas."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "IDN Times",
-                "url": "https://www.idntimes.com/food/recipe/resep-kue-kompiang-khas-manggarai-ntt-00-mk1yf-l47q2r"
-            }
-        ],
-        "foto": null
     },
     {
         "id": "bubur-pedas",
@@ -3920,7 +3793,13 @@
                 "url": "https://www.detik.com/kalimantan/kuliner/d-8037828/7-makanan-unik-khas-dayak-dan-resepnya-selamat-mencoba"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "avlxyz",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/10559879@N00/3211821495",
+            "keterangan": "Foto ilustrasi: roti jala"
+        }
     },
     {
         "id": "soto-banjar",
@@ -4097,7 +3976,13 @@
                 "url": "https://www.idntimes.com/food/recipe/5-resep-minuman-khas-kalimantan-yang-segarnya-sampai-ubun-ubun-01-725m8-sy5f4z"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "knittymarie",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/14671121@N03/11025009356",
+            "keterangan": "Foto ilustrasi: es buah"
+        }
     },
     {
         "id": "nasi-bekepor",
@@ -4277,7 +4162,13 @@
                 "url": "https://www.idntimes.com/food/recipe/resep-kepiting-soka-asam-manis-c1c2-01-6cnpl-j7nvf9"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "avlxyz",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/10559879@N00/4388963211",
+            "keterangan": "Foto ilustrasi: kepiting soka goreng"
+        }
     },
     {
         "id": "lapis-cempedak",
@@ -4331,7 +4222,13 @@
                 "url": "https://www.kompas.com/food/read/2022/11/11/100600875/resep-kue-lapis-cempedak-asli-kalimantan-utara-manisnya-pas"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "anwarsiak***sibuk***",
+            "lisensi": "CC BY 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/43928101@N02/6082727821",
+            "keterangan": "Foto ilustrasi: buah cempedak"
+        }
     },
     {
         "id": "tinutuan",
@@ -4460,52 +4357,6 @@
             "situs": "Wikimedia Commons",
             "sumber": "https://commons.wikimedia.org/wiki/File:Klappertaart_Khas_Manado.jpg"
         }
-    },
-    {
-        "id": "es-kacang-tanah",
-        "nama": "Es Kacang Tanah Manado",
-        "daerah": "Sulawesi Utara",
-        "kategori": "Minuman",
-        "waktu": "5 jam",
-        "porsi": "6 gelas",
-        "kesulitan": "Mudah",
-        "warna": "#A1785C",
-        "gambar": "assets/img/es-kacang-tanah.jpg",
-        "deskripsi": "Kacang tanah yang direbus empuk dengan gula merah dan pandan, lalu disajikan dingin dengan es batu dan susu kental manis.",
-        "bahan": [
-            {
-                "grup": "Bahan utama",
-                "isi": [
-                    "250 g kacang tanah",
-                    "1 liter air",
-                    "150 g gula merah, sisir halus",
-                    "75 g gula pasir",
-                    "2 lembar daun pandan, simpulkan",
-                    "1/2 sdt garam",
-                    "Es batu secukupnya",
-                    "Susu kental manis secukupnya (opsional)"
-                ]
-            }
-        ],
-        "langkah": [
-            "Bilas kacang tanah, lalu rendam sekitar 4 jam agar lebih cepat lunak.",
-            "Buang air rendaman, lalu rebus kacang dengan 1 liter air dengan api sedang selama 45–60 menit sampai empuk.",
-            "Masukkan gula merah, gula pasir, daun pandan, dan garam. Aduk perlahan sampai larut dan kuah kecokelatan.",
-            "Masak lagi 10–15 menit agar manisnya meresap.",
-            "Angkat, biarkan uap panasnya hilang, lalu simpan di kulkas sampai dingin.",
-            "Masukkan kacang beserta kuahnya ke gelas, tambahkan es batu, dan beri susu kental manis jika suka."
-        ],
-        "tips": [
-            "Pilih kacang yang ukurannya seragam agar matangnya merata.",
-            "Garam hanya untuk mempertegas manis, jangan berlebihan."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "IDN Times",
-                "url": "https://www.idntimes.com/food/recipe/resep-es-kacang-tanah-khas-manado-sajian-segar-antimainstream-c1c2-01-3kz8p-wy4dth"
-            }
-        ],
-        "foto": null
     },
     {
         "id": "binte-biluhuta",
@@ -5371,50 +5222,6 @@
         }
     },
     {
-        "id": "air-guraka",
-        "nama": "Air Guraka",
-        "daerah": "Maluku Utara",
-        "kategori": "Minuman",
-        "waktu": "20 menit",
-        "porsi": "4 cangkir",
-        "kesulitan": "Mudah",
-        "warna": "#8B4513",
-        "gambar": "assets/img/air-guraka.jpg",
-        "deskripsi": "Minuman jahe dan gula merah khas Ternate yang ditaburi kenari sangrai. Hangat dan pedas, cocok ditemani pisang goreng mulut bebek.",
-        "bahan": [
-            {
-                "grup": "Bahan utama",
-                "isi": [
-                    "3 ruas jari jahe putih",
-                    "500 g gula merah",
-                    "2 sdm gula pasir",
-                    "1 batang serai, memarkan",
-                    "50 g kenari kupas (atau kacang tanah), sangrai dan cincang",
-                    "750 ml air"
-                ]
-            }
-        ],
-        "langkah": [
-            "Bersihkan jahe, lalu haluskan.",
-            "Masukkan jahe, gula merah, gula pasir, dan air ke panci.",
-            "Masak sampai mendidih.",
-            "Masukkan serai yang sudah dimemarkan, didihkan beberapa saat.",
-            "Matikan api, tuang ke gelas saji.",
-            "Taburi kenari atau kacang tanah cincang, lalu sajikan hangat."
-        ],
-        "tips": [
-            "Kurangi gula merah jika tidak terlalu suka manis.",
-            "Air guraka biasa disajikan bersama gorengan pisang atau singkong."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "detikFood",
-                "url": "https://food.detik.com/resep/d-5038660/resep-pembaca-air-guraka"
-            }
-        ],
-        "foto": null
-    },
-    {
         "id": "papeda",
         "nama": "Papeda Kuah Kuning",
         "daerah": "Papua",
@@ -5638,7 +5445,13 @@
                 "url": "https://www.idntimes.com/food/recipe/melodyna-melody/resep-ikan-bakar-manokwari-c1c2"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Charles Haynes",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/87232391@N00/4221478099",
+            "keterangan": "Foto ilustrasi: ikan bakar"
+        }
     },
     {
         "id": "udang-selingkuh",
@@ -5691,7 +5504,13 @@
                 "url": "https://www.idntimes.com/food/recipe/reza-iqbal/resep-udang-selingkuh-khas-wamena-papua"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Tatters ✾",
+            "lisensi": "CC BY-SA 2.0",
+            "situs": "Flickr",
+            "sumber": "https://www.flickr.com/photos/62938898@N00/12250342224",
+            "keterangan": "Foto ilustrasi: udang air tawar (Cherax)"
+        }
     },
     {
         "id": "nasi-goreng",

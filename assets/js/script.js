@@ -105,6 +105,8 @@ function bukaModal(id, pemicu) {
         kredit.append(buatLink(sumber.nama, sumber.url));
     });
     if (resep.foto) {
+        // Foto yang bukan masakan persis diberi keterangan, misalnya "Foto ilustrasi: serabi"
+        if (resep.foto.keterangan) kredit.append('. ' + resep.foto.keterangan);
         kredit.append('. Foto: ' + resep.foto.pembuat + ' (' + resep.foto.lisensi + ') via ',
             buatLink(resep.foto.situs, resep.foto.sumber), '.');
     } else {
