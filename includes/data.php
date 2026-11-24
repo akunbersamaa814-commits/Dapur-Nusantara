@@ -10,16 +10,50 @@ const DAFTAR_KATEGORI = ['Makanan Berat', 'Sup & Soto', 'Camilan', 'Minuman'];
 // Koordinat [lintang, bujur] tiap daerah untuk penanda di peta (letak ibu kota provinsi).
 // Daerah "Nasional" tidak punya titik karena masakannya ada di seluruh Indonesia.
 const KOORDINAT_DAERAH = [
-    'Sumatera Barat'   => [-0.9471, 100.4172],  // Padang
-    'Sumatera Selatan' => [-2.9761, 104.7754],  // Palembang
-    'DKI Jakarta'      => [-6.2088, 106.8456],  // Jakarta
-    'Jawa Barat'       => [-6.9175, 107.6191],  // Bandung
-    'Jawa Tengah'      => [-6.9667, 110.4167],  // Semarang
-    'Yogyakarta'       => [-7.7956, 110.3695],  // Yogyakarta
-    'Jawa Timur'       => [-7.2575, 112.7521],  // Surabaya
-    'Bali'             => [-8.6705, 115.2126],  // Denpasar
-    'Sulawesi Selatan' => [-5.1477, 119.4327],  // Makassar
-    'Papua'            => [-2.5337, 140.7181],  // Jayapura
+    // Sumatera
+    'Aceh'                      => [5.5483, 95.3238],    // Banda Aceh
+    'Sumatera Utara'            => [3.5952, 98.6722],    // Medan
+    'Sumatera Barat'            => [-0.9471, 100.4172],  // Padang
+    'Riau'                      => [0.5071, 101.4478],   // Pekanbaru
+    'Kepulauan Riau'            => [0.9186, 104.4554],   // Tanjung Pinang
+    'Jambi'                     => [-1.6101, 103.6131],  // Jambi
+    'Sumatera Selatan'          => [-2.9761, 104.7754],  // Palembang
+    'Bengkulu'                  => [-3.7928, 102.2608],  // Bengkulu
+    'Lampung'                   => [-5.3971, 105.2668],  // Bandar Lampung
+    'Kepulauan Bangka Belitung' => [-2.1291, 106.1090],  // Pangkalpinang
+    // Jawa
+    'DKI Jakarta'               => [-6.2088, 106.8456],  // Jakarta
+    'Jawa Barat'                => [-6.9175, 107.6191],  // Bandung
+    'Banten'                    => [-6.1200, 106.1503],  // Serang
+    'Jawa Tengah'               => [-6.9667, 110.4167],  // Semarang
+    'Yogyakarta'                => [-7.7956, 110.3695],  // Yogyakarta
+    'Jawa Timur'                => [-7.2575, 112.7521],  // Surabaya
+    // Bali & Nusa Tenggara
+    'Bali'                      => [-8.6705, 115.2126],  // Denpasar
+    'Nusa Tenggara Barat'       => [-8.5833, 116.1167],  // Mataram
+    'Nusa Tenggara Timur'       => [-10.1772, 123.6070], // Kupang
+    // Kalimantan
+    'Kalimantan Barat'          => [-0.0263, 109.3425],  // Pontianak
+    'Kalimantan Tengah'         => [-2.2161, 113.9135],  // Palangka Raya
+    'Kalimantan Selatan'        => [-3.4425, 114.8310],  // Banjarbaru
+    'Kalimantan Timur'          => [-0.5022, 117.1536],  // Samarinda
+    'Kalimantan Utara'          => [2.8375, 117.3653],   // Tanjung Selor
+    // Sulawesi
+    'Sulawesi Utara'            => [1.4748, 124.8421],   // Manado
+    'Gorontalo'                 => [0.5435, 123.0568],   // Gorontalo
+    'Sulawesi Tengah'           => [-0.8917, 119.8707],  // Palu
+    'Sulawesi Barat'            => [-2.6748, 118.8885],  // Mamuju
+    'Sulawesi Selatan'          => [-5.1477, 119.4327],  // Makassar
+    'Sulawesi Tenggara'         => [-3.9985, 122.5129],  // Kendari
+    // Maluku & Papua
+    'Maluku'                    => [-3.6954, 128.1814],  // Ambon
+    'Maluku Utara'              => [0.7373, 127.5588],   // Sofifi
+    'Papua'                     => [-2.5337, 140.7181],  // Jayapura
+    'Papua Barat'               => [-0.8615, 134.0620],  // Manokwari
+    'Papua Barat Daya'          => [-0.8762, 131.2558],  // Sorong
+    'Papua Tengah'              => [-3.3667, 135.4833],  // Nabire
+    'Papua Pegunungan'          => [-4.0956, 138.9450],  // Wamena
+    'Papua Selatan'             => [-8.4932, 140.4018],  // Merauke
 ];
 
 // Batas peta assets/img/peta-indonesia.svg (proyeksi equirectangular / lintang-bujur lurus).

@@ -14,7 +14,7 @@ dan **membuka detail** resep (bahan + cara memasak) dengan mengklik card.
 
 | Tujuan | Ukuran berhasil |
 |---|---|
-| Menampilkan resep Nusantara dengan tampilan menarik | Minimal 12 resep tampil sebagai card |
+| Menampilkan resep Nusantara dengan tampilan menarik | Minimal 12 resep tampil sebagai card (kini 95 resep dari 35 provinsi) |
 | Memenuhi syarat tugas: HTML, CSS, JS, PHP | Keempat teknologi terpakai dengan peran jelas |
 | Pencarian resep berjalan dengan PHP | Hasil pencarian difilter di server (bukan JS) |
 | Detail resep tampil dengan JS | Klik card → modal bahan & cara masak muncul tanpa reload |
@@ -93,7 +93,7 @@ Alur pencarian:
 ## 8. Kriteria Selesai (Checklist Penilaian)
 
 - [x] Halaman tampil di `http://localhost/...` (XAMPP/Laragon) atau `php -S localhost:8000`
-- [x] Minimal 12 resep tampil sebagai card
+- [x] Minimal 12 resep tampil sebagai card (kini 95 resep dari 35 provinsi)
 - [x] Klik card → modal detail muncul (JS), bisa ditutup
 - [x] Pencarian berjalan via PHP (`?q=`), termasuk kondisi "tidak ditemukan"
 - [x] Tampilan rapi di HP dan desktop

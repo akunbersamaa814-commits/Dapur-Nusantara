@@ -69,10 +69,13 @@ function bukaModal(id, pemicu) {
     if (!resep) return;
     tombolTerakhir = pemicu;
 
-    // Gambar dan badge tingkat kesulitan
+    // Gambar dan badge tingkat kesulitan.
+    // Jika foto belum ada, gambar disembunyikan dan diganti blok warna khas resep.
     const gambar = document.getElementById('modal-gambar');
-    gambar.src = resep.gambar;
+    gambar.style.display = resep.ada_gambar ? '' : 'none';
+    gambar.src = resep.ada_gambar ? resep.gambar : '';
     gambar.alt = resep.nama;
+    gambar.parentElement.style.background = resep.warna;
     const badge = document.getElementById('modal-badge');
     badge.textContent = resep.kesulitan;
     badge.className = 'badge badge-' + resep.kesulitan.toLowerCase();
@@ -101,8 +104,12 @@ function bukaModal(id, pemicu) {
         if (i > 0) kredit.append(', ');
         kredit.append(buatLink(sumber.nama, sumber.url));
     });
-    kredit.append('. Foto: ' + resep.foto.pembuat + ' (' + resep.foto.lisensi + ') via ',
-        buatLink(resep.foto.situs, resep.foto.sumber), '.');
+    if (resep.foto) {
+        kredit.append('. Foto: ' + resep.foto.pembuat + ' (' + resep.foto.lisensi + ') via ',
+            buatLink(resep.foto.situs, resep.foto.sumber), '.');
+    } else {
+        kredit.append('. Foto belum tersedia.');
+    }
 
     // Tampilkan modal. showModal() otomatis menangani tombol Esc,
     // dan CSS mengunci scroll halaman selama modal terbuka.
@@ -196,14 +203,19 @@ function buatIsiPopup(daerah, daftarResep) {
 
         // Foto + label daerah + kredit foto
         const gambar = buatElemen('div', '', 'popup-gambar');
-        const img = document.createElement('img');
-        img.src = resep.gambar;
-        img.alt = resep.nama;
-        gambar.appendChild(img);
+        gambar.style.background = resep.warna; // terlihat jika foto belum ada
+        if (resep.ada_gambar) {
+            const img = document.createElement('img');
+            img.src = resep.gambar;
+            img.alt = resep.nama;
+            gambar.appendChild(img);
+        }
         gambar.appendChild(buatElemen('span', daerah, 'popup-daerah'));
-        const kredit = buatLink('Foto: ' + resep.foto.situs, resep.foto.sumber);
-        kredit.className = 'popup-kredit';
-        gambar.appendChild(kredit);
+        if (resep.foto) {
+            const kredit = buatLink('Foto: ' + resep.foto.situs, resep.foto.sumber);
+            kredit.className = 'popup-kredit';
+            gambar.appendChild(kredit);
+        }
 
         // Nama (dengan ikon pin), deskripsi singkat, dan tombol lihat resep
         const isi = buatElemen('div', '', 'popup-isi');
