@@ -1,0 +1,814 @@
+[
+  {
+    "id": "rendang",
+    "nama": "Rendang Daging",
+    "daerah": "Sumatera Barat",
+    "kategori": "Makanan Berat",
+    "waktu": "120 menit",
+    "porsi": "12 porsi",
+    "kesulitan": "Sedang",
+    "warna": "#5A2E1B",
+    "gambar": "assets/img/rendang.jpg",
+    "deskripsi": "Daging sapi yang dimasak perlahan dalam santan dan bumbu rempah sampai kuahnya menyusut, berminyak, dan daging berwarna cokelat gelap.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "1 kg daging sapi (bagian paha atas/\"daging rendang\")",
+        "Santan dari 3 butir kelapa (santan kental dan santan encer)",
+        "4 lembar daun jeruk",
+        "1 lembar daun kunyit, ikat simpul",
+        "3 batang serai, memarkan",
+        "4 butir asam kandis",
+        "2 sdt garam",
+        "100 g ambu (kelapa sangrai)",
+        "1 sdm bumbu rempah rendang kering siap pakai",
+        "4 sdm minyak goreng untuk menumis"
+      ]},
+      { "grup": "Bumbu halus", "isi": [
+        "250 g cabai merah besar",
+        "100 g bawang merah",
+        "100 g bawang putih",
+        "50 g kemiri",
+        "20 g lengkuas",
+        "3 cm kunyit",
+        "2 cm jahe"
+      ]}
+    ],
+    "langkah": [
+      "Potong daging sapi menjadi kubus berukuran sekitar 3 cm supaya tidak hancur selama dimasak lama. Sisihkan.",
+      "Haluskan semua bahan bumbu halus (cabai, bawang merah, bawang putih, kemiri, lengkuas, kunyit, dan jahe) dengan ulekan atau blender sampai benar-benar halus.",
+      "Panaskan 4 sdm minyak goreng di wajan besar berdasar tebal, lalu tumis bumbu halus dengan api sedang sambil diaduk sampai harum dan matang.",
+      "Masukkan daun jeruk, serai, daun kunyit, asam kandis, dan garam. Aduk rata sampai daun-daunan layu.",
+      "Tuang santan, lalu tambahkan bumbu rempah rendang kering dan ambu (kelapa sangrai). Masak sambil terus diaduk sampai mendidih agar santan tidak pecah.",
+      "Masukkan potongan daging. Kecilkan api dan masak beberapa jam sambil sesekali diaduk supaya bagian bawah tidak gosong.",
+      "Teruskan memasak dengan api kecil sampai santan mengental, mengeluarkan minyak, dan daging berwarna cokelat gelap serta agak kering.",
+      "Angkat dan dinginkan sebelum disajikan bersama nasi hangat."
+    ],
+    "tips": [
+      "Gunakan daging sapi bagian paha atas atau bagian kelapa, yang di tukang daging biasa disebut \"daging rendang\".",
+      "Bumbu rempah rendang kering dijual siap pakai di tukang bumbu. Isinya racikan pala, cengkeh, kapulaga, ketumbar, jintan, pekak, adas, kunyit, dan merica.",
+      "Pakai api kecil dan aduk sesekali agar rendang matang merata dan tidak gosong."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/daging/d-7843890/resep-rendang-padang-asli-untuk-1-kg-daging-sapi" }
+    ],
+    "foto": { "pembuat": "Teguh S", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/delicious-rendang-beef-plate-with-sides-37081040/" }
+  },
+  {
+    "id": "nasi-goreng",
+    "nama": "Nasi Goreng Kampung",
+    "daerah": "Nasional",
+    "kategori": "Makanan Berat",
+    "waktu": "30 menit",
+    "porsi": "3 porsi",
+    "kesulitan": "Mudah",
+    "warna": "#A8642A",
+    "gambar": "assets/img/nasi-goreng.jpg",
+    "deskripsi": "Nasi goreng rumahan berbumbu ulek cabai, kemiri, dan terasi, dimasak dengan kecap manis, ayam suwir, dan sayuran.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "400 g nasi putih dingin",
+        "100 g ayam rebus, suwir-suwir",
+        "3 lembar kol, iris kasar",
+        "3 lembar daun sawi, iris kasar",
+        "1 batang daun bawang, iris kasar",
+        "4 sdm kecap manis",
+        "1 sdm kaldu jamur",
+        "1/2 sdt merica bubuk",
+        "3 sdm minyak sayur"
+      ]},
+      { "grup": "Bumbu halus", "isi": [
+        "3 buah cabai merah keriting",
+        "3 butir bawang merah",
+        "2 siung bawang putih",
+        "1 butir kemiri",
+        "1 sdt terasi (bakar terlebih dahulu)",
+        "1/2 sdt garam"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "Telur goreng",
+        "Kerupuk kanji",
+        "Acar timun wortel",
+        "Bawang merah goreng"
+      ]}
+    ],
+    "langkah": [
+      "Bakar terasi sebentar sampai harum, lalu haluskan bersama cabai merah keriting, bawang merah, bawang putih, kemiri, dan garam.",
+      "Panaskan 3 sdm minyak sayur di wajan, lalu tumis bumbu halus dengan api sedang sampai harum dan matang (warnanya sedikit menggelap).",
+      "Masukkan irisan daun bawang dan ayam suwir. Aduk sampai daun bawang layu dan ayam terbalut bumbu.",
+      "Tambahkan irisan kol dan daun sawi, aduk sebentar sampai sayuran sedikit layu tetapi masih renyah.",
+      "Masukkan nasi putih dingin, kecap manis, kaldu jamur, dan merica bubuk, lalu besarkan api.",
+      "Aduk-aduk terus sampai seluruh butir nasi terlapisi bumbu secara merata dan tidak ada nasi yang menggumpal.",
+      "Angkat dan sajikan selagi hangat bersama telur goreng, kerupuk, acar timun wortel, dan taburan bawang merah goreng."
+    ],
+    "tips": [
+      "Gunakan terasi udang yang bagus kualitasnya, lalu bakar sebelum dihaluskan agar aroma nasi goreng lebih sedap dan gurih.",
+      "Isian ayam suwir bisa diganti bakso, udang, atau sosis sesuai selera.",
+      "Pakai nasi sisa semalam (nasi dingin) supaya butirannya tidak lembek saat digoreng."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/nasi/d-6114186/resep-nasi-goreng-kampung-yang-mlekoh-sedap-bumbunya" }
+    ],
+    "foto": { "pembuat": "Henny Wiyanti", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/delicious-nasi-goreng-with-fried-egg-and-vegetables-40915778/" }
+  },
+  {
+    "id": "gudeg",
+    "nama": "Gudeg",
+    "daerah": "Yogyakarta",
+    "kategori": "Makanan Berat",
+    "waktu": "150 menit",
+    "porsi": "30 porsi",
+    "kesulitan": "Sedang",
+    "warna": "#8A3B22",
+    "gambar": "assets/img/gudeg.jpg",
+    "deskripsi": "Nangka muda yang dimasak lama dengan santan, gula Jawa, dan rempah sampai manis gurih dan berwarna cokelat kemerahan.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "1 kg nangka muda",
+        "5 butir telur ayam rebus, kupas",
+        "1,5 liter santan sedang",
+        "500 ml santan kental",
+        "120 g gula Jawa yang berwarna cokelat tua",
+        "2 lembar daun salam",
+        "3 lembar daun jeruk",
+        "3 cm lengkuas, memarkan",
+        "Air atau air kelapa tua secukupnya untuk merebus nangka"
+      ]},
+      { "grup": "Bumbu halus", "isi": [
+        "8 butir bawang merah",
+        "5 siung bawang putih",
+        "5 butir kemiri",
+        "1 sdm ketumbar",
+        "1 potong terasi",
+        "1/4 sdt jintan",
+        "2 sdt garam"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "Sambal goreng krecek",
+        "Opor ayam",
+        "Sambal bajak"
+      ]}
+    ],
+    "langkah": [
+      "Potong nangka muda berbentuk dadu besar.",
+      "Rebus nangka muda dalam air atau air kelapa tua secukupnya sampai lunak, lalu angkat dan tiriskan.",
+      "Haluskan semua bahan bumbu (bawang merah, bawang putih, kemiri, ketumbar, terasi, jintan, dan garam) dengan blender atau ulekan sampai benar-benar halus.",
+      "Jika ada, alasi dasar panci dengan daun jati atau daun jambu biji agar gudeg berwarna merah kecokelatan.",
+      "Masukkan nangka muda dan telur rebus ke dalam panci. Tuang santan sedang, lalu tambahkan bumbu halus, daun salam, daun jeruk, lengkuas, dan gula Jawa.",
+      "Masak dengan api sedang sampai bumbu meresap dan kuahnya menyusut. Aduk perlahan sesekali agar nangka tidak hancur.",
+      "Tuang santan kental, lalu masak lagi sampai kuah benar-benar menyusut. Matikan api.",
+      "Sajikan gudeg bersama sambal goreng krecek, opor ayam, dan sambal bajak."
+    ],
+    "tips": [
+      "Pilih nangka muda jenis merah yang teksturnya kokoh dan warnanya agak cokelat kemerahan.",
+      "Daun jati atau daun jambu biji yang diletakkan di dasar panci memberi warna merah cokelat pada gudeg.",
+      "Untuk gudeg kering, masak sampai airnya benar-benar habis atau hampir kering.",
+      "Sisa gudeg bisa disimpan dalam wadah bertutup di lemari es, lalu dihangatkan kembali dengan cara dikukus."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/sayur/d-5272175/resep-gudeg-jogja-yang-sedap-ngangeni" }
+    ],
+    "foto": { "pembuat": "Indonesiagood", "lisensi": "CC BY 4.0", "situs": "Wikimedia Commons", "sumber": "https://commons.wikimedia.org/wiki/File:Gudeg_Ayam.jpg" }
+  },
+  {
+    "id": "ayam-betutu",
+    "nama": "Ayam Betutu",
+    "daerah": "Bali",
+    "kategori": "Makanan Berat",
+    "waktu": "2,5 jam",
+    "porsi": "4 porsi",
+    "kesulitan": "Sedang",
+    "warna": "#C0781F",
+    "gambar": "assets/img/ayam-betutu.jpg",
+    "deskripsi": "Ayam kampung utuh berbumbu rempah khas Bali, diisi daun belimbing wuluh, dibungkus daun pisang, dikukus lalu dipanggang.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "1 ekor ayam kampung",
+        "50 ml air jeruk nipis",
+        "50 g daun belimbing wuluh, rebus sampai empuk, tiriskan, cincang kasar",
+        "2 batang serai, ambil bagian putihnya",
+        "25 g gula merah, iris",
+        "Daun jeruk secukupnya",
+        "Daun pisang secukupnya untuk membungkus",
+        "Garam secukupnya",
+        "Minyak goreng untuk menumis"
+      ]},
+      { "grup": "Bumbu halus", "isi": [
+        "10 butir bawang merah",
+        "6 siung bawang putih",
+        "12 buah cabai merah keriting",
+        "2 cm kunyit, bakar",
+        "2 cm kencur",
+        "2 cm jahe, parut",
+        "2 cm lengkuas, parut",
+        "2 sdt terasi bakar",
+        "1 sdt ketumbar",
+        "1 sdt merica butiran",
+        "2 sdt garam"
+      ]}
+    ],
+    "langkah": [
+      "Lumuri ayam kampung dengan air jeruk nipis dan garam sampai rata, lalu diamkan sekitar 15 menit di dalam kulkas.",
+      "Haluskan semua bahan bumbu halus.",
+      "Panaskan minyak di wajan, lalu tumis bumbu halus bersama serai dan irisan gula merah sampai harum dan matang. Angkat dan sisihkan.",
+      "Bagi bumbu yang sudah matang menjadi dua bagian. Campurkan satu bagian dengan daun belimbing wuluh cincang dan daun jeruk sampai rata.",
+      "Lumurkan bagian bumbu lainnya ke seluruh permukaan ayam. Tusuk-tusuk ayam dengan garpu dan remas-remas agar bumbu meresap ke dalam daging.",
+      "Masukkan campuran daun belimbing wuluh ke dalam perut ayam sampai padat.",
+      "Bungkus ayam dengan daun pisang, lalu kukus selama sekitar 1,5 jam. Angkat dan sisihkan.",
+      "Buka bungkusnya, lalu panggang ayam di dalam oven panas sambil diolesi sisa bumbu sampai berwarna kecokelatan.",
+      "Angkat dan sajikan ayam betutu dengan nasi hangat, sambal matah, dan plecing kangkung."
+    ],
+    "tips": [
+      "Cara tradisionalnya, ayam dibungkus daun pinang lalu dimasak dalam bara sekam selama 8 sampai 10 jam. Mengukus lalu memanggang adalah cara modern yang jauh lebih cepat.",
+      "Selain dipanggang, ayam yang sudah dikukus juga bisa digoreng atau dibakar."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/info-kuliner/d-4981033/resep-ayam-betutu-kuliner-khas-bali-yang-kaya-bumbu" }
+    ],
+    "foto": { "pembuat": "Tamba Budiarsana", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/traditional-balinese-ayam-betutu-dish-artfully-prepared-37106528/" }
+  },
+  {
+    "id": "coto-makassar",
+    "nama": "Coto Makassar",
+    "daerah": "Sulawesi Selatan",
+    "kategori": "Sup & Soto",
+    "waktu": "90 menit",
+    "porsi": "16 porsi",
+    "kesulitan": "Mudah",
+    "warna": "#6B4423",
+    "gambar": "assets/img/coto-makassar.jpg",
+    "deskripsi": "Sup daging sapi berbumbu rempah dengan kuah agak kental dari kacang tanah, disantap dengan sambal tauco dan ketupat atau buras.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "2 kg daging has dalam sapi, potong-potong",
+        "4,5 liter air (ditambah air untuk merebus awal)",
+        "8 lembar daun jeruk",
+        "55 g gula pasir",
+        "50 g gula merah",
+        "4 sdt merica bubuk",
+        "60 g garam",
+        "3 sdm kecap manis"
+      ]},
+      { "grup": "Bumbu tumis", "isi": [
+        "225 g bawang merah",
+        "125 g bawang putih",
+        "100 g batang serai, memarkan",
+        "90 g lengkuas, memarkan",
+        "30 g jahe",
+        "250 g kacang tanah, goreng"
+      ]},
+      { "grup": "Sambal coto", "isi": [
+        "3 buah tomat",
+        "50 g terasi",
+        "135 g cabai merah keriting",
+        "240 g cabai rawit merah",
+        "225 g bawang merah",
+        "450 g minyak sayur",
+        "200 g tauco",
+        "3 sdm garam"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "Jeruk nipis",
+        "Daun bawang, iris halus",
+        "Bawang merah goreng",
+        "Ketupat atau buras"
+      ]}
+    ],
+    "langkah": [
+      "Didihkan air secukupnya di panci besar. Masukkan potongan daging dan rebus sampai mendidih beberapa saat, lalu angkat daging dan buang air rebusannya.",
+      "Didihkan kembali 4,5 liter air, masukkan daging, lalu rebus dengan api kecil.",
+      "Sambil menunggu, tumis bawang merah dan bawang putih sampai layu. Tambahkan serai, lengkuas, dan jahe, aduk sampai layu, lalu angkat.",
+      "Pisahkan bawang merah dan bawang putih dari tumisan, lalu haluskan bersama kacang tanah goreng menggunakan chopper sampai halus.",
+      "Tuang bumbu kacang halus ke dalam rebusan daging. Masukkan juga daun jeruk, serai, lengkuas, dan jahe dari tumisan.",
+      "Bumbui dengan gula pasir, gula merah, merica bubuk, garam, dan kecap manis, lalu aduk rata.",
+      "Masak dengan api kecil sampai daging empuk dan bumbu meresap, lalu matikan api.",
+      "Untuk sambal coto, tumis tomat, terasi, cabai merah keriting, cabai rawit, dan bawang merah sampai layu. Angkat, lalu haluskan dengan chopper.",
+      "Tumis kembali bumbu sambal yang sudah halus bersama tauco dan garam sampai mendidih dan benar-benar matang, lalu angkat.",
+      "Sajikan coto Makassar dengan perasan jeruk nipis, daun bawang, bawang goreng, sambal coto, dan ketupat atau buras."
+    ],
+    "tips": [
+      "Selain has dalam, bisa memakai daging sengkel atau daging yang sedikit berlemak.",
+      "Tauco adalah ciri khas sambal coto. Pilih tauco yang bagus kualitasnya agar aroma dan rasa gurihnya lebih kuat.",
+      "Saat menumis sambal coto, pastikan benar-benar mendidih dan matang agar rasa pedasnya lebih kuat."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/daging/d-7241348/resep-coto-makassar-autentik-yang-berbumbu-rempah-mantap" }
+    ],
+    "foto": { "pembuat": "muallim nur", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/traditional-indonesian-coto-makassar-dish-in-bowl-32928771/" }
+  },
+  {
+    "id": "soto-betawi",
+    "nama": "Soto Betawi",
+    "daerah": "DKI Jakarta",
+    "kategori": "Sup & Soto",
+    "waktu": "50 menit",
+    "porsi": "8–10 porsi",
+    "kesulitan": "Sedang",
+    "warna": "#D9A441",
+    "gambar": "assets/img/soto-betawi.jpg",
+    "deskripsi": "Soto daging sapi berkuah santan dan susu yang gurih creamy, disajikan dengan kentang goreng, tomat, dan emping.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "1 kg daging sapi (sengkel dan has)",
+        "1 liter air untuk merebus",
+        "500 ml santan kental dari 1 butir kelapa",
+        "500 ml susu cair",
+        "3 cm lengkuas, memarkan",
+        "1 batang kayu manis (5 cm)",
+        "4 lembar daun salam",
+        "6 butir cengkeh",
+        "2 batang serai, memarkan",
+        "Minyak goreng secukupnya"
+      ]},
+      { "grup": "Bumbu halus", "isi": [
+        "20 butir bawang merah",
+        "8 siung bawang putih",
+        "2 cm jahe",
+        "3 butir kemiri",
+        "1 sdt jintan",
+        "1 sdm ketumbar",
+        "1 sdt merica",
+        "Garam dan gula pasir secukupnya"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "Sambal cabai rawit",
+        "Daun bawang, iris",
+        "Tomat, potong-potong",
+        "Bawang merah goreng",
+        "Emping goreng",
+        "Jeruk nipis",
+        "Kentang goreng, potong-potong",
+        "Acar mentimun"
+      ]}
+    ],
+    "langkah": [
+      "Potong daging sapi, rebus sebentar dalam air mendidih, lalu buang air rebusan pertamanya.",
+      "Rebus kembali daging sapi dengan 1 liter air bersih.",
+      "Haluskan bumbu halus. Panaskan sedikit minyak, lalu tumis bumbu halus bersama lengkuas, daun salam, kayu manis, cengkeh, dan serai sampai harum.",
+      "Masukkan bumbu tumis ke dalam rebusan daging, lalu didihkan.",
+      "Tuang santan dan susu cair. Aduk perlahan dan jaga api agar tidak terlalu besar supaya santan tidak pecah.",
+      "Beri garam dan gula pasir secukupnya. Masak sampai bumbu meresap dan daging empuk.",
+      "Jika suka, angkat potongan daging lalu goreng sebentar agar permukaannya sedikit kering.",
+      "Siapkan mangkuk, isi dengan kentang goreng dan irisan tomat. Masukkan daging, siram dengan kuah soto, lalu taburi bawang merah goreng, emping, dan irisan daun bawang. Sajikan dengan sambal, jeruk nipis, dan acar."
+    ],
+    "tips": [
+      "Kuah santan dan susu mudah pecah, jadi aduk terus dan jangan biarkan mendidih terlalu kuat setelah santan dimasukkan.",
+      "Merebus daging sebentar lalu membuang air pertamanya membuat kuah lebih bening dan tidak berbau prengus."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/daging/d-6839793/resep-soto-betawi-dengan-santan-dan-susu-pastinya-gurih-lezat" }
+    ],
+    "foto": { "pembuat": "Riandy Saputra", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/indonesian-soto-betawi-with-rice-and-crackers-36896598/" }
+  },
+  {
+    "id": "rawon",
+    "nama": "Rawon",
+    "daerah": "Jawa Timur",
+    "kategori": "Sup & Soto",
+    "waktu": "90 menit",
+    "porsi": "10 porsi",
+    "kesulitan": "Mudah",
+    "warna": "#2A1F1A",
+    "gambar": "assets/img/rawon.jpg",
+    "deskripsi": "Sup daging sapi berlemak dengan kuah hitam pekat dari kluwek, gurih medok, dan segar disantap dengan tauge pendek dan telur asin.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "1 kg daging sandung lamur sapi",
+        "3 lembar daun salam",
+        "5 lembar daun jeruk",
+        "2 batang serai, ambil bagian putihnya, memarkan",
+        "4 cm lengkuas, memarkan",
+        "5 sdm minyak sayur",
+        "Air secukupnya (sampai daging terendam)"
+      ]},
+      { "grup": "Bumbu halus", "isi": [
+        "12 butir bawang merah",
+        "8 siung bawang putih",
+        "3 buah cabai merah",
+        "5 butir kemiri",
+        "8 buah kluwek, ambil isinya",
+        "2 cm kunyit",
+        "1 sdt ketumbar",
+        "1 sdt merica butiran",
+        "1 sdt terasi",
+        "2 sdt asam Jawa",
+        "2 sdt garam"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "Telur asin",
+        "Tauge pendek",
+        "Sambal terasi"
+      ]}
+    ],
+    "langkah": [
+      "Keruk isi kluwek, lalu cicipi sedikit untuk memastikan tidak ada yang pahit. Buang kluwek yang rasanya pahit.",
+      "Haluskan semua bahan bumbu halus bersama isi kluwek.",
+      "Potong-potong daging sandung lamur seukuran sekali suap.",
+      "Panaskan minyak, lalu tumis bumbu halus sampai wangi.",
+      "Masukkan serai, daun salam, daun jeruk, dan lengkuas. Aduk sampai daun-daunan layu.",
+      "Masukkan potongan daging, aduk sampai warnanya berubah agak pucat dan terbalut bumbu.",
+      "Pindahkan ke dalam panci, lalu tuang air secukupnya sampai daging terendam.",
+      "Masak dengan api kecil sampai daging empuk dan kuah agak menyusut.",
+      "Angkat dan sajikan rawon hangat bersama nasi, telur asin, tauge pendek, dan sambal terasi."
+    ],
+    "tips": [
+      "Sandung lamur yang berlemak paling cocok untuk rawon. Bisa juga memakai iga atau buntut sapi.",
+      "Pilih kluwek yang tua dan benar-benar masak, berwarna hitam kecokelatan. Kluwek yang masih cokelat muda biasanya pahit.",
+      "Cicipi semua isi kluwek sebelum diulek bersama bumbu lain supaya kuah tidak pahit."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/daging/d-6617698/resep-rawon-daging-surabaya-kuahnya-pekat-gurih-mantap" }
+    ],
+    "foto": { "pembuat": "Daniel Lee", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/traditional-indonesian-black-soup-with-side-dishes-36547527/" }
+  },
+  {
+    "id": "sate-ayam",
+    "nama": "Sate Ayam Madura",
+    "daerah": "Jawa Timur",
+    "kategori": "Makanan Berat",
+    "waktu": "60 menit",
+    "porsi": "8 porsi",
+    "kesulitan": "Sedang",
+    "warna": "#7A3E12",
+    "gambar": "assets/img/sate-ayam.jpg",
+    "deskripsi": "Potongan ayam tipis yang ditusuk, dicelup bumbu kacang dan kecap, lalu dibakar. Gurih manis sedikit pedas.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "500 g fillet ayam",
+        "Tusuk sate secukupnya",
+        "3 sdm kecap manis",
+        "2 sdm minyak sayur"
+      ]},
+      { "grup": "Bumbu kacang", "isi": [
+        "150 g kacang tanah goreng",
+        "5 buah cabai merah keriting",
+        "3 siung bawang putih",
+        "2 sdm bawang goreng",
+        "3 butir kemiri",
+        "1/2 sdt merica bubuk",
+        "10 g gula Jawa",
+        "2 sdt garam",
+        "300 ml air"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "Lontong",
+        "Sambal rawit",
+        "Bawang merah, iris kasar",
+        "Jeruk nipis"
+      ]}
+    ],
+    "langkah": [
+      "Potong-potong fillet ayam berukuran sekitar 3 × 2 × 0,5 cm.",
+      "Tusuk setiap 4 potong daging ayam dengan satu tusuk sate. Ulangi sampai ayam habis.",
+      "Untuk bumbu kacang, giling kacang tanah goreng, cabai merah keriting, bawang putih, bawang goreng, kemiri, merica, gula Jawa, dan garam sampai benar-benar halus.",
+      "Taruh bumbu halus dalam wadah, tambahkan 300 ml air, lalu masak dengan api kecil sampai mendidih dan mengental. Angkat dan dinginkan.",
+      "Di piring datar, campurkan 3 sdm bumbu kacang dengan kecap manis dan minyak sayur sampai rata.",
+      "Celupkan setiap tusuk sate ke dalam campuran bumbu tersebut sampai seluruh permukaannya terlapisi.",
+      "Bakar sate di atas bara arang atau wajan datar yang panas sampai kedua sisinya matang dan sedikit kecokelatan.",
+      "Sajikan sate selagi hangat dengan sisa bumbu kacang, lontong, sambal rawit, irisan bawang merah, dan jeruk nipis."
+    ],
+    "tips": [
+      "Agar lebih gurih, selingi potongan fillet dengan potongan lemak atau kulit ayam, atau gunakan daging paha atas.",
+      "Jeroan seperti hati dan ampela juga bisa dibuat sate. Rebus ampela sampai empuk lebih dulu sebelum ditusuk.",
+      "Jika tidak punya panggangan arang, sate bisa dibakar di wajan datar."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/ayam/d-5603898/resep-sate-madura-yang-gurih-manis-mantap-bumbunya" }
+    ],
+    "foto": { "pembuat": "David Tumpal", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/traditional-indonesian-satay-with-rice-cakes-37106134/" }
+  },
+  {
+    "id": "gado-gado",
+    "nama": "Gado-Gado",
+    "daerah": "DKI Jakarta",
+    "kategori": "Makanan Berat",
+    "waktu": "45 menit",
+    "porsi": "2 porsi",
+    "kesulitan": "Mudah",
+    "warna": "#9C7A2E",
+    "gambar": "assets/img/gado-gado.jpg",
+    "deskripsi": "Aneka sayuran rebus, tahu, tempe, kentang, dan telur yang disiram saus kacang bersantan yang kental dan gurih.",
+    "bahan": [
+      { "grup": "Bahan utama", "isi": [
+        "1 buah tahu putih besar, goreng",
+        "200 g tempe, goreng",
+        "1 buah kentang besar, rebus",
+        "5 helai kacang panjang, potong-potong",
+        "200 g kol, iris kasar",
+        "1 buah labu siam, kupas, potong-potong",
+        "50 g tauge",
+        "3 butir telur rebus, kupas, potong-potong",
+        "8 lembar daun selada, iris kasar"
+      ]},
+      { "grup": "Saus kacang", "isi": [
+        "400 ml santan",
+        "2 sdm air asam Jawa",
+        "50 g gula merah",
+        "1/2 sdm kaldu jamur bubuk",
+        "3 lembar daun jeruk"
+      ]},
+      { "grup": "Bumbu halus saus kacang", "isi": [
+        "250 g kacang tanah goreng",
+        "7 siung bawang putih",
+        "5 butir bawang merah",
+        "3 buah cabai merah besar",
+        "1 sdt garam"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "Lontong, potong-potong",
+        "Kerupuk",
+        "Emping",
+        "Bawang merah goreng"
+      ]}
+    ],
+    "langkah": [
+      "Potong-potong kentang rebus, tahu goreng, dan tempe goreng sesuai selera. Sisihkan.",
+      "Rebus kacang panjang, labu siam, dan kol secara terpisah sampai lunak, lalu tiriskan.",
+      "Seduh tauge dengan air mendidih sebentar, lalu tiriskan.",
+      "Untuk saus kacang, haluskan kacang tanah goreng, bawang putih, bawang merah, cabai merah besar, dan garam.",
+      "Masukkan bumbu halus ke dalam panci bersama santan, gula merah, daun jeruk, air asam Jawa, dan kaldu jamur. Aduk rata.",
+      "Masak saus kacang dengan api kecil sambil diaduk sampai mendidih dan mengental. Angkat dan dinginkan.",
+      "Susun potongan lontong, sayuran rebus, tauge, selada, tahu, tempe, kentang, dan telur di piring saji.",
+      "Siram dengan saus kacang, lalu sajikan bersama kerupuk, emping, dan taburan bawang merah goreng."
+    ],
+    "tips": [
+      "Sayuran bisa disesuaikan selera, misalnya bayam, kol, kacang panjang, labu siam, atau kentang.",
+      "Agar saus kacang lebih gurih, sebagian kacang tanah bisa diganti kacang mede."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/sayur/d-8540586/resep-gado-gado-jakarta-siram-saus-kacang-yang-kental-gurih" }
+    ],
+    "foto": { "pembuat": "Rika Amani", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/traditional-indonesian-gado-gado-salad-with-peanut-sauce-40754040/" }
+  },
+  {
+    "id": "pempek",
+    "nama": "Pempek Kapal Selam",
+    "daerah": "Sumatera Selatan",
+    "kategori": "Camilan",
+    "waktu": "60 menit",
+    "porsi": "4 porsi",
+    "kesulitan": "Sedang",
+    "warna": "#C9A36B",
+    "gambar": "assets/img/pempek.jpg",
+    "deskripsi": "Pempek ikan tenggiri berisi telur yang direbus lalu digoreng, disantap dengan kuah cuko asam manis pedas khas Palembang.",
+    "bahan": [
+      { "grup": "Adonan pempek", "isi": [
+        "500 g daging ikan tenggiri",
+        "500 g tepung tapioka (sisihkan sedikit untuk melumuri tangan)",
+        "60 g tepung terigu",
+        "6 siung bawang putih, haluskan",
+        "200 ml air",
+        "2 sdm garam",
+        "1 sdm gula pasir",
+        "2 sdm kecap ikan",
+        "1 sdm minyak wijen"
+      ]},
+      { "grup": "Isian", "isi": [
+        "Telur ayam atau bebek (1 butir per pempek)"
+      ]},
+      { "grup": "Kuah cuko", "isi": [
+        "1 kg gula merah yang bagus, potong-potong",
+        "2 liter air",
+        "200 g bawang putih",
+        "Cabai rawit sesuai selera",
+        "3 sdm cuka putih/air asam/air jeruk nipis",
+        "Garam secukupnya"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "Irisan mentimun",
+        "Ebi tumbuk"
+      ]}
+    ],
+    "langkah": [
+      "Buat biang: campurkan tepung terigu, bawang putih halus, dan 200 ml air. Masak dengan api kecil sambil diaduk sampai kental dan rata. Angkat, dinginkan, lalu simpan di kulkas minimal 1 jam.",
+      "Haluskan daging ikan tenggiri dengan penggiling jika belum halus, lalu simpan di kulkas selama 1 jam.",
+      "Campurkan adonan biang dengan daging ikan yang sudah dihaluskan.",
+      "Tambahkan garam, gula pasir, kecap ikan, dan minyak wijen. Aduk sampai tercampur rata.",
+      "Masukkan tepung tapioka sedikit demi sedikit sambil diaduk sampai adonan kalis dan tidak lengket.",
+      "Timbang adonan masing-masing seberat 120 gram sampai adonan habis.",
+      "Lumuri tangan dengan tepung tapioka. Ambil satu bagian adonan, bulatkan, lalu tekan bagian tengahnya sampai membentuk kantong yang dalam.",
+      "Tuang satu butir telur ke dalam kantong adonan, lalu rekatkan bagian pinggirnya rapat-rapat agar telur tidak bocor.",
+      "Masukkan pempek ke dalam air mendidih. Rebus sampai matang, ditandai dengan pempek mengapung, lalu angkat dan tiriskan.",
+      "Untuk kuah cuko, masak gula merah dengan air sampai larut. Haluskan bawang putih dan cabai rawit, masukkan ke rebusan gula, lalu didihkan.",
+      "Tambahkan cuka dan garam, lalu rebus dengan api kecil sekitar 1 jam sampai agak kental. Angkat dan saring.",
+      "Biarkan pempek dingin, lalu goreng sampai permukaan luarnya kering dan kecokelatan.",
+      "Potong pempek, sajikan dengan kuah cuko, irisan mentimun, dan ebi tumbuk."
+    ],
+    "tips": [
+      "Pilih ikan tenggiri yang segar. Selain tenggiri, bisa memakai ikan gabus, kakap, patin, atau kembung.",
+      "Makin banyak tepung yang dipakai, pempek makin kenyal atau keras, jadi sesuaikan dengan selera.",
+      "Telur untuk isian bisa dikocok lebih dulu atau langsung dimasukkan utuh.",
+      "Secara tradisional, pempek disajikan tanpa mi kuning."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood (pempek)", "url": "https://food.detik.com/makanan-laut/d-8482551/resep-pempek-kapal-selam-homemade-gurih-kenyalnya-mantap" },
+      { "nama": "detikFood (kuah cuko)", "url": "https://food.detik.com/makanan-laut/d-1033434/pempek-palembang" }
+    ],
+    "foto": { "pembuat": "macarius draftStudio", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/a-meal-on-a-table-23879736/" }
+  },
+  {
+    "id": "klepon",
+    "nama": "Klepon",
+    "daerah": "Jawa Tengah",
+    "kategori": "Camilan",
+    "waktu": "45 menit",
+    "porsi": "± 20 butir",
+    "kesulitan": "Mudah",
+    "warna": "#3E7D3A",
+    "gambar": "assets/img/klepon.jpg",
+    "deskripsi": "Bola-bola ketan hijau beraroma pandan berisi gula merah yang lumer, dibalut kelapa parut gurih.",
+    "bahan": [
+      { "grup": "Adonan", "isi": [
+        "200 g tepung ketan",
+        "200 ml air panas",
+        "2 sdm gula pasir",
+        "Pasta pandan secukupnya",
+        "Gula merah secukupnya untuk isian"
+      ]},
+      { "grup": "Taburan", "isi": [
+        "1/2 butir kelapa parut",
+        "1/2 sdt garam"
+      ]}
+    ],
+    "langkah": [
+      "Campur kelapa parut dengan garam, lalu kukus selama 10 menit. Angkat dan sisihkan.",
+      "Iris tipis gula merah untuk isian.",
+      "Masukkan tepung ketan dan gula pasir ke dalam wadah. Tuang air panas sedikit demi sedikit sambil diaduk, lalu tambahkan pasta pandan.",
+      "Uleni adonan sampai kalis dan mudah dibentuk. Jika masih terlalu kering, tambahkan sedikit air.",
+      "Ambil sedikit adonan, bulatkan, lalu pipihkan dan beri isian gula merah di tengahnya.",
+      "Tutup kembali adonan dan bulatkan dengan rapat supaya gula merah tidak bocor saat direbus. Ulangi sampai adonan habis.",
+      "Didihkan air di panci, lalu rebus bola-bola klepon sampai mengapung. Angkat dan tiriskan.",
+      "Gulingkan klepon selagi hangat di atas kelapa parut kukus sampai seluruh permukaannya tertutup.",
+      "Sajikan klepon dan santap selagi hangat agar gula merah di dalamnya masih lumer."
+    ],
+    "tips": [
+      "Untuk warna hijau yang pekat dan aroma harum, pasta pandan bisa diganti ekstrak daun pandan asli.",
+      "Gula merah yang diiris tipis atau disisir lebih cepat lumer dibandingkan gula merah bongkahan."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/kue/d-8629683/resep-klepon-isi-gula-merah-lumer-di-mulut-bikin-nagih" }
+    ],
+    "foto": { "pembuat": "Meggy Kadam Aryanto", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/coconut-rice-cake-balls-in-a-small-bowl-7429251/" }
+  },
+  {
+    "id": "es-cendol",
+    "nama": "Es Cendol",
+    "daerah": "Jawa Barat",
+    "kategori": "Minuman",
+    "waktu": "45 menit",
+    "porsi": "4 gelas",
+    "kesulitan": "Mudah",
+    "warna": "#5E9B4E",
+    "gambar": "assets/img/es-cendol.jpg",
+    "deskripsi": "Minuman segar berisi cendol hijau dari tepung hunkwe dan air daun suji, disiram kuah santan dan sirup gula merah dengan nangka.",
+    "bahan": [
+      { "grup": "Cendol", "isi": [
+        "150 g tepung hunkwe",
+        "500 ml air",
+        "100 ml air daun suji",
+        "1/2 sdt garam",
+        "Air es secukupnya untuk merendam"
+      ]},
+      { "grup": "Kuah santan", "isi": [
+        "600 ml santan dari 1 butir kelapa",
+        "1/2 sdt garam",
+        "2 lembar daun pandan"
+      ]},
+      { "grup": "Sirup gula merah", "isi": [
+        "250 g gula merah, sisir halus",
+        "250 ml air",
+        "2 lembar daun pandan",
+        "1/4 sdt garam",
+        "3 buah nangka, potong kotak"
+      ]},
+      { "grup": "Pelengkap", "isi": [
+        "500 g es batu"
+      ]}
+    ],
+    "langkah": [
+      "Masukkan air, air daun suji, garam, dan tepung hunkwe ke dalam panci. Aduk sampai tepung larut dan tidak menggumpal.",
+      "Masak dengan api sedang sambil terus diaduk sampai mendidih, kental, dan meletup-letup.",
+      "Siapkan wadah berisi air es. Tuang adonan panas ke dalam cetakan cendol, lalu tekan di atas wadah tersebut sampai butiran cendol jatuh ke air es.",
+      "Biarkan cendol terendam sebentar agar kokoh, lalu angkat dan tiriskan.",
+      "Untuk kuah santan, rebus santan bersama garam dan daun pandan sampai mendidih sambil diaduk agar santan tidak pecah. Dinginkan.",
+      "Untuk sirup, rebus gula merah, air, daun pandan, garam, dan potongan nangka sampai gula larut dan sirup mengental. Dinginkan.",
+      "Tata cendol di gelas, tambahkan sirup gula merah dan nangka, es batu, lalu siram dengan kuah santan. Sajikan segera."
+    ],
+    "tips": [
+      "Es cendol khas Jawa Barat dibuat dari tepung hunkwe (tepung kacang hijau), sedangkan es dawet biasanya memakai tepung beras.",
+      "Cendol paling enak disajikan dingin agar teksturnya lembut dan kenyal."
+    ],
+    "sumber_resep": [
+      { "nama": "detikFood", "url": "https://food.detik.com/info-kuliner/d-4926903/begini-cara-membuat-es-cendol-yang-enak-di-rumah" }
+    ],
+    "foto": { "pembuat": "Sokat Rachman", "lisensi": "Lisensi Pexels", "situs": "Pexels", "sumber": "https://www.pexels.com/photo/traditional-indonesian-dessert-es-cendol-served-in-glass-37240946/" }
+  },
+  {
+    "id": "papeda",
+    "nama": "Papeda Kuah Kuning",
+    "daerah": "Papua",
+    "kategori": "Makanan Berat",
+    "waktu": "45 menit",
+    "porsi": "4 porsi",
+    "kesulitan": "Sedang",
+    "warna": "#D7B43A",
+    "gambar": "assets/img/papeda.jpg",
+    "deskripsi": "Bubur sagu bening yang kenyal, disantap bersama ikan tongkol berkuah kuning segar dari kunyit, serai, dan kemangi.",
+    "bahan": [
+      { "grup": "Papeda", "isi": [
+        "85 g pati sagu asli",
+        "100 ml air (untuk melarutkan sagu)",
+        "400 ml air (untuk dididihkan)",
+        "1/4 sdt garam",
+        "1/4 sdt gula pasir"
+      ]},
+      { "grup": "Ikan kuah kuning", "isi": [
+        "500 g ikan tongkol",
+        "600 ml air",
+        "1 buah tomat merah, iris",
+        "1 ikat kemangi, petik daunnya",
+        "1 batang daun bawang, potong-potong",
+        "2 batang serai",
+        "7 lembar daun jeruk",
+        "3 cm lengkuas, memarkan",
+        "2,5 sdt kaldu bubuk",
+        "1,5 sdt garam",
+        "1,5 sdt gula pasir"
+      ]},
+      { "grup": "Bumbu halus", "isi": [
+        "4 butir bawang merah",
+        "2 siung bawang putih",
+        "4 buah cabai merah keriting",
+        "2 cm jahe",
+        "1 sdt kunyit bubuk"
+      ]}
+    ],
+    "langkah": [
+      "Cuci bersih ikan tongkol, beri perasan jeruk nipis agar tidak amis, lalu potong menjadi beberapa bagian. Sisihkan.",
+      "Haluskan bahan bumbu dengan blender, lalu tumis sampai harum.",
+      "Masukkan serai, daun jeruk, dan lengkuas ke dalam tumisan, aduk sampai layu.",
+      "Masukkan potongan ikan tongkol, tuang 600 ml air, lalu tambahkan kaldu bubuk, garam, dan gula pasir. Masak sampai mendidih dan ikan matang.",
+      "Cicipi dan koreksi rasanya. Jika sudah pas, masukkan irisan tomat, potongan daun bawang, dan daun kemangi. Angkat dan sisihkan.",
+      "Untuk papeda, didihkan 400 ml air bersama garam dan gula. Setelah mendidih, kecilkan api.",
+      "Larutkan pati sagu dengan 100 ml air sampai tercampur rata dan tidak menggumpal, lalu tuang perlahan ke dalam air mendidih.",
+      "Aduk perlahan dan terus sampai adonan berubah bening, kental, dan meletup-letup. Angkat setelah matang.",
+      "Ambil papeda dengan dua sumpit atau garpu kayu sambil digulung, letakkan di mangkuk, lalu siram dengan ikan kuah kuning."
+    ],
+    "tips": [
+      "Pakai tepung sagu yang bagus kualitasnya dan tidak menggumpal.",
+      "Tuang air ke tepung sedikit demi sedikit sambil diaduk, begitu juga saat menuangkannya ke air mendidih.",
+      "Pilih ikan tongkol yang masih segar dan beri perasan jeruk nipis agar aroma amisnya hilang."
+    ],
+    "sumber_resep": [
+      { "nama": "IDN Times", "url": "https://www.idntimes.com/food/recipe/resep-papeda-kuah-kuning-yang-gurih-dan-lezat-gampang-bikinnya-01-mr4bd-wwpmcq" }
+    ],
+    "foto": { "pembuat": "Gunawan Kartapranata", "lisensi": "CC BY-SA 3.0", "situs": "Wikimedia Commons", "sumber": "https://commons.wikimedia.org/wiki/File:Papeda,_Kuah_Kuning,_Ikan_Tude_Bakar_2.jpg" }
+  },
+  {
+    "id": "bir-pletok",
+    "nama": "Bir Pletok",
+    "daerah": "DKI Jakarta",
+    "kategori": "Minuman",
+    "waktu": "30 menit",
+    "porsi": "4–5 gelas",
+    "kesulitan": "Mudah",
+    "warna": "#8E2F1F",
+    "gambar": "assets/img/bir-pletok.jpg",
+    "deskripsi": "Minuman rempah khas Betawi tanpa alkohol, berwarna merah dari kayu secang, hangat dan harum jahe.",
+    "bahan": [
+      { "grup": "Bahan", "isi": [
+        "1 liter air",
+        "200 g jahe merah, memarkan",
+        "2 batang serai, memarkan",
+        "5 lembar daun pandan",
+        "5 lembar daun jeruk purut",
+        "2 batang kayu manis",
+        "5 cm kayu secang (pewarna merah alami)",
+        "1 sdt cengkeh",
+        "1 sdt kapulaga",
+        "1 sdm biji pala",
+        "150 g gula merah, sisir halus",
+        "100 g gula pasir (sesuai selera)"
+      ]}
+    ],
+    "langkah": [
+      "Cuci bersih semua bahan, terutama jahe, serai, daun pandan, dan daun jeruk.",
+      "Memarkan jahe dan serai agar aroma serta rasanya lebih keluar.",
+      "Masukkan jahe, serai, daun pandan, daun jeruk, kayu manis, kayu secang, cengkeh, kapulaga, dan biji pala ke dalam panci berisi 1 liter air.",
+      "Rebus sampai mendidih dan aroma rempah tercium.",
+      "Setelah mendidih, tambahkan gula merah dan gula pasir. Aduk sampai gula larut sepenuhnya.",
+      "Kecilkan api dan biarkan rempah meresap selama sekitar 15–20 menit sampai warnanya berubah menjadi merah tua.",
+      "Cicipi, lalu tambahkan gula atau air jika rasanya terlalu manis atau terlalu kuat.",
+      "Saring air rebusan untuk memisahkan rempah-rempahnya.",
+      "Sajikan bir pletok selagi hangat, atau dinginkan dan tambahkan es batu."
+    ],
+    "tips": [
+      "Gunakan rempah segar. Cengkeh, kapulaga, dan kayu manis yang baru memberi aroma lebih tajam.",
+      "Jangan memakai kayu secang terlalu banyak agar rasa minuman tidak berubah.",
+      "Walau bernama \"bir\", minuman ini sama sekali tidak mengandung alkohol."
+    ],
+    "sumber_resep": [
+      { "nama": "IDN Times", "url": "https://www.idntimes.com/food/recipe/resep-bir-pletok-dan-tips-membuatnya-dijamin-halal-01-2jsqs-lfqpvb" }
+    ],
+    "foto": { "pembuat": "Swarabakti", "lisensi": "CC BY-SA 4.0", "situs": "Wikimedia Commons", "sumber": "https://commons.wikimedia.org/wiki/File:Iced_bir_pletok_20240622_112754.jpg" }
+  }
+]

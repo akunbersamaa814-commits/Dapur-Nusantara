@@ -1,0 +1,1411 @@
+/* =========================================================
+   Dapur Nusantara — style.css
+   Gaya: tema gelap, aksen gradien oranye–kuning, font Poppins
+   (mengikuti web referensi yang dipilih; lihat docs/DESAIN.md)
+   ========================================================= */
+
+/* ---------- 1. Variabel (warna, ukuran, efek) ---------- */
+:root {
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #1a1a1a;
+    --bg-card: rgba(255, 255, 255, 0.05);
+    --bg-card-hover: rgba(255, 255, 255, 0.08);
+    --bg-modal: #161616;
+    --accent-primary: #ff8c42;
+    --accent-secondary: #ffd166;
+    --accent-gradient: linear-gradient(135deg, #ff8c42, #ffd166);
+    --text-primary: #f5f5f5;
+    --text-secondary: #cccccc;
+    --text-muted: #a3a3a3;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --badge-mudah: #2ecc71;
+    --badge-sedang: linear-gradient(135deg, #ffd700, #ff8c00);
+    --badge-sulit: #e74c3c;
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-hover: 0 16px 48px rgba(255, 140, 66, 0.2);
+    --radius: 16px;
+    --radius-sm: 8px;
+    --radius-lg: 24px;
+    --transition: all 0.3s ease;
+    --font: 'Poppins', sans-serif;
+}
+
+/* ---------- 2. Reset & dasar ---------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* agar judul tidak tertutup navbar saat lompat ke #anchor */
+}
+
+body {
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+    animation: fadeIn 0.6s ease;
+}
+
+/* Kunci scroll halaman selama modal terbuka */
+body:has(.modal[open]) {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+:focus-visible {
+    outline: 3px solid var(--accent-secondary);
+    outline-offset: 3px;
+}
+
+/* Teks khusus pembaca layar (tidak tampil di layar) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+/* Link "lewati" untuk pengguna keyboard */
+.lewati {
+    position: absolute;
+    left: 16px;
+    top: -60px;
+    z-index: 2000;
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    background: var(--accent-gradient);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.lewati:focus {
+    top: 12px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------- 3. Navbar ---------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+}
+
+.nav-brand span {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-brand__ikon {
+    width: 28px;
+    height: 28px;
+    color: var(--accent-primary);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent-primary);
+    background: rgba(255, 140, 66, 0.1);
+}
+
+.nav-links a.btn-primary,
+.nav-links a.btn-primary:hover {
+    color: #000;
+    background: var(--accent-gradient);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--text-primary);
+}
+
+/* ---------- 4. Tombol ---------- */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--accent-gradient);
+    color: #000;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 140, 66, 0.4);
+}
+
+.btn-sm {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+}
+
+/* ---------- 5. Hero ---------- */
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+    padding: 100px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.1), rgba(255, 209, 102, 0.05));
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Cahaya oranye lembut yang berdenyut di belakang hero */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 140, 66, 0.08) 0%, transparent 50%);
+    animation: heroPulse 8s ease-in-out infinite;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+}
+
+/* Form pencarian di hero */
+.cari {
+    display: flex;
+    gap: 10px;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.cari__input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.cari__input::placeholder {
+    color: var(--text-muted);
+}
+
+.cari__input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- 6. Filter kategori ---------- */
+.filter-section {
+    padding: 30px 40px 10px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 10px 22px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn[aria-current="page"] {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* ---------- 7. Daftar resep ---------- */
+.recipe-section {
+    padding: 40px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px;
+}
+
+/* Card resep */
+.recipe-card {
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    opacity: 0;
+    animation: cardFadeIn 0.5s ease forwards;
+    transition: var(--transition);
+}
+
+/* Card muncul bergantian */
+.recipe-card:nth-child(1) { animation-delay: 0.05s; }
+.recipe-card:nth-child(2) { animation-delay: 0.1s; }
+.recipe-card:nth-child(3) { animation-delay: 0.15s; }
+.recipe-card:nth-child(4) { animation-delay: 0.2s; }
+.recipe-card:nth-child(5) { animation-delay: 0.25s; }
+.recipe-card:nth-child(6) { animation-delay: 0.3s; }
+.recipe-card:nth-child(n+7) { animation-delay: 0.35s; }
+
+.recipe-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(255, 140, 66, 0.3);
+    background: var(--bg-card-hover);
+}
+
+/* Fokus keyboard pada tombol card ditampilkan sebagai garis di seluruh card */
+.recipe-card:has(.card-buka:focus-visible) {
+    outline: 3px solid var(--accent-secondary);
+    outline-offset: 3px;
+}
+
+.card-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-image img,
+.card-image__kosong {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.recipe-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+/* Badge tingkat kesulitan (warna + teks, tidak hanya warna) */
+.badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 2;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.badge-mudah {
+    background: var(--badge-mudah);
+    color: #000;
+}
+
+.badge-sedang {
+    background: var(--badge-sedang);
+    color: #000;
+}
+
+.badge-sulit {
+    background: var(--badge-sulit);
+    color: #fff;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Tombol berupa teks nama; area kliknya diperluas menutupi seluruh card */
+.card-buka {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--text-primary);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.card-buka::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+}
+
+.card-buka:focus-visible {
+    outline: none;
+}
+
+.card-desc {
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.card-meta .kategori {
+    color: var(--accent-primary);
+    font-weight: 500;
+}
+
+/* Hasil pencarian kosong */
+.kosong {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+}
+
+.kosong h3 {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.kosong p {
+    margin-bottom: 24px;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+/* ---------- 8. Modal detail resep ---------- */
+.modal {
+    width: calc(100% - 32px);
+    max-width: 900px;
+    max-height: 92dvh;
+    margin: auto;
+    padding: 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--bg-modal);
+    color: var(--text-primary);
+    box-shadow: var(--shadow);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+/* Tombol tutup dan isi modal ditumpuk di sel grid yang sama,
+   lalu tombolnya menempel di pojok kanan atas saat modal di-scroll. */
+.modal[open] {
+    display: grid;
+    animation: fadeIn 0.4s ease;
+}
+
+.modal__tutup,
+.recipe-detail {
+    grid-area: 1 / 1;
+}
+
+.modal__tutup {
+    position: sticky;
+    top: 14px;
+    z-index: 5;
+    align-self: start;
+    justify-self: end;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    background: rgba(15, 15, 15, 0.8);
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.modal__tutup:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.recipe-detail {
+    padding: 0 0 36px;
+}
+
+.detail-image {
+    position: relative;
+    height: 400px;
+    margin-bottom: 32px;
+    overflow: hidden;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-image .badge {
+    top: auto;
+    right: auto;
+    bottom: 16px;
+    left: 16px;
+}
+
+.detail-header,
+.detail-section,
+.detail-kredit {
+    padding: 0 36px;
+}
+
+.detail-header {
+    margin-bottom: 32px;
+}
+
+.detail-header h2 {
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.detail-desc {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.detail-meta .kategori {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.detail-section {
+    margin-bottom: 40px;
+}
+
+.detail-section h3 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-secondary);
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* Bahan per kelompok */
+.ingredients-group {
+    margin: 20px 0 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.ingredients-group:first-child {
+    margin-top: 0;
+}
+
+.ingredients-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+    list-style: none;
+}
+
+.ingredients-list li {
+    padding: 12px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.ingredients-list li:hover {
+    border-color: var(--accent-primary);
+    background: var(--bg-card-hover);
+}
+
+.ingredients-list li::before {
+    content: '✦ ';
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+/* Langkah memasak bernomor */
+.instructions-list {
+    list-style: none;
+    counter-reset: step;
+}
+
+.instructions-list li {
+    position: relative;
+    counter-increment: step;
+    margin-bottom: 16px;
+    padding: 20px 20px 20px 72px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.instructions-list li:hover {
+    border-color: var(--accent-primary);
+    background: var(--bg-card-hover);
+}
+
+.instructions-list li::before {
+    content: counter(step);
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    color: #000;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+/* Tips */
+.tips-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.tips-list li {
+    padding: 14px 18px;
+    background: rgba(255, 209, 102, 0.08);
+    border: 1px solid rgba(255, 209, 102, 0.2);
+    border-left: 4px solid var(--accent-secondary);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.detail-kredit {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.detail-kredit a {
+    color: var(--accent-primary);
+}
+
+/* ---------- 9. Footer ---------- */
+.footer {
+    margin-top: 80px;
+    padding: 60px 40px 30px;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.footer-section .footer-brand {
+    font-size: 1.4rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.footer-section a {
+    display: block;
+    padding: 4px 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-section a:hover {
+    color: var(--accent-primary);
+    transform: translateX(4px);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ---------- 10. Animasi ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroPulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50%      { transform: scale(1.1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .recipe-card {
+        opacity: 1;
+    }
+}
+
+/* ---------- 11. Responsif ---------- */
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 4px;
+        padding: 20px;
+        background: rgba(15, 15, 15, 0.95);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 12px 16px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .cari {
+        flex-direction: column;
+    }
+
+    .filter-section,
+    .recipe-section {
+        padding: 20px;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-image {
+        height: 220px;
+    }
+
+    .detail-header,
+    .detail-section,
+    .detail-kredit {
+        padding: 0 20px;
+    }
+
+    .detail-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .instructions-list li {
+        padding: 16px 16px 16px 60px;
+    }
+
+    .instructions-list li::before {
+        left: 14px;
+        top: 14px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* ---------- 12. Peta Daerah (gambar SVG + JavaScript murni) ---------- */
+.peta-section {
+    padding: 60px 40px 20px;
+}
+
+.section-sub {
+    max-width: 640px;
+    margin: -28px auto 32px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.peta-wrap {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    background: #13212b; /* warna laut peta */
+}
+
+/* Area peta: tingginya mengikuti rasio gambar peta; bisa di-scroll saat diperbesar */
+.peta {
+    aspect-ratio: 1200 / 459.5;
+    min-height: 420px;
+    max-height: 640px;
+    width: 100%;
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+}
+
+/* Saat peta pas di dalam area (tidak diperbesar), tidak perlu scroll */
+.peta.pas {
+    overflow: hidden;
+}
+
+/* Lapisan peta: lebarnya diatur JavaScript (zoom), tingginya ikut rasio gambar */
+.peta-lapisan {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1200 / 459.5;
+}
+
+.peta-gambar {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Kotak cari mengambang di atas peta */
+.peta-cari {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: min(440px, calc(100% - 140px));
+    padding: 0 16px;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transform: translateX(-50%);
+}
+
+.peta-cari svg {
+    flex-shrink: 0;
+    color: var(--accent-primary);
+}
+
+.peta-cari input {
+    flex: 1;
+    min-width: 0;
+    min-height: 48px;
+    border: 0;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 0.95rem;
+}
+
+.peta-cari input::placeholder {
+    color: var(--text-muted);
+}
+
+.peta-cari input:focus {
+    outline: none;
+}
+
+.peta-cari:focus-within {
+    border-color: var(--accent-primary);
+}
+
+/* Tombol zoom sederhana di kanan bawah */
+.peta-zoom {
+    position: absolute;
+    right: 16px;
+    bottom: 32px;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+}
+
+.peta-zoom button {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: rgba(15, 15, 15, 0.9);
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.peta-zoom button + button {
+    border-top: 1px solid var(--border-color);
+}
+
+.peta-zoom button:hover:not(:disabled) {
+    background: var(--accent-primary);
+    color: #000;
+}
+
+.peta-zoom button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.peta-zoom svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Keterangan sumber peta (wajib untuk lisensi CC BY-SA) */
+.peta-sumber {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 30;
+    padding: 2px 8px;
+    background: rgba(15, 15, 15, 0.8);
+    border-top-right-radius: 6px;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.peta-sumber a {
+    color: var(--accent-primary);
+}
+
+.peta-kosong {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 30;
+    padding: 10px 18px;
+    background: rgba(15, 15, 15, 0.9);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transform: translateX(-50%);
+}
+
+.peta-catatan {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Penanda daerah: sepasang pria & wanita berpakaian adat.
+   Titik bawah-tengah penanda tepat berada di lokasi daerah. */
+.penanda {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    transform: translate(-50%, -100%);
+}
+
+.penanda__svg {
+    width: 48px;
+    height: 48px;
+    fill: initial;
+    stroke: none;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.45));
+    transition: transform 0.3s ease;
+}
+
+.penanda:hover,
+.penanda:focus-visible,
+.penanda[aria-expanded="true"] {
+    z-index: 15;
+}
+
+.penanda:hover .penanda__svg,
+.penanda:focus-visible .penanda__svg,
+.penanda[aria-expanded="true"] .penanda__svg {
+    transform: translateY(-4px) scale(1.1);
+}
+
+.penanda:focus-visible {
+    outline: 3px solid var(--accent-secondary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* Label nama daerah: muncul saat penanda disorot atau difokus keyboard */
+.penanda__label {
+    position: absolute;
+    top: 52px;
+    padding: 4px 10px;
+    background: rgba(15, 15, 15, 0.92);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.penanda:hover .penanda__label,
+.penanda:focus-visible .penanda__label {
+    opacity: 1;
+}
+
+/* Popup kartu masakan */
+.peta-popup {
+    position: absolute;
+    z-index: 20;
+    width: 256px;
+    background: rgba(22, 22, 22, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    animation: fadeIn 0.25s ease;
+}
+
+/* Panah kecil yang menunjuk ke penanda. Arahnya mengikuti letak popup (data-arah). */
+.peta-popup::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: rgba(22, 22, 22, 0.95);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.peta-popup[data-arah="atas"]::after {
+    left: var(--panah-x, 50%);
+    bottom: -7px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.peta-popup[data-arah="bawah"]::after {
+    left: var(--panah-x, 50%);
+    top: -7px;
+    transform: translateX(-50%) rotate(225deg);
+}
+
+.peta-popup[data-arah="kanan"]::after {
+    top: var(--panah-y, 50%);
+    left: -7px;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.peta-popup[data-arah="kiri"]::after {
+    top: var(--panah-y, 50%);
+    right: -7px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Popup sebagai panel di bawah peta (layar sempit / HP) */
+.peta-popup.panel {
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.peta-popup.panel::after {
+    display: none;
+}
+
+.peta-popup.panel .popup-gambar {
+    height: 160px;
+}
+
+.peta-popup__tutup {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Jika satu daerah punya beberapa masakan, daftar bisa di-scroll */
+.popup-daftar {
+    max-height: 360px;
+    overflow-y: auto;
+    border-radius: 12px;
+}
+
+.popup-kartu + .popup-kartu {
+    border-top: 1px solid var(--border-color);
+}
+
+.popup-gambar {
+    position: relative;
+    height: 128px;
+}
+
+.popup-gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup-daerah {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 3px 8px;
+    background: var(--accent-gradient);
+    border-radius: 6px;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.popup-kredit {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    padding: 2px 8px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.popup-isi {
+    padding: 14px 16px 16px;
+}
+
+.popup-judul {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.popup-judul svg {
+    flex-shrink: 0;
+    color: var(--accent-primary);
+}
+
+/* Deskripsi dipotong 3 baris */
+.popup-desk {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 12px;
+    color: var(--text-muted);
+}
+
+.popup-tombol {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* Tombol "Lihat di Peta" di card: berada di atas area klik card */
+.card-peta {
+    position: relative;
+    z-index: 4;
+    margin-top: 14px;
+    padding: 6px 0;
+    border: 0;
+    background: none;
+    color: var(--accent-primary);
+    font-family: var(--font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card-peta:hover {
+    color: var(--accent-secondary);
+}
+
+@media (max-width: 768px) {
+    .peta-section {
+        padding: 40px 20px 10px;
+    }
+
+    .peta-cari {
+        top: 12px;
+        left: 12px;
+        width: calc(100% - 24px);
+        transform: none;
+    }
+
+    .peta-zoom {
+        right: 12px;
+    }
+}
