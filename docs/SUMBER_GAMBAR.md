@@ -50,6 +50,7 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Wedang Ronde | `assets/img/wedang-ronde.jpg` | Daniatin | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wedang_Ronde_di_Malioboro.jpg) |
 | Gudeg | `assets/img/gudeg.jpg` | Indonesiagood | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gudeg_Ayam.jpg) |
 | Bakpia Kacang Hijau | `assets/img/bakpia.jpg` | Jmarlon | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bakpia_pathuk.jpg) |
+| Wedang Uwuh | `assets/img/wedang-uwuh.jpg` | M Joko Apriyo Putro | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wedang_Uwuh_Jawa.jpg) |
 | Rawon | `assets/img/rawon.jpg` | Daniel Lee | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-black-soup-with-side-dishes-36547527/) |
 | Sate Ayam Madura | `assets/img/sate-ayam.jpg` | David Tumpal | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-satay-with-rice-cakes-37106134/) |
 | Onde-Onde Wijen | `assets/img/onde-onde.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Onde-Onde_Wijen.jpg) |
@@ -57,12 +58,15 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Ayam Betutu | `assets/img/ayam-betutu.jpg` | Tamba Budiarsana | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-balinese-ayam-betutu-dish-artfully-prepared-37106528/) |
 | Jaje Laklak | `assets/img/laklak.jpg` | wiendietry | CC BY 2.0 | [Flickr](https://www.flickr.com/photos/53688900@N00/2694680281) |
 | Ayam Taliwang | `assets/img/ayam-taliwang.jpg` | Midori | CC BY 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ayam_bakar_khas_Taliwang_2.JPG) |
+| Es Poteng | `assets/img/es-poteng.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_poteng-3.jpg) |
 | Se'i Sapi | `assets/img/sei-sapi.jpg` | Kembangraps | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sei_sapi_Pj_DSC_2925.jpg) |
 | Bubur Pedas Sambas | `assets/img/bubur-pedas.jpg` | Bibazi | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bubur_pedas_melayu.jpg) |
 | Choi Pan | `assets/img/choi-pan.jpg` | Cun Cun | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Choipan.jpg) |
 | Es Lidah Buaya | `assets/img/es-lidah-buaya.jpg` | Gunawan Kartapranata | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_Lidah_Buaya.JPG) |
 | Kue Jala Dayak | `assets/img/kue-jala.jpg` | avlxyz | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/10559879@N00/3211821495) |
+| Juhu Singkah | `assets/img/juhu-singkah.jpg` | Volstand | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Juhu_Umbut_Rotan_Ikan_Nila.jpg) |
 | Soto Banjar | `assets/img/soto-banjar.jpg` | Crisco 1492 | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Soto_banjar,_Pak_Ahmat,_Martapura,_South_Kalimantan,_2018-07-28_01.jpg) |
+| Bingka Barandam | `assets/img/bingka.jpg` | Wadaihangit | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bingka_barandam.jpg) |
 | Es Buah Banjarmasin | `assets/img/es-buah-banjar.jpg` | knittymarie | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/14671121@N03/11025009356) |
 | Amplang | `assets/img/amplang.jpg` | Gunawan Kartapranata | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Amplang_on_a_plate.JPG) |
 | Kepiting Soka Asam Manis | `assets/img/kepiting-soka.jpg` | avlxyz | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/10559879@N00/4388963211) |
@@ -70,6 +74,7 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Tinutuan (Bubur Manado) | `assets/img/tinutuan.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bubur_Khas_Manado_(Tinutuan).jpg) |
 | Klappertaart | `assets/img/klappertaart.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Klappertaart_Khas_Manado.jpg) |
 | Binte Biluhuta | `assets/img/binte-biluhuta.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Binte_Biluhuta.jpg) |
+| Kue Tobu'u | `assets/img/kue-tobuu.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tobu%27u.jpg) |
 | Es Brenebon | `assets/img/es-brenebon.jpg` | Sofi Solihah | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_Brenebon_1.jpg) |
 | Kaledo | `assets/img/kaledo.jpg` | Crisco 1492 | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kaledo_soup,_Central_Sulawesi,_2018-09-16.jpg) |
 | Coto Makassar | `assets/img/coto-makassar.jpg` | muallim nur | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-coto-makassar-dish-in-bowl-32928771/) |
@@ -83,7 +88,7 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Udang Selingkuh Bakar | `assets/img/udang-selingkuh.jpg` | Tatters ✾ | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/62938898@N00/12250342224) |
 | Nasi Goreng Kampung | `assets/img/nasi-goreng.jpg` | Henny Wiyanti | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/delicious-nasi-goreng-with-fried-egg-and-vegetables-40915778/) |
 
-Belum ada foto (card dan modal menampilkan blok warna dari field `warna`): Es Jeruk Kunci, Rabeg Banten, Wedang Uwuh, Loloh Cemcem, Es Poteng, Juhu Singkah, Bingka Barandam, Nasi Bekepor, Kue Tobu'u, Kue Tetu, Bau Peapi, Sanggara Bandang, Nasi Lapola, Kopi Rarobang, Kue Lontar, Es Matoa.
+Belum ada foto (card dan modal menampilkan blok warna dari field `warna`) karena belum ditemukan foto berlisensi bebas di Wikimedia Commons, Flickr, Openverse, Unsplash, maupun Pexels: Es Jeruk Kunci, Rabeg Banten, Loloh Cemcem, Nasi Bekepor, Kue Tetu, Bau Peapi, Sanggara Bandang, Nasi Lapola, Kopi Rarobang, Kue Lontar, Es Matoa.
 
 ## Resep
 Bahan dan takaran mengikuti resep dari media kuliner berikut (gratis dibaca). Langkah memasak

@@ -18,10 +18,9 @@ $semua = ambil_semua_resep();
 $hasil = cari_resep($semua, $q, $kategori);
 $jumlah = count($hasil);
 
-// 3. Data untuk peta: koordinat daerah yang muncul di hasil, dan masakan yang tidak punya titik.
+// 3. Data untuk peta: koordinat daerah yang muncul di hasil pencarian.
 $daerah_hasil = array_unique(array_column($hasil, 'daerah'));
 $koordinat = array_intersect_key(KOORDINAT_DAERAH, array_flip($daerah_hasil));
-$tanpa_peta = array_filter($hasil, fn ($r) => !isset(KOORDINAT_DAERAH[$r['daerah']]));
 
 // Pasangan warna baju (pria, wanita) untuk penanda, dipakai bergantian per daerah.
 $warna_penanda = [
@@ -77,7 +76,7 @@ include __DIR__ . '/includes/header.php';
 
                     <?php $i = 0; ?>
                     <?php foreach ($koordinat as $daerah => $titik): ?>
-                        <?php $posisi = posisi_di_peta($titik); $warna = $warna_penanda[$i++ % count($warna_penanda)]; ?>
+                        <?php $posisi = posisi_penanda($daerah); $warna = $warna_penanda[$i++ % count($warna_penanda)]; ?>
                         <!-- Penanda: sepasang pria & wanita berpakaian adat -->
                         <button class="penanda" type="button" data-daerah="<?= e($daerah) ?>"
                                 style="left: <?= $posisi['x'] ?>%; top: <?= $posisi['y'] ?>%;"
@@ -124,13 +123,6 @@ include __DIR__ . '/includes/header.php';
 
         <!-- Di layar sempit (HP), popup dipindah ke sini (di bawah peta) agar tidak keluar layar -->
         <div class="peta-panel" id="peta-panel"></div>
-
-        <?php if (count($tanpa_peta) > 0): ?>
-            <p class="peta-catatan">
-                <?= e(implode(', ', array_column($tanpa_peta, 'nama'))) ?> adalah masakan nasional,
-                jadi tidak ditandai di satu daerah.
-            </p>
-        <?php endif; ?>
     </div>
 </section>
 

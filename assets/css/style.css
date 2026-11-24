@@ -1134,13 +1134,6 @@ svg {
     transform: translateX(-50%);
 }
 
-.peta-catatan {
-    margin-top: 14px;
-    text-align: center;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-}
-
 /* Penanda daerah: sepasang pria & wanita berpakaian adat.
    Titik bawah-tengah penanda tepat berada di lokasi daerah. */
 .penanda {

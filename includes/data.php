@@ -56,6 +56,43 @@ const KOORDINAT_DAERAH = [
     'Papua Selatan'             => [-8.4932, 140.4018],  // Merauke
 ];
 
+// Titik tampil penanda yang digeser dari ibu kota provinsi, supaya penanda (lebar 48px)
+// tidak saling bertumpuk (mis. Banten & DKI Jakarta) dan tidak terpotong di tepi peta (Aceh, Papua).
+// Daerah yang tidak ada di sini memakai titik asli dari KOORDINAT_DAERAH.
+const TITIK_TAMPIL = [
+    // Sumatera
+    'Aceh'                      => [4.30, 96.20],
+    'Riau'                      => [1.60, 101.90],
+    'Kepulauan Riau'            => [1.60, 104.80],
+    'Jambi'                     => [-0.87, 103.28],
+    'Sumatera Selatan'          => [-3.31, 104.61],
+    'Bengkulu'                  => [-4.30, 101.61],
+    'Kepulauan Bangka Belitung' => [-2.40, 107.31],
+    'Lampung'                   => [-5.71, 104.44],
+    // Jawa: berselang-seling di atas (utara) dan bawah (selatan) Pulau Jawa
+    'Banten'                    => [-8.29, 105.73],
+    'DKI Jakarta'               => [-5.93, 106.93],
+    'Jawa Barat'                => [-8.29, 108.13],
+    'Jawa Tengah'               => [-5.93, 110.36],
+    'Yogyakarta'                => [-8.29, 110.53],
+    'Jawa Timur'                => [-6.36, 112.93],
+    // Bali & Nusa Tenggara
+    'Bali'                      => [-8.07, 115.33],
+    'Nusa Tenggara Barat'       => [-8.07, 117.73],
+    // Kalimantan
+    'Kalimantan Tengah'         => [-0.79, 113.35],
+    'Kalimantan Timur'          => [-0.90, 116.90],
+    'Kalimantan Utara'          => [1.70, 116.90],
+    // Sulawesi
+    'Gorontalo'                 => [0.54, 122.50],
+    'Sulawesi Barat'            => [-3.27, 118.88],
+    'Sulawesi Selatan'          => [-5.70, 119.90],
+    // Papua
+    'Papua'                     => [-1.64, 139.92],
+    'Papua Pegunungan'          => [-4.21, 138.64],
+    'Papua Selatan'             => [-8.71, 139.71],
+];
+
 // Batas peta assets/img/peta-indonesia.svg (proyeksi equirectangular / lintang-bujur lurus).
 const BATAS_PETA = ['atas' => 6.5, 'bawah' => -11.5, 'kiri' => 94.5, 'kanan' => 141.5];
 
@@ -69,6 +106,15 @@ function posisi_di_peta(array $titik): array
     $x = ($bujur - BATAS_PETA['kiri']) / (BATAS_PETA['kanan'] - BATAS_PETA['kiri']) * 100;
     $y = (BATAS_PETA['atas'] - $lintang) / (BATAS_PETA['atas'] - BATAS_PETA['bawah']) * 100;
     return ['x' => round($x, 2), 'y' => round($y, 2)];
+}
+
+/**
+ * Posisi penanda sebuah daerah di peta (persen).
+ * Memakai TITIK_TAMPIL jika ada, kalau tidak memakai titik asli di KOORDINAT_DAERAH.
+ */
+function posisi_penanda(string $daerah): array
+{
+    return posisi_di_peta(TITIK_TAMPIL[$daerah] ?? KOORDINAT_DAERAH[$daerah]);
 }
 
 /**

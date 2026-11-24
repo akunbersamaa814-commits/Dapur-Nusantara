@@ -2829,7 +2829,12 @@
                 "url": "https://www.detik.com/jogja/kuliner/d-8129464/resep-dan-isi-wedang-uwuh-yang-kaya-rempah-cara-membuatnya-mudah"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "M Joko Apriyo Putro",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Wedang_Uwuh_Jawa.jpg"
+        }
     },
     {
         "id": "rawon",
@@ -3409,7 +3414,12 @@
                 "url": "https://www.detik.com/bali/bali-bungah/d-6655313/poteng-jaje-tujak-jajanan-khas-lebaran-di-lombok"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Oceanmuse",
+            "lisensi": "CC BY 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Es_poteng-3.jpg"
+        }
     },
     {
         "id": "sei-sapi",
@@ -3749,7 +3759,12 @@
                 "url": "https://www.detik.com/kalimantan/kuliner/d-8430822/resep-juhu-singkah-uwei-sayuran-orang-dayak-yang-terbuat-dari-umbut-rotan"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Volstand",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Juhu_Umbut_Rotan_Ikan_Nila.jpg"
+        }
     },
     {
         "id": "kue-jala",
@@ -3929,7 +3944,12 @@
                 "url": "https://www.detik.com/kalimantan/kuliner/d-8749147/resep-simpel-bingka-barandam-khas-banjar"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Wadaihangit",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Bingka_barandam.jpg"
+        }
     },
     {
         "id": "es-buah-banjar",
@@ -4471,7 +4491,12 @@
                 "url": "https://www.idntimes.com/food/recipe/resep-kue-tobuu-khas-gorontalo-c1c2-01-mtn6k-x0q93b"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Supardisahabu",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Tobu%27u.jpg"
+        }
     },
     {
         "id": "es-brenebon",

@@ -86,8 +86,9 @@ Parameter URL:
 
 ### Peta Daerah
 - Gambar peta: `assets/img/peta-indonesia.svg` (proyeksi equirectangular, batas di `BATAS_PETA`).
-- PHP mengubah koordinat daerah (`KOORDINAT_DAERAH`) menjadi posisi persen dengan `posisi_di_peta()`,
-  lalu mencetak satu `<button class="penanda">` per daerah yang ada di hasil pencarian — jadi penanda
+- PHP mengubah koordinat daerah (`KOORDINAT_DAERAH`) menjadi posisi persen dengan `posisi_penanda()` →
+  `posisi_di_peta()`. Daerah yang berdekatan (mis. Banten & DKI Jakarta) atau di tepi peta (Aceh, Papua)
+  memakai titik tampil yang sudah digeser di `TITIK_TAMPIL` agar penanda tidak bertumpuk/terpotong. Lalu PHP mencetak satu `<button class="penanda">` per daerah yang ada di hasil pencarian — jadi penanda
   ikut tersaring oleh pencarian/kategori PHP. Penanda = SVG sepasang pria & wanita berpakaian adat
   (warna bergantian); label nama daerah tampil saat disorot/difokus keyboard.
 - Klik/Enter pada penanda → `bukaPopup()`: popup berisi kartu setiap masakan dari daerah itu (foto,
@@ -98,7 +99,7 @@ Parameter URL:
   penanda ikut karena posisinya persen; area `#peta-area` bisa di-scroll saat diperbesar.
 - Tombol **Lihat di Peta** di card → `tampilkanDiPeta(daerah)`: gulir ke peta, zoom 2× di daerahnya, buka popup.
 - Kotak cari di atas peta adalah form GET biasa (`q`), diproses PHP seperti form di hero.
-- Daerah "Nasional" (Nasi Goreng Kampung) tidak punya titik, jadi tidak ditandai; ada catatan di bawah peta.
+- Daerah "Nasional" (Nasi Goreng Kampung) tidak punya titik, jadi tidak ditandai di peta.
 
 ## 6. Keamanan Sederhana
 
