@@ -99,7 +99,6 @@ Parameter URL:
   penanda ikut karena posisinya persen; area `#peta-area` bisa di-scroll saat diperbesar.
 - Tombol **Lihat di Peta** di card → `tampilkanDiPeta(daerah)`: gulir ke peta, zoom 2× di daerahnya, buka popup.
 - Kotak cari di atas peta adalah form GET biasa (`q`), diproses PHP seperti form di hero.
-- Daerah "Nasional" (Nasi Goreng Kampung) tidak punya titik, jadi tidak ditandai di peta.
 
 ## 6. Keamanan Sederhana
 

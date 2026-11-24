@@ -81,7 +81,7 @@ include __DIR__ . '/includes/header.php';
                         <button class="penanda" type="button" data-daerah="<?= e($daerah) ?>"
                                 style="left: <?= $posisi['x'] ?>%; top: <?= $posisi['y'] ?>%;"
                                 aria-label="Lihat masakan dari <?= e($daerah) ?>" aria-haspopup="dialog">
-                            <svg class="penanda__svg" viewBox="0 0 64 64" aria-hidden="true">
+                            <svg class="penanda__svg" viewBox="12 9 41 41" aria-hidden="true">
                                 <path d="M12 50 L16 28 C16 22, 28 22, 28 28 L32 50 Z" fill="<?= $warna[0] ?>"/>
                                 <circle cx="22" cy="18" r="6" fill="#FDE68A"/>
                                 <path d="M 14 15 Q 22 4 30 15 Z" fill="#F59E0B"/>

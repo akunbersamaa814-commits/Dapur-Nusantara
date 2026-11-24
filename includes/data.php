@@ -8,7 +8,6 @@
 const DAFTAR_KATEGORI = ['Makanan Berat', 'Sup & Soto', 'Camilan', 'Minuman'];
 
 // Koordinat [lintang, bujur] tiap daerah untuk penanda di peta (letak ibu kota provinsi).
-// Daerah "Nasional" tidak punya titik karena masakannya ada di seluruh Indonesia.
 const KOORDINAT_DAERAH = [
     // Sumatera
     'Aceh'                      => [5.5483, 95.3238],    // Banda Aceh
@@ -56,41 +55,26 @@ const KOORDINAT_DAERAH = [
     'Papua Selatan'             => [-8.4932, 140.4018],  // Merauke
 ];
 
-// Titik tampil penanda yang digeser dari ibu kota provinsi, supaya penanda (lebar 48px)
-// tidak saling bertumpuk (mis. Banten & DKI Jakarta) dan tidak terpotong di tepi peta (Aceh, Papua).
-// Daerah yang tidak ada di sini memakai titik asli dari KOORDINAT_DAERAH.
+// Titik tampil penanda untuk daerah yang ibu kotanya terlalu dekat dengan daerah lain
+// (mis. Banten & DKI Jakarta), terlalu dekat tepi peta / kotak cari (Aceh, Kalimantan Utara),
+// atau ibu kotanya di garis pantai sehingga di gambar peta jatuh di laut (Kepulauan Riau, Bengkulu).
+// Setiap titik tetap berada di DARATAN provinsinya (sudah dicek dengan gambar peta),
+// hanya digeser secukupnya agar penanda (26px) tidak bertumpuk.
+// Daerah yang tidak ada di sini memakai titik ibu kota dari KOORDINAT_DAERAH.
 const TITIK_TAMPIL = [
-    // Sumatera
-    'Aceh'                      => [4.30, 96.20],
-    'Riau'                      => [1.60, 101.90],
-    'Kepulauan Riau'            => [1.60, 104.80],
-    'Jambi'                     => [-0.87, 103.28],
-    'Sumatera Selatan'          => [-3.31, 104.61],
-    'Bengkulu'                  => [-4.30, 101.61],
-    'Kepulauan Bangka Belitung' => [-2.40, 107.31],
-    'Lampung'                   => [-5.71, 104.44],
-    // Jawa: berselang-seling di atas (utara) dan bawah (selatan) Pulau Jawa
-    'Banten'                    => [-8.29, 105.73],
-    'DKI Jakarta'               => [-5.93, 106.93],
-    'Jawa Barat'                => [-8.29, 108.13],
-    'Jawa Tengah'               => [-5.93, 110.36],
-    'Yogyakarta'                => [-8.29, 110.53],
-    'Jawa Timur'                => [-6.36, 112.93],
-    // Bali & Nusa Tenggara
-    'Bali'                      => [-8.07, 115.33],
-    'Nusa Tenggara Barat'       => [-8.07, 117.73],
-    // Kalimantan
-    'Kalimantan Tengah'         => [-0.79, 113.35],
-    'Kalimantan Timur'          => [-0.90, 116.90],
-    'Kalimantan Utara'          => [1.70, 116.90],
-    // Sulawesi
-    'Gorontalo'                 => [0.54, 122.50],
-    'Sulawesi Barat'            => [-3.27, 118.88],
-    'Sulawesi Selatan'          => [-5.70, 119.90],
-    // Papua
-    'Papua'                     => [-1.64, 139.92],
-    'Papua Pegunungan'          => [-4.21, 138.64],
-    'Papua Selatan'             => [-8.71, 139.71],
+    'Aceh'                => [5.25, 95.42],
+    'Kepulauan Riau'      => [0.97, 104.51],
+    'Bengkulu'            => [-3.74, 102.31],
+    'Banten'              => [-6.82, 105.65],
+    'Jawa Barat'          => [-6.92, 108.07],
+    'Jawa Tengah'         => [-6.67, 110.82],
+    'Yogyakarta'          => [-7.90, 110.37],
+    'Nusa Tenggara Barat' => [-8.58, 116.42],
+    'Kalimantan Utara'    => [2.00, 115.80],
+    'Sulawesi Selatan'    => [-5.15, 119.53],
+    'Maluku'              => [-3.60, 128.23],
+    'Papua Barat'         => [-1.01, 134.01],
+    'Papua'               => [-2.68, 140.57],
 ];
 
 // Batas peta assets/img/peta-indonesia.svg (proyeksi equirectangular / lintang-bujur lurus).

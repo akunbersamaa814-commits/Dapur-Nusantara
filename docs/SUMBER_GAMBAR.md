@@ -86,7 +86,6 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Papeda Kuah Kuning | `assets/img/papeda.jpg` | Gunawan Kartapranata | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Papeda,_Kuah_Kuning,_Ikan_Tude_Bakar_2.jpg) |
 | Ikan Bakar Manokwari | `assets/img/ikan-bakar-manokwari.jpg` | Charles Haynes | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/87232391@N00/4221478099) |
 | Udang Selingkuh Bakar | `assets/img/udang-selingkuh.jpg` | Tatters ✾ | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/62938898@N00/12250342224) |
-| Nasi Goreng Kampung | `assets/img/nasi-goreng.jpg` | Henny Wiyanti | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/delicious-nasi-goreng-with-fried-egg-and-vegetables-40915778/) |
 
 Belum ada foto (card dan modal menampilkan blok warna dari field `warna`) karena belum ditemukan foto berlisensi bebas di Wikimedia Commons, Flickr, Openverse, Unsplash, maupun Pexels: Es Jeruk Kunci, Rabeg Banten, Loloh Cemcem, Nasi Bekepor, Kue Tetu, Bau Peapi, Sanggara Bandang, Nasi Lapola, Kopi Rarobang, Kue Lontar, Es Matoa.
 
@@ -186,7 +185,6 @@ tampil di modal setiap resep (field `sumber_resep`).
 | Es Matoa | [IDN Times](https://www.idntimes.com/food/recipe/kreasi-resep-buah-matoa-segar-00-mk1yf-0mk4kv) |
 | Ikan Bakar Manokwari | [IDN Times](https://www.idntimes.com/food/recipe/melodyna-melody/resep-ikan-bakar-manokwari-c1c2) |
 | Udang Selingkuh Bakar | [IDN Times](https://www.idntimes.com/food/recipe/reza-iqbal/resep-udang-selingkuh-khas-wamena-papua) |
-| Nasi Goreng Kampung | [detikFood](https://food.detik.com/nasi/d-6114186/resep-nasi-goreng-kampung-yang-mlekoh-sedap-bumbunya) |
 
 Catatan: beberapa sumber hanya menjelaskan bahan dan cara tanpa takaran (mis. Loloh Cemcem,
 Es Poteng, Kue Jala, Lapis Cempedak, Sinonggi, Kopi Rarobang). Untuk resep tersebut takaran ditulis

@@ -490,9 +490,10 @@ svg {
 
 .card-meta {
     display: flex;
+    flex-wrap: wrap;          /* jika teks waktu panjang, pindah ke baris baru dengan rapi */
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 4px 12px;
     font-size: 0.85rem;
     color: var(--text-muted);
 }
@@ -500,6 +501,7 @@ svg {
 .card-meta .kategori {
     color: var(--accent-primary);
     font-weight: 500;
+    white-space: nowrap;
 }
 
 /* Hasil pencarian kosong */
@@ -1134,16 +1136,16 @@ svg {
     transform: translateX(-50%);
 }
 
-/* Penanda daerah: sepasang pria & wanita berpakaian adat.
-   Titik bawah-tengah penanda tepat berada di lokasi daerah. */
+/* Penanda daerah: sepasang pria & wanita berpakaian adat (ukuran 26px).
+   Titik bawah-tengah penanda (kaki) tepat berada di lokasi daerah. */
 .penanda {
     position: absolute;
     z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 48px;
-    height: 48px;
+    width: 26px;
+    height: 26px;
     padding: 0;
     border: 0;
     background: none;
@@ -1152,11 +1154,11 @@ svg {
 }
 
 .penanda__svg {
-    width: 48px;
-    height: 48px;
+    width: 26px;
+    height: 26px;
     fill: initial;
     stroke: none;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.45));
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.45));
     transition: transform 0.3s ease;
 }
 
@@ -1181,7 +1183,7 @@ svg {
 /* Label nama daerah: muncul saat penanda disorot atau difokus keyboard */
 .penanda__label {
     position: absolute;
-    top: 52px;
+    top: 30px;
     padding: 4px 10px;
     background: rgba(15, 15, 15, 0.92);
     border: 1px solid var(--border-color);

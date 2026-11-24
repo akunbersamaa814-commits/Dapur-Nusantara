@@ -10,7 +10,7 @@ Data disimpan di `data/resep.json` (array objek). Tanpa database.
   "nama": "Rendang Daging",
   "daerah": "Sumatera Barat",
   "kategori": "Makanan Berat",
-  "waktu": "120 menit",
+  "waktu": "120 menit (2 jam)",
   "porsi": "12 porsi",
   "kesulitan": "Sedang",
   "warna": "#5A2E1B",
@@ -39,6 +39,7 @@ Aturan:
 - `id` unik, huruf kecil, pakai tanda hubung (`soto-betawi`).
 - `kategori` hanya salah satu dari: **Makanan Berat**, **Sup & Soto**, **Camilan**, **Minuman**.
 - `kesulitan`: Mudah / Sedang / Sulit.
+- `waktu`: selalu dalam menit; jika 60 menit atau lebih, ditambah keterangan jam, mis. `45 menit`, `75 menit (1 jam 15 menit)`, `120 menit (2 jam)`.
 - `bahan`: dikelompokkan per `grup` (Bahan utama, Bumbu halus, Pelengkap, ...). Takaran mengikuti sumber resep.
 - `langkah`: urutan cara memasak yang rinci (api, waktu, tanda matang). `tips`: catatan dari sumber resep.
 - `sumber_resep`: satu atau lebih link resep asli (detikFood / IDN Times).
@@ -46,7 +47,7 @@ Aturan:
 - `foto`: pembuat, lisensi, situs, dan link sumber foto (lihat `docs/SUMBER_GAMBAR.md`).
   Jika gambar tidak tersedia, card menampilkan blok warna (`warna`) agar layout tidak rusak.
 
-## Daftar Resep (90 resep dari 35 provinsi)
+## Daftar Resep (89 resep dari 35 provinsi)
 
 Target: satu makanan (Makanan Berat / Sup & Soto), satu camilan, dan satu minuman per provinsi.
 Provinsi yang belum lengkap tidak diisi asal-asalan karena belum ditemukan resep khas dengan sumber
@@ -146,4 +147,3 @@ Papua Barat Daya, Papua Tengah, dan Papua Selatan (belum ada).
 | 87 | es-matoa | Es Matoa | Papua | Minuman |
 | 88 | ikan-bakar-manokwari | Ikan Bakar Manokwari | Papua Barat | Makanan Berat |
 | 89 | udang-selingkuh | Udang Selingkuh Bakar | Papua Pegunungan | Makanan Berat |
-| 90 | nasi-goreng | Nasi Goreng Kampung | Nasional | Makanan Berat |

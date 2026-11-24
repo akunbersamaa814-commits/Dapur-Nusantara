@@ -260,7 +260,7 @@ function posisikanPopup() {
         return;
     }
 
-    const TINGGI_PENANDA = 48;
+    const TINGGI_PENANDA = 26;
     const JARAK = 10;
     const RUANG_CARI = 76; // ruang di atas peta yang tertutup kotak cari
 
