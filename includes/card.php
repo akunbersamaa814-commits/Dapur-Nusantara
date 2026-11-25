@@ -23,9 +23,15 @@
                     aria-haspopup="dialog"><?= e($resep['nama']) ?></button>
         </h3>
         <p class="card-desc"><?= e($resep['deskripsi']) ?></p>
+        <?php [$menit, $jam] = pisah_waktu($resep['waktu']); ?>
+        <!-- Info singkat: setiap item tidak terpotong di tengah (lihat .meta-item di CSS) -->
         <div class="card-meta">
             <span class="kategori"><?= e($resep['kategori']) ?></span>
-            <span><?= e($resep['daerah']) ?> &middot; <?= e($resep['waktu']) ?></span>
+            <span class="meta-item meta-daerah"><span class="sr-only">Daerah: </span><?= e($resep['daerah']) ?></span>
+            <span class="meta-item meta-waktu">
+                <span class="sr-only">Waktu memasak: </span><?= e($menit) ?>
+                <?php if ($jam !== ''): ?><span class="waktu-jam">(<?= e($jam) ?>)</span><?php endif; ?>
+            </span>
         </div>
         <?php if (isset(KOORDINAT_DAERAH[$resep['daerah']])): ?>
             <!-- Membawa ke peta dan membuka popup daerah masakan ini (diatur oleh JavaScript) -->

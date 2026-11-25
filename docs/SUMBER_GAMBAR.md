@@ -20,7 +20,7 @@ Semua foto dipotong landscape 1000×667 px (kecuali Kasuami 600×400 karena foto
 | Bolu Kemojo | `assets/img/bolu-kemojo.jpg` | Marketing DB | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bolu_Kemojo.jpg) |
 | Es Laksamana Mengamuk | `assets/img/laksamana-mengamuk.jpg` | anoldent | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/8563790@N08/50152539353) |
 | Mie Lendir | `assets/img/mie-lendir.jpg` | Swarabakti | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mi_lendir_Batam_20260616_090543.jpg) |
-| Otak-Otak Ikan | `assets/img/otak-otak.jpg` | Midori | CC BY 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Otak-otak_Jakarta.JPG) |
+| Otak-Otak Ikan | `assets/img/otak-otak.jpg` | Sokat Rachman | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-snack-with-dipping-sauce-37104348/) |
 | Teh Obeng | `assets/img/teh-obeng.jpg` | Cendy00 | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_teh_manis.jpg) |
 | Tempoyak Ikan Patin | `assets/img/tempoyak-patin.jpg` | Chareinity | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nasi_Campur_Tempoyak_Ikan_Patin_Pucuk_Ubi_dan_Labu_Masak_Lemak.jpg) |
 | Kue Padamaran | `assets/img/padamaran.jpg` | Nurul Anggini | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:KUE_PADAMARAN.jpg) |
@@ -35,13 +35,13 @@ Semua foto dipotong landscape 1000×667 px (kecuali Kasuami 600×400 karena foto
 | Engkak Ketan | `assets/img/engkak.jpg` | Zeefra | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kue_Engkak_Ketan.jpg) |
 | Serbat Kweni | `assets/img/serbat-kweni.jpg` | GinkgoTelegraph | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/40998509@N02/8397119665) |
 | Lempah Kuning | `assets/img/lempah-kuning.jpg` | Taman Renyah | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lempah_kuning.JPG) |
-| Martabak Bangka | `assets/img/martabak-bangka.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Martabak_Terang_Bulan.jpg) |
-| Mie Ayam Bangka | `assets/img/mie-ayam-bangka.jpg` | Gunawan Kartapranata | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bakmi_Bangka_1.jpg) |
+| Martabak Bangka | `assets/img/martabak-bangka.jpg` | Riki Risnandar | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/sliced-bread-on-white-ceramic-plate-4023252/) |
+| Mie Ayam Bangka | `assets/img/mie-ayam-bangka.jpg` | Suryq | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/cooked-food-on-white-ceramic-bowl-7926171/) |
 | Soto Betawi | `assets/img/soto-betawi.jpg` | Riandy Saputra | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/indonesian-soto-betawi-with-rice-and-crackers-36896598/) |
 | Gado-Gado | `assets/img/gado-gado.jpg` | Rika Amani | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-gado-gado-salad-with-peanut-sauce-40754040/) |
 | Kerak Telor | `assets/img/kerak-telor.jpg` | Yuriandrian85 | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kerak_Telor_Khas_Betawi_2.jpg) |
 | Bir Pletok | `assets/img/bir-pletok.jpg` | Swarabakti | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Iced_bir_pletok_20240622_112754.jpg) |
-| Nasi Liwet Sunda | `assets/img/nasi-liwet.jpg` | Dadidudedo | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nasi_liwet_cumi.jpg) |
+| Nasi Liwet Sunda | `assets/img/nasi-liwet.jpg` | JENNI AGUSTINA | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-cuisine-with-nasi-liwet-36887470/) |
 | Batagor | `assets/img/batagor.jpg` | Ignatiaadela | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Batagor_dan_Bumbu_Kacang.jpg) |
 | Es Cendol | `assets/img/es-cendol.jpg` | Sokat Rachman | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-dessert-es-cendol-served-in-glass-37240946/) |
 | Kue Jojorong | `assets/img/jojorong.jpg` | Salm Abdullah | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jojorong_banten_3.jpg) |
@@ -52,14 +52,14 @@ Semua foto dipotong landscape 1000×667 px (kecuali Kasuami 600×400 karena foto
 | Wedang Ronde | `assets/img/wedang-ronde.jpg` | Daniatin | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wedang_Ronde_di_Malioboro.jpg) |
 | Gudeg | `assets/img/gudeg.jpg` | Indonesiagood | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gudeg_Ayam.jpg) |
 | Bakpia Kacang Hijau | `assets/img/bakpia.jpg` | Jmarlon | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bakpia_pathuk.jpg) |
-| Wedang Uwuh | `assets/img/wedang-uwuh.jpg` | M Joko Apriyo Putro | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wedang_Uwuh_Jawa.jpg) |
+| Wedang Uwuh | `assets/img/wedang-uwuh.jpg` | bams awey | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-herbal-drink-on-wooden-table-35622148/) |
 | Rawon | `assets/img/rawon.jpg` | Daniel Lee | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-black-soup-with-side-dishes-36547527/) |
 | Sate Ayam Madura | `assets/img/sate-ayam.jpg` | David Tumpal | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-satay-with-rice-cakes-37106134/) |
 | Onde-Onde Wijen | `assets/img/onde-onde.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Onde-Onde_Wijen.jpg) |
 | Wedang Angsle | `assets/img/angsle.jpg` | Indonesiagood | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Angsle.jpg) |
 | Ayam Betutu | `assets/img/ayam-betutu.jpg` | Tamba Budiarsana | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-balinese-ayam-betutu-dish-artfully-prepared-37106528/) |
 | Es Kuwut | `assets/img/es-kuwut.jpg` | Indonesiagood | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nikmatnya_Es_Kuwut.jpg) |
-| Jaje Laklak | `assets/img/laklak.jpg` | wiendietry | CC BY 2.0 | [Flickr](https://www.flickr.com/photos/53688900@N00/2694680281) |
+| Jaje Laklak | `assets/img/laklak.jpg` | Anton Tezar | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/serabi-kuah-indonesian-coconut-pancakes-6802090/) |
 | Ayam Taliwang | `assets/img/ayam-taliwang.jpg` | Midori | CC BY 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ayam_bakar_khas_Taliwang_2.JPG) |
 | Es Poteng | `assets/img/es-poteng.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_poteng-3.jpg) |
 | Se'i Sapi | `assets/img/sei-sapi.jpg` | Kembangraps | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sei_sapi_Pj_DSC_2925.jpg) |
@@ -96,7 +96,7 @@ Semua foto dipotong landscape 1000×667 px (kecuali Kasuami 600×400 karena foto
 | Ikan Bakar Manokwari | `assets/img/ikan-bakar-manokwari.jpg` | Charles Haynes | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/87232391@N00/4221478099) |
 | Ikan Kuah Kuning | `assets/img/ikan-kuah-kuning.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ikan_Kuah_Kuning-2.jpg) |
 | Bakar Batu | `assets/img/bakar-batu.jpg` | Wahyudinkat | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nikmat_Bakar_Batu.jpg) |
-| Udang Selingkuh Bakar | `assets/img/udang-selingkuh.jpg` | Tatters ✾ | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/62938898@N00/12250342224) |
+| Udang Selingkuh Bakar | `assets/img/udang-selingkuh.jpg` | Valeria Boltneva | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/crabs-served-in-a-restaurant-19503795/) |
 | Sate Ulat Sagu | `assets/img/sate-ulat-sagu.jpg` | Kemenparekraf | Domain publik | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sate_ulat_sagu.webp) |
 
 

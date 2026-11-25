@@ -67,6 +67,9 @@ function cari_resep(array $semua, string $q = '', string $kategori = ''): array;
 // - $kategori: jika tidak kosong & bukan "semua", filter kategori persis
 // - $q kosong → kembalikan semua (atau sesuai kategori)
 
+function pisah_waktu(string $waktu): array;
+// "75 menit (1 jam 15 menit)" → ['75 menit', '1 jam 15 menit'] untuk tampilan waktu di card
+
 function e(string $teks): string;
 // Helper: htmlspecialchars($teks, ENT_QUOTES, 'UTF-8')
 ```
@@ -80,7 +83,7 @@ Parameter URL:
 - Baca data dari `<script id="data-resep" type="application/json">`.
 - Event delegation pada container grid: klik pada `.recipe-card` → `bukaModal(card)`.
 - Setiap card punya `<button class="card-buka">` asli (area kliknya diperluas ke seluruh card dengan CSS), jadi `Enter`/`Space` otomatis bekerja.
-- `bukaModal(card)`: isi foto + badge, nama, deskripsi, meta, bahan per kelompok, `<ol>` langkah, tips, dan kredit sumber resep/foto; `showModal()`; fokus ke tombol tutup. Scroll halaman dikunci oleh CSS `body:has(.modal[open])`.
+- `bukaModal(card)`: isi foto + badge, nama, deskripsi, meta (ikon + label lewat `buatItemMeta()`), bahan per kelompok, `<ol>` langkah, tips, dan kredit sumber resep/foto; `showModal()`; fokus ke tombol tutup. Scroll halaman dikunci oleh CSS `body:has(.modal[open])`.
 - Tutup lewat tombol ✕, klik backdrop, atau `Escape`; fokus kembali ke tombol card yang diklik.
 - Tombol hamburger (layar < 768px) membuka/menutup menu navbar dengan class `active` dan `aria-expanded`.
 

@@ -372,6 +372,8 @@ svg {
 /* Card resep */
 .recipe-card {
     position: relative;
+    display: flex;            /* susunan atas-bawah agar isi card bisa diratakan ke bawah */
+    flex-direction: column;
     overflow: hidden;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -403,10 +405,13 @@ svg {
     outline-offset: 3px;
 }
 
+/* Gambar card selalu rasio 3:2 (sama dengan ukuran foto 1000×667),
+   jadi foto tidak terpotong berlebihan di layar lebar maupun sempit */
 .card-image {
     position: relative;
-    height: 220px;
+    aspect-ratio: 3 / 2;
     overflow: hidden;
+    background: var(--bg-card-hover);
 }
 
 .card-image img,
@@ -418,7 +423,7 @@ svg {
 }
 
 .recipe-card:hover .card-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Badge tingkat kesulitan (warna + teks, tidak hanya warna) */
@@ -450,6 +455,9 @@ svg {
 }
 
 .card-content {
+    display: flex;
+    flex: 1;                  /* mengisi sisa tinggi card */
+    flex-direction: column;
     padding: 20px;
 }
 
@@ -481,7 +489,13 @@ svg {
     outline: none;
 }
 
+/* Deskripsi dibatasi 3 baris agar tinggi semua card seragam (teks lengkap ada di modal) */
 .card-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
     margin-bottom: 16px;
     font-size: 0.95rem;
     line-height: 1.5;
@@ -490,10 +504,10 @@ svg {
 
 .card-meta {
     display: flex;
-    flex-wrap: wrap;          /* jika teks waktu panjang, pindah ke baris baru dengan rapi */
-    justify-content: space-between;
+    flex-wrap: wrap;          /* item yang tidak muat pindah utuh ke baris baru */
     align-items: center;
-    gap: 4px 12px;
+    margin-top: auto;         /* info + tombol peta selalu menempel di bawah card */
+    gap: 8px 16px;
     font-size: 0.85rem;
     color: var(--text-muted);
 }
@@ -502,6 +516,53 @@ svg {
     color: var(--accent-primary);
     font-weight: 500;
     white-space: nowrap;
+}
+
+/* Satu info singkat (daerah, waktu, porsi) dengan ikon di depannya.
+   white-space: nowrap agar teks seperti "75 menit (1 jam 15 menit)" tidak terpotong di tengah. */
+.meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+/* Ikon dibuat dari SVG sebagai "mask", warnanya mengikuti warna teks (currentColor) */
+.meta-item::before {
+    content: "";
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    background-color: currentColor;
+    -webkit-mask: var(--ikon) center / contain no-repeat;
+    mask: var(--ikon) center / contain no-repeat;
+}
+
+/* Ikon pin lokasi */
+.meta-daerah {
+    --ikon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 5-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E");
+}
+
+/* Ikon jam */
+.meta-waktu {
+    --ikon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E");
+}
+
+/* Ikon orang (porsi) */
+.meta-porsi {
+    --ikon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8'/%3E%3C/svg%3E");
+}
+
+/* Di card, waktu selalu di baris sendiri agar susunan semua card sama:
+   baris 1 = kategori + daerah, baris 2 = waktu memasak */
+.card-meta .meta-waktu {
+    flex-basis: 100%;
+}
+
+/* Keterangan jam dibuat lebih redup agar angka menit tetap jadi yang utama */
+.waktu-jam {
+    margin-left: 4px;
+    opacity: 0.75;
 }
 
 /* Hasil pencarian kosong */
@@ -588,9 +649,12 @@ svg {
     padding: 0 0 36px;
 }
 
+/* Foto di modal: rasio 3:2 seperti foto aslinya, dibatasi tingginya agar judul tetap terlihat */
 .detail-image {
     position: relative;
-    height: 400px;
+    aspect-ratio: 3 / 2;
+    max-height: min(460px, 60vh);
+    width: 100%;
     margin-bottom: 32px;
     overflow: hidden;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
@@ -642,6 +706,13 @@ svg {
 
 .detail-meta .kategori {
     color: var(--accent-primary);
+    font-weight: 600;
+}
+
+/* Label kecil "Daerah", "Waktu", "Porsi" di modal */
+.detail-meta .meta-label {
+    margin-right: 2px;
+    color: var(--text-secondary);
     font-weight: 600;
 }
 
@@ -924,10 +995,6 @@ svg {
 
     .recipe-grid {
         grid-template-columns: 1fr;
-    }
-
-    .detail-image {
-        height: 220px;
     }
 
     .detail-header,
@@ -1266,7 +1333,7 @@ svg {
 }
 
 .peta-popup.panel .popup-gambar {
-    height: 160px;
+    aspect-ratio: 16 / 9;
 }
 
 .peta-popup__tutup {
@@ -1300,7 +1367,7 @@ svg {
 
 .popup-gambar {
     position: relative;
-    height: 128px;
+    aspect-ratio: 2 / 1;
 }
 
 .popup-gambar img {
@@ -1373,6 +1440,7 @@ svg {
 .card-peta {
     position: relative;
     z-index: 4;
+    align-self: flex-start;   /* tombol tidak melebar selebar card */
     margin-top: 14px;
     padding: 6px 0;
     border: 0;

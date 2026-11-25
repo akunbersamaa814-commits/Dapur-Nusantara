@@ -26,13 +26,16 @@ konten, fitur, dan kode tetap milik Dapur Nusantara (HTML + CSS + vanilla JS + P
 │ Hero (tengah): judul gradien, subjudul, form cari + tombol gradien     │
 │ Chip kategori (pil, tengah)                                            │
 │ "Semua Resep" (tengah)                                                 │
-│ Grid card 3 kolom: foto 220px + badge | judul | deskripsi | meta       │
+│ Grid card 3 kolom: foto 3:2 + badge | judul | deskripsi 3 baris | meta │
 │ Footer 3 kolom: tentang | tautan cepat | info tugas                    │
 └────────────────────────────────────────────────────────────────────────┘
-Modal detail: foto 400px + badge, judul besar, meta, Bahan (kotak ✦ per
+Modal detail: foto 3:2 (maks. 460px) + badge, judul besar, meta ber-ikon, Bahan (kotak ✦ per
 kelompok), Cara Memasak (kotak bernomor lingkaran gradien), Tips, kredit.
 ```
 - Grid otomatis (`minmax(320px, 1fr)`), 1 kolom di bawah 768px.
+- Semua foto memakai rasio 3:2 (`aspect-ratio`), sama dengan ukuran file 1000×667.
+- Meta card: baris 1 = kategori + ikon pin daerah, baris 2 = ikon jam + waktu
+  ("75 menit" diikuti "(1 jam 15 menit)" yang lebih redup). Info + tombol peta selalu di dasar card.
 - Navbar menjadi menu hamburger di bawah 768px.
 
 ## Gerak

@@ -25,6 +25,17 @@ function buatElemen(tag, teks, kelas) {
 }
 
 /**
+ * Membuat satu info singkat di modal, mis. ikon jam + "Waktu" + "75 menit (1 jam 15 menit)".
+ * Ikonnya dipasang lewat CSS sesuai kelas (meta-daerah, meta-waktu, meta-porsi).
+ */
+function buatItemMeta(kelas, label, nilai) {
+    const item = buatElemen('span', '', 'meta-item ' + kelas);
+    item.appendChild(buatElemen('span', label, 'meta-label'));
+    item.append(nilai);
+    return item;
+}
+
+/**
  * Membuat link yang dibuka di tab baru.
  */
 function buatLink(teks, url) {
@@ -86,9 +97,9 @@ function bukaModal(id, pemicu) {
     const meta = document.getElementById('modal-meta');
     meta.innerHTML = '';
     meta.appendChild(buatElemen('span', resep.kategori, 'kategori'));
-    meta.appendChild(buatElemen('span', 'Daerah: ' + resep.daerah));
-    meta.appendChild(buatElemen('span', 'Waktu: ' + resep.waktu));
-    meta.appendChild(buatElemen('span', 'Porsi: ' + resep.porsi));
+    meta.appendChild(buatItemMeta('meta-daerah', 'Daerah', resep.daerah));
+    meta.appendChild(buatItemMeta('meta-waktu', 'Waktu', resep.waktu));
+    meta.appendChild(buatItemMeta('meta-porsi', 'Porsi', resep.porsi));
 
     // Bahan, langkah, dan tips
     isiBahan(document.getElementById('modal-bahan'), resep.bahan);

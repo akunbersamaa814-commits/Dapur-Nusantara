@@ -105,6 +105,18 @@ function posisi_penanda(string $daerah): array
 }
 
 /**
+ * Memisahkan teks waktu menjadi menit dan keterangan jam.
+ * Contoh: "75 menit (1 jam 15 menit)" → ['75 menit', '1 jam 15 menit'];
+ *         "45 menit" → ['45 menit', ''].
+ */
+function pisah_waktu(string $waktu): array
+{
+    $bagian = explode(' (', $waktu, 2);
+    $jam = isset($bagian[1]) ? rtrim($bagian[1], ')') : '';
+    return [$bagian[0], $jam];
+}
+
+/**
  * Helper untuk mencetak teks dengan aman (mencegah XSS).
  */
 function e(string $teks): string
