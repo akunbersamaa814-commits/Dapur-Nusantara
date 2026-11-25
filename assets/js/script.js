@@ -455,6 +455,20 @@ window.addEventListener('resize', function () {
 // Ukuran awal: zoom 1, pusat peta di tengah.
 aturZoom(0, { x: 0.5, y: 0.5 });
 
+// Jika pencarian dari kotak cari peta (alamat berakhiran #peta) hanya menghasilkan satu provinsi,
+// misalnya "prabumulih" → Sumatera Selatan, langsung perbesar dan buka popup provinsi itu.
+const semuaPenanda = petaLapisan.querySelectorAll('.penanda');
+if (location.hash === '#peta' && location.search !== '' && semuaPenanda.length === 1) {
+    const satuPenanda = semuaPenanda[0];
+    // Gulir ke peta dulu (langsung, tanpa animasi) agar tidak terpotong saat popup dibuka.
+    document.getElementById('peta').scrollIntoView({ behavior: 'instant', block: 'start' });
+    aturZoom(2, {
+        x: parseFloat(satuPenanda.style.left) / 100,
+        y: parseFloat(satuPenanda.style.top) / 100
+    });
+    bukaPopup(satuPenanda);
+}
+
 /* =========================================================
    Form langganan di footer (contoh tampilan)
    Website ini tanpa database, jadi email TIDAK dikirim atau disimpan.

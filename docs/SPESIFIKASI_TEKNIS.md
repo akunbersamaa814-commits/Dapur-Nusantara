@@ -23,7 +23,8 @@ projek_pemweb/
 │   ├── footer.php            # footer (brand, tautan, kategori pulau, newsletter) + <script>
 │   └── card.php              # Template satu card resep (foto, badge, judul, meta)
 ├── data/
-│   └── resep.json            # Data seluruh resep (lihat docs/DATA_RESEP.md)
+│   ├── resep.json            # Data seluruh resep (lihat docs/DATA_RESEP.md)
+│   └── wilayah.json          # Nama kota/kabupaten/ibu kota/singkatan → provinsi (untuk pencarian)
 ├── assets/
 │   ├── css/style.css         # Semua styling
 │   ├── js/script.js          # Logika modal detail
@@ -61,17 +62,29 @@ assets/js/script.js ── JSON.parse → klik card → isi & tampilkan modal
 function ambil_semua_resep(): array;
 // Membaca data/resep.json, mengembalikan array resep.
 
-function cari_resep(array $semua, string $q = '', string $kategori = ''): array;
+function cari_resep(array $semua, string $q = '', string $kategori = '', ?string &$sumber = null): array;
 // - $semua: hasil ambil_semua_resep() (dibaca sekali per halaman)
-// - $q dicocokkan (stripos / mb_stripos) ke: nama, daerah, kategori, bahan[]
-// - $kategori: jika tidak kosong & bukan "semua", filter kategori persis
+// - $kategori: jika tidak kosong, filter kategori persis (dilakukan lebih dulu)
 // - $q kosong → kembalikan semua (atau sesuai kategori)
+// - $q dinormalisasi (huruf kecil, tanpa tanda petik, spasi ganda dirapatkan) dan setiap kata
+//   harus muncul di AWAL sebuah kata ("es" cocok "Es Cendol", tidak cocok "Sulawesi").
+// - Urutan relevansi; tingkat pertama yang punya hasil yang dipakai:
+//     1. wilayah  — nama pulau/provinsi/kota/kabupaten/singkatan (provinsi_dari_kata) → resep provinsinya
+//                   + resep yang namanya cocok (mis. "prabumulih" → Sumatera Selatan)
+//     2. nama     — nama masakan ("ayam" → Ayam Taliwang, Ayam Betutu, ...)
+//     3. daerah   — nama + daerah + kategori ("minuman", "ayam bali")
+//     4. bahan    — isi bahan ("santan"), hanya jika 1–3 kosong
+// - $sumber diisi 'semua' | 'wilayah' | 'nama' | 'daerah' | 'bahan' (untuk judul hasil)
+
+function provinsi_dari_kata(string $q): array;
+// Nama pulau (konstanta PULAU), nama provinsi, atau nama di data/wilayah.json → daftar provinsi.
+// Awalan "kota", "kabupaten", "kab." boleh ikut diketik. Selain itu → array kosong.
+
+function normalisasi(string $teks): string;
+function cocok_semua_kata(string $teks, string $q): bool;
 
 function pisah_waktu(string $waktu): array;
 // "75 menit (1 jam 15 menit)" → ['75 menit', '1 jam 15 menit'] untuk tampilan waktu di card
-
-// Catatan: jika $q persis nama pulau di konstanta PULAU (Sumatera, Jawa, Bali, Kalimantan,
-// Sulawesi, Papua), resep dicocokkan berdasarkan provinsinya saja (dipakai link "Kategori" di footer).
 
 function e(string $teks): string;
 // Helper: htmlspecialchars($teks, ENT_QUOTES, 'UTF-8')
@@ -107,6 +120,10 @@ Parameter URL:
   penanda ikut karena posisinya persen; area `#peta-area` bisa di-scroll saat diperbesar.
 - Tombol **Lihat di Peta** di card → `tampilkanDiPeta(daerah)`: gulir ke peta, zoom 2× di daerahnya, buka popup.
 - Kotak cari di atas peta adalah form GET biasa (`q`), diproses PHP seperti form di hero.
+- Saat peta tersaring (ada `q`/`kategori`), muncul `.peta-info` berisi jumlah provinsi, keterangan wilayah
+  (mis. "Wilayah “prabumulih” ada di Sumatera Selatan") dan tombol **Tampilkan semua provinsi** (`./#peta`).
+- Jika pencarian dari kotak peta (alamat `#peta`) hanya menghasilkan satu provinsi, JS langsung menggulir ke peta,
+  memperbesar 2× di provinsi itu, dan membuka popupnya.
 
 ## 6. Keamanan Sederhana
 

@@ -210,3 +210,11 @@ sebagai perkiraan dan hal ini disebutkan di bagian tips resepnya.
 oleh **Uwe Dedering**, lisensi **CC BY-SA 3.0**, via Wikimedia Commons. Dimodifikasi: warna disesuaikan
 dengan tema terang website (putih–krem) dan layer sungai dihapus. Sesuai lisensi CC BY-SA, versi modifikasi ini juga
 berlisensi CC BY-SA 3.0. Keterangan sumber tampil di pojok kiri bawah peta.
+
+## Data Wilayah
+`data/wilayah.json` (416 kabupaten, 98 kota, ibu kota kabupaten, dan singkatan seperti NTB/Jogja/Sumsel
+→ provinsi) disusun dari [Daftar kabupaten di Indonesia](https://id.wikipedia.org/wiki/Daftar_kabupaten_di_Indonesia)
+dan [Daftar kota di Indonesia](https://id.wikipedia.org/wiki/Daftar_kota_di_Indonesia) di Wikipedia
+(mengacu Kepmendagri No. 100.1.1-6117 Tahun 2022). Jumlah per provinsi sudah dicocokkan dengan tabel
+[Daftar kabupaten dan kota di Indonesia menurut provinsi](https://id.wikipedia.org/wiki/Daftar_kabupaten_dan_kota_di_Indonesia_menurut_provinsi).
+Koreksi: ibu kota Kabupaten Pasuruan ditulis "Bangil" (di sumber tertulis "Bangli").

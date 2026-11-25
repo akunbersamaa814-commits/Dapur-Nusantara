@@ -159,47 +159,129 @@ function ambil_semua_resep(): array
 }
 
 /**
- * Mencari resep (dari $semua) berdasarkan kata kunci dan/atau kategori.
- * Kata kunci dicocokkan ke nama, daerah, kategori, dan bahan (tidak peka huruf besar/kecil).
+ * Merapikan teks agar mudah dibandingkan: huruf kecil, tanda petik dihapus, spasi ganda dirapatkan.
+ * Contoh: "Se'i  Sapi" → "sei sapi", sehingga pencarian "sei sapi" tetap ketemu.
  */
-function cari_resep(array $semua, string $q = '', string $kategori = ''): array
+function normalisasi(string $teks): string
 {
-    $hasil = [];
+    $teks = mb_strtolower($teks, 'UTF-8');
+    $teks = str_replace(["'", '’', '`'], '', $teks);
+    return trim(preg_replace('/\s+/', ' ', $teks));
+}
 
-    foreach ($semua as $resep) {
-        // 1. Filter kategori (dilewati jika kategori kosong).
-        if ($kategori !== '' && $resep['kategori'] !== $kategori) {
-            continue;
-        }
+/**
+ * Mencari provinsi dari kata kunci berupa nama pulau, provinsi singkatan, kota, atau kabupaten.
+ * Data kota/kabupaten ada di data/wilayah.json (contoh: "prabumulih" → Sumatera Selatan).
+ * Mengembalikan daftar nama provinsi, atau array kosong jika kata kunci bukan nama wilayah.
+ */
+function provinsi_dari_kata(string $q): array
+{
+    $kata = normalisasi($q);
+    // Awalan seperti "kota", "kabupaten", "kab." boleh diketik atau tidak.
+    $kata = preg_replace('/^(kota|kabupaten|kab\.?|provinsi)\s+/', '', $kata);
 
-        // 2. Jika tidak ada kata kunci, resep langsung masuk hasil.
-        if ($q === '') {
-            $hasil[] = $resep;
-            continue;
-        }
-
-        // 2b. Jika kata kunci persis nama pulau (mis. "Jawa"), cocokkan berdasarkan provinsinya saja.
-        $pulau = ucwords(strtolower($q));
-        if (isset(PULAU[$pulau])) {
-            if (in_array($resep['daerah'], PULAU[$pulau], true)) {
-                $hasil[] = $resep;
-            }
-            continue;
-        }
-
-        // 3. Gabungkan semua teks yang boleh dicari, lalu cek apakah mengandung kata kunci.
-        //    Bahan disimpan per kelompok (Bahan utama, Bumbu halus, ...), jadi digabung dulu.
-        $teks = $resep['nama'] . ' ' . $resep['daerah'] . ' ' . $resep['kategori'];
-        foreach ($resep['bahan'] as $kelompok) {
-            $teks .= ' ' . implode(' ', $kelompok['isi']);
-        }
-
-        if (stripos($teks, $q) !== false) {
-            $hasil[] = $resep;
+    // 1. Nama pulau (konstanta PULAU), mis. "jawa" → provinsi-provinsi di Pulau Jawa.
+    foreach (PULAU as $pulau => $daftar_provinsi) {
+        if ($kata === normalisasi($pulau)) {
+            return $daftar_provinsi;
         }
     }
 
-    return $hasil;
+    // 2. Nama provinsi persis, mis. "aceh" → Aceh (agar semua resep Aceh tampil, bukan hanya "Mie Aceh").
+    foreach (array_keys(KOORDINAT_DAERAH) as $nama_provinsi) {
+        if ($kata === normalisasi($nama_provinsi)) {
+            return [$nama_provinsi];
+        }
+    }
+
+    // 3. Nama kota/kabupaten/ibu kota kabupaten/singkatan dari data/wilayah.json (dibaca sekali saja).
+    static $wilayah = null;
+    if ($wilayah === null) {
+        $wilayah = json_decode(file_get_contents(__DIR__ . '/../data/wilayah.json'), true) ?? [];
+    }
+    return $wilayah[$kata] ?? [];
+}
+
+/**
+ * Mengecek apakah SEMUA kata dari kata kunci muncul di AWAL sebuah kata di dalam teks.
+ * Contoh: "ayam bali" cocok dengan "Ayam Betutu Bali", dan "es" cocok dengan "Es Cendol",
+ * tetapi "es" TIDAK cocok dengan "Sulawesi" (karena "es" ada di tengah kata).
+ */
+function cocok_semua_kata(string $teks, string $q): bool
+{
+    $teks = normalisasi($teks);
+    foreach (explode(' ', normalisasi($q)) as $kata) {
+        // (?<![\p{L}\p{N}]) = sebelum kata kunci bukan huruf/angka, artinya awal sebuah kata.
+        if (!preg_match('/(?<![\p{L}\p{N}])' . preg_quote($kata, '/') . '/u', $teks)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+/**
+ * Mencari resep (dari $semua) berdasarkan kata kunci dan/atau kategori.
+ * Urutan pencocokan (dari yang paling relevan); yang pertama menemukan hasil yang dipakai:
+ *   1. Nama wilayah (pulau, kota, kabupaten, singkatan) → resep dari provinsinya,
+ *      ditambah resep yang namanya cocok (mis. "batu" → Jawa Timur + Bakar Batu).
+ *   2. Nama masakan (mis. "ayam" → Ayam Taliwang, Ayam Betutu, ...; "soto" → Soto Betawi, ...).
+ *   3. Nama + daerah + kategori (mis. "minuman", "ayam bali").
+ *   4. Bahan (mis. "santan") — hanya jika langkah 1–3 tidak menemukan apa pun.
+ * $sumber diisi 'semua', 'wilayah', 'nama', 'daerah', atau 'bahan' untuk judul hasil.
+ */
+function cari_resep(array $semua, string $q = '', string $kategori = '', ?string &$sumber = null): array
+{
+    $sumber = 'semua';
+
+    // Filter kategori lebih dulu (dilewati jika kategori kosong).
+    if ($kategori !== '') {
+        $semua = array_values(array_filter($semua, fn ($resep) => $resep['kategori'] === $kategori));
+    }
+
+    // Jika tidak ada kata kunci, semua resep (sesuai kategori) masuk hasil.
+    if (normalisasi($q) === '') {
+        return $semua;
+    }
+
+    $provinsi = provinsi_dari_kata($q);
+    $tingkat = ['wilayah' => [], 'nama' => [], 'daerah' => [], 'bahan' => []];
+
+    foreach ($semua as $resep) {
+        // Bahan disimpan per kelompok (Bahan utama, Bumbu halus, ...), jadi digabung dulu.
+        $teks_bahan = '';
+        foreach ($resep['bahan'] as $kelompok) {
+            $teks_bahan .= ' ' . implode(' ', $kelompok['isi']);
+        }
+        $teks_utama = $resep['nama'] . ' ' . $resep['daerah'] . ' ' . $resep['kategori'];
+        $cocok_nama = cocok_semua_kata($resep['nama'], $q);
+
+        if ($provinsi !== [] && (in_array($resep['daerah'], $provinsi, true) || $cocok_nama)) {
+            $tingkat['wilayah'][] = $resep;
+        }
+        if ($cocok_nama) {
+            $tingkat['nama'][] = $resep;
+        } elseif (cocok_semua_kata($teks_utama, $q)) {
+            $tingkat['daerah'][] = $resep;
+        } elseif (cocok_semua_kata($teks_utama . ' ' . $teks_bahan, $q)) {
+            $tingkat['bahan'][] = $resep;
+        }
+    }
+
+    // Pakai tingkat pertama yang punya hasil. Tingkat "daerah" juga menyertakan yang cocok nama.
+    if ($tingkat['wilayah'] !== []) {
+        $sumber = 'wilayah';
+        return $tingkat['wilayah'];
+    }
+    if ($tingkat['nama'] !== []) {
+        $sumber = 'nama';
+        return $tingkat['nama'];
+    }
+    if ($tingkat['daerah'] !== []) {
+        $sumber = 'daerah';
+        return $tingkat['daerah'];
+    }
+    $sumber = 'bahan';
+    return $tingkat['bahan'];
 }
 
 /**

@@ -7,7 +7,8 @@ require __DIR__ . '/includes/data.php';
 
 // 1. Ambil input pencarian dari URL, rapikan, dan batasi panjangnya.
 //    is_string() menjaga agar URL aneh seperti ?q[]=x tidak membuat error.
-$q = is_string($_GET['q'] ?? null) ? substr(trim($_GET['q']), 0, 100) : '';
+//    mb_substr (bukan substr) agar huruf non-ASCII tidak terpotong di tengah.
+$q = is_string($_GET['q'] ?? null) ? mb_substr(trim($_GET['q']), 0, 100, 'UTF-8') : '';
 $kategori = is_string($_GET['kategori'] ?? null) ? $_GET['kategori'] : '';
 if (!in_array($kategori, DAFTAR_KATEGORI, true)) {
     $kategori = ''; // abaikan kategori yang tidak dikenal
@@ -15,8 +16,13 @@ if (!in_array($kategori, DAFTAR_KATEGORI, true)) {
 
 // 2. Baca data sekali, lalu cari resep sesuai input (fungsi ada di includes/data.php).
 $semua = ambil_semua_resep();
-$hasil = cari_resep($semua, $q, $kategori);
+$hasil = cari_resep($semua, $q, $kategori, $sumber);
 $jumlah = count($hasil);
+
+// Jika kata kunci adalah nama wilayah (kota, kabupaten, pulau, singkatan), catat provinsinya
+// untuk keterangan, mis. "prabumulih" → Sumatera Selatan.
+$provinsi_wilayah = $q !== '' ? provinsi_dari_kata($q) : [];
+$ada_pencarian = $q !== '' || $kategori !== '';
 
 // 3. Data untuk peta: koordinat daerah yang muncul di hasil pencarian.
 $daerah_hasil = array_unique(array_column($hasil, 'daerah'));
@@ -55,13 +61,27 @@ include __DIR__ . '/includes/header.php';
         <h2 class="section-title">Peta Kuliner Nusantara</h2>
         <p class="section-sub">Klik penanda daerah di peta untuk melihat masakan khasnya, lalu buka resepnya.</p>
 
+        <?php if ($ada_pencarian): ?>
+            <!-- Saat peta tersaring oleh pencarian/kategori: info + tombol kembali ke semua provinsi -->
+            <div class="peta-info" role="status">
+                <p>
+                    Menampilkan <?= count($koordinat) ?> provinsi
+                    <?= $q !== '' ? 'untuk “' . e($q) . '”' : '' ?><?= $kategori !== '' ? ' di kategori ' . e($kategori) : '' ?>.
+                    <?php if ($provinsi_wilayah !== []): ?>
+                        Wilayah “<?= e($q) ?>” ada di <?= e(implode(', ', $provinsi_wilayah)) ?>.
+                    <?php endif; ?>
+                </p>
+                <a class="btn btn-sm peta-info__kembali" href="./#peta">Tampilkan semua provinsi</a>
+            </div>
+        <?php endif; ?>
+
         <div class="peta-wrap">
             <!-- Kotak cari di atas peta: sama seperti form di hero, diproses oleh PHP -->
             <form class="peta-cari" action="./#peta" method="get" role="search">
                 <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-                <label class="sr-only" for="q-peta">Cari nama masakan atau daerah</label>
+                <label class="sr-only" for="q-peta">Cari masakan, daerah, atau kota</label>
                 <input type="search" id="q-peta" name="q" value="<?= e($q) ?>"
-                       placeholder="Cari nama masakan atau daerah..." maxlength="100" autocomplete="off">
+                       placeholder="Cari masakan, daerah, atau kota..." maxlength="100" autocomplete="off">
                 <?php if ($kategori !== ''): ?>
                     <input type="hidden" name="kategori" value="<?= e($kategori) ?>">
                 <?php endif; ?>
@@ -117,7 +137,7 @@ include __DIR__ . '/includes/header.php';
                 <a href="https://commons.wikimedia.org/wiki/File:Indonesia_location_map.svg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
 
             <?php if (count($koordinat) === 0): ?>
-                <p class="peta-kosong">Tidak ada daerah yang cocok dengan pencarian ini.</p>
+                <p class="peta-kosong">Makanan atau minuman tidak ditemukan di daerah mana pun.</p>
             <?php endif; ?>
         </div>
 
@@ -141,7 +161,11 @@ include __DIR__ . '/includes/header.php';
 <main class="recipe-section" id="daftar-resep">
     <div class="container">
         <h2 class="section-title" role="status">
-            <?php if ($q !== ''): ?>
+            <?php if ($q !== '' && $jumlah === 0): ?>
+                Makanan atau minuman tidak ditemukan
+            <?php elseif ($q !== '' && $sumber === 'bahan'): ?>
+                <?= $jumlah ?> resep yang memakai bahan “<?= e($q) ?>”<?= $kategori !== '' ? ' di ' . e($kategori) : '' ?>
+            <?php elseif ($q !== ''): ?>
                 <?= $jumlah ?> resep untuk “<?= e($q) ?>”<?= $kategori !== '' ? ' di ' . e($kategori) : '' ?>
             <?php elseif ($kategori !== ''): ?>
                 <?= e($kategori) ?>
@@ -149,6 +173,15 @@ include __DIR__ . '/includes/header.php';
                 Semua Resep
             <?php endif; ?>
         </h2>
+
+        <?php if ($ada_pencarian && $jumlah > 0): ?>
+            <p class="hasil-info">
+                <?php if ($provinsi_wilayah !== []): ?>
+                    Wilayah “<?= e($q) ?>” ada di <?= e(implode(', ', $provinsi_wilayah)) ?>.
+                <?php endif; ?>
+                <a href="./#daftar-resep">Hapus pencarian &amp; tampilkan semua resep</a>
+            </p>
+        <?php endif; ?>
 
         <?php if ($jumlah > 0): ?>
             <div class="recipe-grid" id="grid-resep">
@@ -158,9 +191,14 @@ include __DIR__ . '/includes/header.php';
             </div>
         <?php else: ?>
             <div class="kosong">
-                <h3>Belum ada resep yang cocok</h3>
-                <p>Coba kata lain, misalnya nama daerah (Padang, Bali) atau bahan (santan, kacang).</p>
-                <a class="btn btn-primary" href="./">Lihat Semua Resep</a>
+                <?php if ($q !== ''): ?>
+                    <h3>Tidak ada menu yang cocok dengan “<?= e($q) ?>”<?= $kategori !== '' ? ' di kategori ' . e($kategori) : '' ?></h3>
+                <?php else: ?>
+                    <h3>Belum ada menu di kategori ini</h3>
+                <?php endif; ?>
+                <p>Coba kata kunci lain, misalnya nama masakan (rendang, soto), nama daerah atau kota
+                   (Bali, Padang, Palembang), atau bahan (santan, kacang).</p>
+                <a class="btn btn-primary" href="./#daftar-resep">Lihat Semua Resep</a>
             </div>
         <?php endif; ?>
     </div>

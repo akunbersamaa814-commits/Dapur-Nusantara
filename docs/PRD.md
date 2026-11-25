@@ -43,11 +43,13 @@ dan **membuka detail** resep (bahan + cara memasak) dengan mengklik card.
 
 ### F3 — Pencarian Resep (**wajib PHP**)
 - Form pencarian (`method="GET"`, parameter `q`) di bagian atas halaman.
-- PHP membaca data resep lalu **memfilter** berdasarkan kata kunci yang cocok dengan
-  nama, daerah, kategori, atau bahan (tidak peka huruf besar/kecil).
+- PHP membaca data resep lalu **memfilter** berdasarkan kata kunci (tidak peka huruf besar/kecil),
+  dengan urutan relevansi: nama wilayah (pulau/provinsi/kota/kabupaten, mis. "prabumulih" → Sumatera
+  Selatan) → nama masakan ("ayam" → menu ayam saja) → daerah/kategori → bahan ("santan").
 - Hasil ditampilkan sebagai card (memakai komponen yang sama dengan F1).
 - Tampilkan info: *"Menampilkan X resep untuk 'kata kunci'"*.
-- Jika tidak ada hasil: tampilkan pesan kosong yang ramah + tombol "Lihat semua resep".
+- Jika tidak ada hasil: judul "Makanan atau minuman tidak ditemukan", saran kata kunci, dan tombol "Lihat Semua Resep".
+- Saat ada pencarian tersedia link untuk menghapus pencarian, dan di peta tombol "Tampilkan semua provinsi".
 - Input wajib di-escape (`htmlspecialchars`) untuk mencegah XSS.
 
 ### F4 — Filter Kategori (opsional / nilai tambah)
