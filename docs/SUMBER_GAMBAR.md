@@ -3,7 +3,7 @@
 ## Foto
 Foto diambil dari **Pexels** (Lisensi Pexels: gratis dipakai, tanpa wajib atribusi) dan
 **Wikimedia Commons** (Creative Commons: nama pembuat dan lisensi wajib dicantumkan).
-Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal setiap resep
+Semua foto dipotong landscape 1000×667 px (kecuali Kasuami 600×400 karena foto aslinya kecil). Keterangan ini juga tampil di modal setiap resep
 (field `foto` di `data/resep.json`).
 
 | Masakan | File | Pembuat | Lisensi | Sumber |
@@ -36,6 +36,7 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Serbat Kweni | `assets/img/serbat-kweni.jpg` | GinkgoTelegraph | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/40998509@N02/8397119665) |
 | Lempah Kuning | `assets/img/lempah-kuning.jpg` | Taman Renyah | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lempah_kuning.JPG) |
 | Martabak Bangka | `assets/img/martabak-bangka.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Martabak_Terang_Bulan.jpg) |
+| Mie Ayam Bangka | `assets/img/mie-ayam-bangka.jpg` | Gunawan Kartapranata | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bakmi_Bangka_1.jpg) |
 | Soto Betawi | `assets/img/soto-betawi.jpg` | Riandy Saputra | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/indonesian-soto-betawi-with-rice-and-crackers-36896598/) |
 | Gado-Gado | `assets/img/gado-gado.jpg` | Rika Amani | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-gado-gado-salad-with-peanut-sauce-40754040/) |
 | Kerak Telor | `assets/img/kerak-telor.jpg` | Yuriandrian85 | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kerak_Telor_Khas_Betawi_2.jpg) |
@@ -44,6 +45,7 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Batagor | `assets/img/batagor.jpg` | Ignatiaadela | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Batagor_dan_Bumbu_Kacang.jpg) |
 | Es Cendol | `assets/img/es-cendol.jpg` | Sokat Rachman | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-dessert-es-cendol-served-in-glass-37240946/) |
 | Kue Jojorong | `assets/img/jojorong.jpg` | Salm Abdullah | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jojorong_banten_3.jpg) |
+| Sate Bandeng | `assets/img/sate-bandeng.jpg` | Gunawan Kartapranata | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sate_Bandeng_1.jpg) |
 | Es Sekemu | `assets/img/es-sekemu.jpg` | Prayitno / Thank you for (12 millions +) view | CC BY 2.0 | [Flickr](https://www.flickr.com/photos/34128007@N04/8524287175) |
 | Garang Asem Ayam | `assets/img/garang-asem.jpg` | Risanprasetyo/Febri Ady Prasetyo | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Garang_asem.jpg) |
 | Klepon | `assets/img/klepon.jpg` | Meggy Kadam Aryanto | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/coconut-rice-cake-balls-in-a-small-bowl-7429251/) |
@@ -56,6 +58,7 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Onde-Onde Wijen | `assets/img/onde-onde.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Onde-Onde_Wijen.jpg) |
 | Wedang Angsle | `assets/img/angsle.jpg` | Indonesiagood | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Angsle.jpg) |
 | Ayam Betutu | `assets/img/ayam-betutu.jpg` | Tamba Budiarsana | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-balinese-ayam-betutu-dish-artfully-prepared-37106528/) |
+| Es Kuwut | `assets/img/es-kuwut.jpg` | Indonesiagood | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nikmatnya_Es_Kuwut.jpg) |
 | Jaje Laklak | `assets/img/laklak.jpg` | wiendietry | CC BY 2.0 | [Flickr](https://www.flickr.com/photos/53688900@N00/2694680281) |
 | Ayam Taliwang | `assets/img/ayam-taliwang.jpg` | Midori | CC BY 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ayam_bakar_khas_Taliwang_2.JPG) |
 | Es Poteng | `assets/img/es-poteng.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_poteng-3.jpg) |
@@ -69,6 +72,7 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Bingka Barandam | `assets/img/bingka.jpg` | Wadaihangit | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bingka_barandam.jpg) |
 | Es Buah Banjarmasin | `assets/img/es-buah-banjar.jpg` | knittymarie | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/14671121@N03/11025009356) |
 | Amplang | `assets/img/amplang.jpg` | Gunawan Kartapranata | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Amplang_on_a_plate.JPG) |
+| Gence Ruan | `assets/img/gence-ruan.jpg` | Ezagren | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gence_Ruan.JPG) |
 | Kepiting Soka Asam Manis | `assets/img/kepiting-soka.jpg` | avlxyz | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/10559879@N00/4388963211) |
 | Kue Lapis Cempedak | `assets/img/lapis-cempedak.jpg` | anwarsiak***sibuk*** | CC BY 2.0 | [Flickr](https://www.flickr.com/photos/43928101@N02/6082727821) |
 | Tinutuan (Bubur Manado) | `assets/img/tinutuan.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bubur_Khas_Manado_(Tinutuan).jpg) |
@@ -77,17 +81,20 @@ Semua foto dipotong landscape 1000×667 px. Keterangan ini juga tampil di modal 
 | Kue Tobu'u | `assets/img/kue-tobuu.jpg` | Supardisahabu | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tobu%27u.jpg) |
 | Es Brenebon | `assets/img/es-brenebon.jpg` | Sofi Solihah | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_Brenebon_1.jpg) |
 | Kaledo | `assets/img/kaledo.jpg` | Crisco 1492 | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kaledo_soup,_Central_Sulawesi,_2018-09-16.jpg) |
+| Uta Kelo | `assets/img/uta-kelo.jpg` | Syauqi_akib | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Uta_Kelo.jpg) |
 | Coto Makassar | `assets/img/coto-makassar.jpg` | muallim nur | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-coto-makassar-dish-in-bowl-32928771/) |
 | Barongko | `assets/img/barongko.jpg` | Gunarta | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Barongko_hendak_dimakan.jpg) |
 | Es Pisang Ijo | `assets/img/es-pisang-ijo.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_pisang_ijo_otentik_Makassar-3.jpg) |
 | Sinonggi | `assets/img/sinonggi.jpg` | Akhsan05 | CC0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sinonggi.jpg) |
+| Kasuami | `assets/img/kasuami.jpg` (600×400) | Arzan 88 | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kasuami.jpg) |
 | Bagea Kenari | `assets/img/bagea.jpg` | Midori | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bagea_kenari.JPG) |
+| Rujak Natsepa | `assets/img/rujak-natsepa.jpg` | Trifosa18 | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rujak_Ambon.jpg) |
+| Ikan Asar | `assets/img/ikan-asar.jpg` | 26Isabella | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Smoked_tuna_from_Maluku.jpg) |
 | Gohu Ikan | `assets/img/gohu-ikan.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gohu_ikan-1.jpg) |
 | Papeda Kuah Kuning | `assets/img/papeda.jpg` | Gunawan Kartapranata | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Papeda,_Kuah_Kuning,_Ikan_Tude_Bakar_2.jpg) |
 | Ikan Bakar Manokwari | `assets/img/ikan-bakar-manokwari.jpg` | Charles Haynes | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/87232391@N00/4221478099) |
 | Udang Selingkuh Bakar | `assets/img/udang-selingkuh.jpg` | Tatters ✾ | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/62938898@N00/12250342224) |
 
-Belum ada foto (card dan modal menampilkan blok warna dari field `warna`) karena belum ditemukan foto berlisensi bebas di Wikimedia Commons, Flickr, Openverse, Unsplash, maupun Pexels: Es Jeruk Kunci, Rabeg Banten, Loloh Cemcem, Nasi Bekepor, Kue Tetu, Bau Peapi, Sanggara Bandang, Nasi Lapola, Kopi Rarobang, Kue Lontar, Es Matoa.
 
 ## Resep
 Bahan dan takaran mengikuti resep dari media kuliner berikut (gratis dibaca). Langkah memasak
@@ -124,7 +131,7 @@ tampil di modal setiap resep (field `sumber_resep`).
 | Serbat Kweni | [IDN Times Lampung](https://lampung.idntimes.com/food/dining-guide/mengenal-minuman-khas-lampung-serbat-kweni-dan-cara-buatnya-00-jf67w-w2jp3c) |
 | Lempah Kuning | [IDN Times](https://www.idntimes.com/food/recipe/resep-lempah-kuning-khas-bangka-c1c2-2-01-2jsqs-sf088w) |
 | Martabak Bangka | [IDN Times Sumsel](https://sumsel.idntimes.com/food/recipe/resep-dan-cara-bikin-martabak-khas-bangka-di-rumah-cobain-deh-c1c2-01-pj4sw-42tds3) |
-| Es Jeruk Kunci | [detikFood](https://food.detik.com/info-kuliner/d-7886330/5-minuman-khas-bangka-belitung-yang-nikmat-dan-segar-wajib-coba) |
+| Mie Ayam Bangka | [detikFood](https://food.detik.com/mie-dan-pasta/d-1760205/mi-ayam-bangka) |
 | Soto Betawi | [detikFood](https://food.detik.com/daging/d-6839793/resep-soto-betawi-dengan-santan-dan-susu-pastinya-gurih-lezat) |
 | Gado-Gado | [detikFood](https://food.detik.com/sayur/d-8540586/resep-gado-gado-jakarta-siram-saus-kacang-yang-kental-gurih) |
 | Kerak Telor | [detikFood](https://food.detik.com/telur/d-6352681/resep-kerak-telor-betawi-kudapan-legendaris-yang-renyah-harum) |
@@ -132,7 +139,7 @@ tampil di modal setiap resep (field `sumber_resep`).
 | Nasi Liwet Sunda | [detikFood](https://food.detik.com/nasi/d-7249057/resep-nasi-liwet-sunda-yang-simpel-dan-anti-gagal) |
 | Batagor | [detikFood](https://food.detik.com/resep/d-8698266/resep-batagor-khas-bandung-gorengan-terbaik-ke-2-di-dunia-yang-lezat) |
 | Es Cendol | [detikFood](https://food.detik.com/info-kuliner/d-4926903/begini-cara-membuat-es-cendol-yang-enak-di-rumah) |
-| Rabeg Banten | [detikFood](https://food.detik.com/resep-kuliner-pusaka/d-1888763/resep-daging-rabeg-asli-banten) |
+| Sate Bandeng | [detikFood](https://food.detik.com/resep-kuliner-pusaka/d-1656015/sate-bandeng-khas-banten) |
 | Kue Jojorong | [IDN Times](https://www.idntimes.com/food/recipe/buat-camilan-lebaran-bikin-kue-jojorong-khas-banten-ini-c1c2-01-6n5ty-36f02l) |
 | Es Sekemu | [detikFood](https://food.detik.com/info-kuliner/d-5217329/minuman-khas-banten-yang-langka-tapi-enak) |
 | Garang Asem Ayam | [detikFood](https://food.detik.com/ayam/d-8611583/resep-garang-asem-ayam-kampung-kuah-santan-yang-gurih) |
@@ -147,7 +154,7 @@ tampil di modal setiap resep (field `sumber_resep`).
 | Wedang Angsle | [IDN Times](https://www.idntimes.com/food/recipe/resep-wedang-angsle-khas-malang-cocok-dinikmati-saat-sedang-hujan-01-rbmsh-2gx8ks) |
 | Ayam Betutu | [detikFood](https://food.detik.com/info-kuliner/d-4981033/resep-ayam-betutu-kuliner-khas-bali-yang-kaya-bumbu) |
 | Jaje Laklak | [detikFood](https://food.detik.com/kue/d-6986956/resep-jaje-laklak-serabi-khas-bali-yang-empuk-legit-yang-cocok-buat-ngopi) |
-| Loloh Cemcem | [detikBali](https://www.detik.com/bali/kuliner/d-6615840/khasiat-loloh-cemcem-yuk-bikin-sendiri-minuman-khas-bali) |
+| Es Kuwut | [detikFood](https://food.detik.com/info-kuliner/d-4776889/resep-es-kuwut-khas-bali-praktis-dan-menyegarkan) |
 | Ayam Taliwang | [detikBali](https://www.detik.com/bali/kuliner/d-7221636/asal-usul-dan-resep-ayam-taliwang-kuliner-pedas-gurih-khas-lombok) |
 | Es Poteng | [detikBali](https://www.detik.com/bali/berita/d-6643779/5-minuman-khas-lombok-cocok-untuk-berbuka-puasa), [detikBali](https://www.detik.com/bali/bali-bungah/d-6655313/poteng-jaje-tujak-jajanan-khas-lebaran-di-lombok) |
 | Se'i Sapi | [detikFood](https://food.detik.com/daging/d-6488903/resep-sei-sapi-sambal-luat-yang-pedas-harum-untuk-menu-bbq) |
@@ -159,7 +166,7 @@ tampil di modal setiap resep (field `sumber_resep`).
 | Soto Banjar | [detikKalimantan](https://www.detik.com/kalimantan/kuliner/d-7817607/resep-hingga-cara-membuat-soto-banjar-khas-kalimantan-selatan) |
 | Bingka Barandam | [detikKalimantan](https://www.detik.com/kalimantan/kuliner/d-8749147/resep-simpel-bingka-barandam-khas-banjar) |
 | Es Buah Banjarmasin | [IDN Times](https://www.idntimes.com/food/recipe/5-resep-minuman-khas-kalimantan-yang-segarnya-sampai-ubun-ubun-01-725m8-sy5f4z) |
-| Nasi Bekepor | [detikKalimantan](https://www.detik.com/kalimantan/kuliner/d-7912103/resep-nasi-bekepor-sambal-raja-khas-kutai-yang-kaya-rasa-dan-filosofi) |
+| Gence Ruan | [detikFood](https://food.detik.com/resep-kuliner-pusaka/d-1645139/masakan-khas-kutai-gence-ruan) |
 | Amplang | [IDN Times](https://www.idntimes.com/food/recipe/resep-amplang-kerupuk-ikan-khas-samarinda-yang-gurih-01-491ts-l0rjy9) |
 | Kepiting Soka Asam Manis | [IDN Times](https://www.idntimes.com/food/recipe/resep-kepiting-soka-asam-manis-c1c2-01-6cnpl-j7nvf9) |
 | Kue Lapis Cempedak | [Kompas.com](https://www.kompas.com/food/read/2022/11/11/100600875/resep-kue-lapis-cempedak-asli-kalimantan-utara-manisnya-pas) |
@@ -169,25 +176,22 @@ tampil di modal setiap resep (field `sumber_resep`).
 | Kue Tobu'u | [IDN Times](https://www.idntimes.com/food/recipe/resep-kue-tobuu-khas-gorontalo-c1c2-01-mtn6k-x0q93b) |
 | Es Brenebon | [IDN Times](https://www.idntimes.com/food/recipe/fina-wahibatun-nisa-1/resep-es-brenebon) |
 | Kaledo | [IDN Times](https://www.idntimes.com/food/recipe/resep-kaledo-khas-palu-sup-tulang-sapi-yang-super-gurih-dan-nikmat-1-c1c2-01-4xmhc-12ln9q) |
-| Kue Tetu | [IDN Times Sulsel](https://sulsel.idntimes.com/food/recipe/5-makanan-khas-palu-masaknya-praktis-dengan-rasa-nikmat-01-f3lw4-xkgds7) |
-| Bau Peapi | [IDN Times](https://www.idntimes.com/food/recipe/resep-olahan-ikan-masak-khas-mandar-c1c2-01-6wp18-t1450v) |
+| Uta Kelo | [IDN Times Sulsel](https://sulsel.idntimes.com/food/recipe/5-makanan-khas-palu-masaknya-praktis-dengan-rasa-nikmat-01-f3lw4-xkgds7) |
 | Coto Makassar | [detikFood](https://food.detik.com/daging/d-7241348/resep-coto-makassar-autentik-yang-berbumbu-rempah-mantap) |
 | Barongko | [IDN Times Sulsel](https://sulsel.idntimes.com/food/recipe/resep-barongko-pisang-kukus-khas-bugis-makassar-legit-bikin-nagih-01-3ln1w-nf6m5j) |
 | Es Pisang Ijo | [detikFood](https://food.detik.com/minuman/d-8706673/resep-es-pisang-ijo-khas-makassar-dengan-kuah-manis-creamy) |
 | Sinonggi | [detikSulsel](https://www.detik.com/sulsel/kuliner/d-5950217/sinonggi-kuliner-suku-tolaki-sultra-punya-rasa-hambar-tapi-lezat) |
-| Sanggara Bandang | [detikSulsel](https://www.detik.com/sulsel/kuliner/d-6026212/resep-sanggara-bandang-dan-onde-onde-khas-kendari-banyak-dicari-saat-ramadan) |
-| Nasi Lapola | [IDN Times](https://www.idntimes.com/food/recipe/resep-nasi-lapola-khas-maluku-sedapnya-getarkan-lidahmu-01-mtn6k-s2pt1j) |
+| Kasuami | [IDN Times Sulsel](https://sulsel.idntimes.com/food/dining-guide/mengenal-kasuami-kuliner-legendaris-khas-sulawesi-tenggara-01-hr5y9-2qhy15) |
+| Ikan Asar | [IDN Times](https://www.idntimes.com/food/diet/5-olahan-ikan-khas-maluku-yang-paling-enak-ada-favoritmu-01-813x8-hm2xhn), [20detik](https://20.detik.com/spot-wisata/20231018-231026011/memasak-ikan-asar-berbahan-dasar-tuna-dan-cakalang-ambon) |
 | Bagea Kenari | [IDN Times](https://www.idntimes.com/food/recipe/resep-bagea-kue-kering-khas-maluku-yang-cocok-untuk-teman-mengopi-01-5xn9c-td06dd) |
-| Kopi Rarobang | [detikFood](https://food.detik.com/info-kuliner/d-4963264/sluuurp-hangat-gurih-kopi-rarobang-khas-ambon-dengan-jahe-dan-kenari) |
+| Rujak Natsepa | [IDN Times](https://www.idntimes.com/food/recipe/resep-rujak-nestapa-khas-ambon-c1c2-01-mtn6k-953zlb) |
 | Gohu Ikan | [IDN Times](https://www.idntimes.com/food/recipe/resep-gohu-ikan-cakalang-khas-ternate-nikmatnya-bikin-lupa-segalanya-01-2jsqs-rc43vb) |
 | Papeda Kuah Kuning | [IDN Times](https://www.idntimes.com/food/recipe/resep-papeda-kuah-kuning-yang-gurih-dan-lezat-gampang-bikinnya-01-mr4bd-wwpmcq) |
-| Kue Lontar | [IDN Times](https://www.idntimes.com/food/recipe/resep-kue-lontar-khas-papua-rasanya-lezat-dan-manis-legit-01-mtn6k-00jsvs) |
-| Es Matoa | [IDN Times](https://www.idntimes.com/food/recipe/kreasi-resep-buah-matoa-segar-00-mk1yf-0mk4kv) |
 | Ikan Bakar Manokwari | [IDN Times](https://www.idntimes.com/food/recipe/melodyna-melody/resep-ikan-bakar-manokwari-c1c2) |
 | Udang Selingkuh Bakar | [IDN Times](https://www.idntimes.com/food/recipe/reza-iqbal/resep-udang-selingkuh-khas-wamena-papua) |
 
-Catatan: beberapa sumber hanya menjelaskan bahan dan cara tanpa takaran (mis. Loloh Cemcem,
-Es Poteng, Kue Jala, Lapis Cempedak, Sinonggi, Kopi Rarobang). Untuk resep tersebut takaran ditulis
+Catatan: beberapa sumber hanya menjelaskan bahan dan cara tanpa takaran (mis. Es Poteng,
+Kue Jala, Lapis Cempedak, Sinonggi, Uta Kelo, Kasuami, Ikan Asar). Untuk resep tersebut takaran ditulis
 sebagai perkiraan dan hal ini disebutkan di bagian tips resepnya.
 
 ## Peta

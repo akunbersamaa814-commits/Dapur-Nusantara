@@ -1721,46 +1721,84 @@
         }
     },
     {
-        "id": "es-jeruk-kunci",
-        "nama": "Es Jeruk Kunci",
+        "id": "mie-ayam-bangka",
+        "nama": "Mie Ayam Bangka",
         "daerah": "Kepulauan Bangka Belitung",
-        "kategori": "Minuman",
-        "waktu": "10 menit",
-        "porsi": "2 gelas",
+        "kategori": "Makanan Berat",
+        "waktu": "40 menit",
+        "porsi": "5 porsi",
         "kesulitan": "Mudah",
-        "warna": "#C0CA33",
-        "gambar": "assets/img/es-jeruk-kunci.jpg",
-        "deskripsi": "Es jeruk dari jeruk kunci yang tumbuh subur di Pulau Bangka. Rasanya lebih lembut dari jeruk nipis dan diberi biji selasih.",
+        "warna": "#C8873A",
+        "gambar": "assets/img/mie-ayam-bangka.jpg",
+        "deskripsi": "Mi telur kenyal yang diaduk dengan minyak dan kecap asin, diberi tumisan ayam dan jamur merang, tauge, serta sawi, lalu disajikan dengan kuah kaldu ayam.",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "10 buah jeruk kunci",
-                    "3 sdm gula pasir (sesuai selera)",
-                    "400 ml air",
-                    "1 sdt biji selasih, rendam air hangat",
-                    "Es batu secukupnya"
+                    "1 kg mi telur basah/segar",
+                    "Minyak sayur atau minyak ayam secukupnya (untuk mangkuk)",
+                    "Kecap asin secukupnya (untuk mangkuk)"
+                ]
+            },
+            {
+                "grup": "Ayam tumis",
+                "isi": [
+                    "2 sdm minyak sayur",
+                    "1/2 sdt minyak wijen",
+                    "2 siung bawang putih, cincang halus",
+                    "250 g daging ayam, potong kecil",
+                    "100 g jamur merang, potong kecil",
+                    "2 sdm saus tiram",
+                    "2 sdm kecap asin",
+                    "1 sdm kecap manis",
+                    "1/2 sdt merica bubuk",
+                    "1 sdt garam",
+                    "150 ml air"
+                ]
+            },
+            {
+                "grup": "Topping",
+                "isi": [
+                    "150 g sawi hijau, potong 3 cm, rebus sebentar",
+                    "150 g tauge besar, bersihkan"
+                ]
+            },
+            {
+                "grup": "Pelengkap",
+                "isi": [
+                    "Kaldu ayam",
+                    "Bawang merah goreng",
+                    "Daun bawang, iris halus"
                 ]
             }
         ],
         "langkah": [
-            "Rendam biji selasih dalam air hangat sampai mengembang.",
-            "Belah jeruk kunci, peras airnya, lalu saring bijinya.",
-            "Larutkan gula dengan sedikit air hangat.",
-            "Campur air jeruk, air gula, dan sisa air, aduk rata.",
-            "Isi gelas dengan es batu, tuang es jeruk, lalu tambahkan biji selasih dan sajikan."
+            "Ayam tumis: panaskan minyak sayur dan minyak wijen, lalu tumis bawang putih cincang hingga wangi.",
+            "Masukkan potongan ayam, aduk hingga berubah warna dan kaku.",
+            "Masukkan jamur merang, aduk hingga layu.",
+            "Tambahkan saus tiram, kecap asin, kecap manis, merica, garam, dan air. Masak hingga mendidih dan kuahnya agak kering, lalu angkat.",
+            "Didihkan air secukupnya, rebus mi hingga mengapung. Angkat dan tiriskan.",
+            "Siapkan mangkuk, beri sedikit minyak sayur (atau minyak ayam) dan kecap asin di dasarnya.",
+            "Masukkan mi selagi panas ke mangkuk, aduk-aduk hingga rata dengan minyak dan kecap asin.",
+            "Bagi mi menjadi 5 mangkuk. Beri masing-masing tauge, sawi, dan ayam tumis.",
+            "Taburi bawang merah goreng dan daun bawang iris, lalu sajikan panas bersama semangkuk kaldu ayam."
         ],
         "tips": [
-            "Selasih adalah ciri khas yang membedakannya dari es jeruk biasa.",
-            "Jeruk kunci lebih manis dan tidak sekecut jeruk nipis, jadi gula bisa dikurangi."
+            "Aduk mi selagi masih panas agar minyak dan kecap asin meresap rata dan mi tidak lengket.",
+            "Kaldu, pangsit, atau bakso bisa ditambahkan sebagai pelengkap."
         ],
         "sumber_resep": [
             {
                 "nama": "detikFood",
-                "url": "https://food.detik.com/info-kuliner/d-7886330/5-minuman-khas-bangka-belitung-yang-nikmat-dan-segar-wajib-coba"
+                "url": "https://food.detik.com/mie-dan-pasta/d-1760205/mi-ayam-bangka"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Gunawan Kartapranata",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Bakmi_Bangka_1.jpg"
+        }
     },
     {
         "id": "soto-betawi",
@@ -2273,61 +2311,70 @@
         }
     },
     {
-        "id": "rabeg",
-        "nama": "Rabeg Banten",
+        "id": "sate-bandeng",
+        "nama": "Sate Bandeng",
         "daerah": "Banten",
         "kategori": "Makanan Berat",
-        "waktu": "120 menit (2 jam)",
-        "porsi": "8 porsi",
-        "kesulitan": "Sedang",
-        "warna": "#5D3A1A",
-        "gambar": "assets/img/rabeg.jpg",
-        "deskripsi": "Olahan daging kambing berkuah cokelat tanpa santan, berbumbu lada, pala, dan kayu manis. Konon hidangan favorit Sultan Banten setelah pulang dari tanah Arab.",
+        "waktu": "90 menit (1 jam 30 menit)",
+        "porsi": "6 porsi",
+        "kesulitan": "Sulit",
+        "warna": "#8D6E3F",
+        "gambar": "assets/img/sate-bandeng.jpg",
+        "deskripsi": "Ikan bandeng yang dagingnya dikeluarkan dari kulit, digiling halus bersama durinya dan bumbu, lalu dimasukkan kembali ke kulitnya dan dibakar. Gurih, sedikit manis, dan bebas duri.",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "1 kg daging kambing dan tulang iga (atau sampil)",
-                    "1 batang serai, memarkan",
-                    "3 lembar daun salam",
-                    "Air dingin secukupnya untuk merebus"
+                    "2 ekor bandeng ukuran sedang (masing-masing 500–600 g)",
+                    "Santan kental dari 1/2 butir kelapa"
                 ]
             },
             {
                 "grup": "Bumbu",
                 "isi": [
-                    "100 g bawang merah",
-                    "100 g bawang putih",
-                    "3 sdm lada putih",
-                    "10 buah cabai rawit",
-                    "1 butir biji pala",
-                    "2 cm lengkuas",
-                    "2 cm jahe",
-                    "3 cm kayu manis",
-                    "5 sdm kecap manis (atau gula merah)"
+                    "200 g bawang merah, iris tipis",
+                    "100 g bawang putih, iris tipis",
+                    "2 sdm ketumbar",
+                    "2 sdm gula merah"
+                ]
+            },
+            {
+                "grup": "Lainnya",
+                "isi": [
+                    "Minyak untuk menggoreng bawang",
+                    "Tusukan bambu besar",
+                    "Daun pisang untuk membungkus"
                 ]
             }
         ],
         "langkah": [
-            "Rajang bawang merah dan bawang putih. Memarkan jahe, lengkuas, dan biji pala.",
-            "Rebus daging dan tulang kambing dengan daun salam dan serai. Mulai dari air dingin dengan api sedang agar tidak prengus, dan buang buih yang muncul.",
-            "Setelah daging matang tetapi belum empuk, angkat dan tiriskan. Simpan air rebusannya.",
-            "Tumis semua bumbu kecuali daun salam dan serai sampai harum.",
-            "Tuang air sisa rebusan ke tumisan bumbu dan didihkan.",
-            "Potong-potong daging dan tulang iga, masukkan kembali ke kuah.",
-            "Masak sampai daging empuk, bumbu meresap, dan kuah mengental."
+            "Bersihkan sisik ikan, keluarkan insang dan isi perutnya.",
+            "Remas-remas badan ikan agar dagingnya lembek dan terlepas dari kulit serta tulang utama.",
+            "Keluarkan tulang dan daging bandeng dengan hati-hati supaya kulit dan kepalanya tetap utuh (mirip membalik baju). Buang tulang utama, simpan dagingnya, lalu rapikan kembali kulit dan kepala ikan.",
+            "Goreng irisan bawang merah dan bawang putih sampai garing, angkat dan tiriskan.",
+            "Rebus santan kental sampai matang.",
+            "Masukkan daging bandeng (termasuk duri halusnya), santan, bawang merah goreng, bawang putih goreng, ketumbar, dan gula merah ke blender. Giling sampai halus hingga duri halus ikut hancur.",
+            "Isikan adonan daging ke dalam kulit bandeng sampai kembali berbentuk seperti ikan utuh. Sisakan sedikit adonan untuk membalut bagian luar ikan.",
+            "Tusuk ikan dengan tusukan bambu besar, lalu bungkus dengan daun pisang.",
+            "Bakar di atas bara api sambil dibolak-balik sampai matang dan kering.",
+            "Angkat dan sajikan hangat dengan nasi putih."
         ],
         "tips": [
-            "Merebus dengan air dingin dan membuang buihnya membuat daging kambing tidak berbau prengus.",
-            "Resep ini berasal dari RM Rabeg Khas Serang untuk 8 orang."
+            "Duri halus ikut digiling bersama daging sehingga tidak terasa saat dimakan.",
+            "Kerjakan langkah mengeluarkan daging dengan pelan agar kulit ikan tidak sobek."
         ],
         "sumber_resep": [
             {
                 "nama": "detikFood",
-                "url": "https://food.detik.com/resep-kuliner-pusaka/d-1888763/resep-daging-rabeg-asli-banten"
+                "url": "https://food.detik.com/resep-kuliner-pusaka/d-1656015/sate-bandeng-khas-banten"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Gunawan Kartapranata",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Sate_Bandeng_1.jpg"
+        }
     },
     {
         "id": "jojorong",
@@ -3250,55 +3297,62 @@
         }
     },
     {
-        "id": "loloh-cemcem",
-        "nama": "Loloh Cemcem",
+        "id": "es-kuwut",
+        "nama": "Es Kuwut",
         "daerah": "Bali",
         "kategori": "Minuman",
-        "waktu": "20 menit",
-        "porsi": "4 gelas",
+        "waktu": "15 menit",
+        "porsi": "5 porsi",
         "kesulitan": "Mudah",
-        "warna": "#558B2F",
-        "gambar": "assets/img/loloh-cemcem.jpg",
-        "deskripsi": "Minuman herbal hijau dari daun cemcem (kedondong hutan) dengan air kelapa dan bumbu rujak. Rasanya asam, manis, pahit, dan sedikit pedas. Terkenal di Desa Penglipuran.",
+        "warna": "#C5E1A5",
+        "gambar": "assets/img/es-kuwut.jpg",
+        "deskripsi": "Minuman segar khas Bali dari air kelapa muda dengan perasan jeruk nipis, serutan kelapa muda, melon, dan biji selasih.",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "1 genggam daun cemcem/kedondong (campur muda dan tua)",
-                    "300 ml air matang",
-                    "Air dan daging 1 buah kelapa muda",
-                    "Es batu secukupnya"
+                    "1 buah kelapa muda",
+                    "250 g melon",
+                    "1 sdm biji selasih, rendam air hangat lalu tiriskan",
+                    "2 buah jeruk nipis, peras airnya",
+                    "800 ml air kelapa muda",
+                    "100 g gula pasir",
+                    "Air panas secukupnya (untuk melarutkan gula)"
                 ]
             },
             {
-                "grup": "Bumbu rujak",
+                "grup": "Pelengkap",
                 "isi": [
-                    "2 sdm gula merah",
-                    "1 sdm gula pasir",
-                    "1 sdm air asam jawa",
-                    "1–2 buah cabai rawit",
-                    "Sejumput garam"
+                    "Irisan jeruk nipis secukupnya",
+                    "Es batu secukupnya"
                 ]
             }
         ],
         "langkah": [
-            "Cuci bersih daun cemcem, lalu tumbuk atau blender bersama air matang.",
-            "Peras dan saring untuk mengambil sari daunnya.",
-            "Rebus bahan bumbu rujak dengan sedikit air sampai mendidih dan gula larut, lalu dinginkan dan saring.",
-            "Campur sari daun dengan air kelapa dan bumbu rujak, aduk rata.",
-            "Tambahkan daging kelapa muda, lalu sajikan dengan es batu."
+            "Rendam biji selasih dengan air hangat sampai mengembang, lalu tiriskan.",
+            "Keruk daging kelapa muda dan daging melon, sisihkan.",
+            "Campur gula pasir dengan sedikit air panas, aduk hingga gula larut.",
+            "Tuang gula cair ke dalam air kelapa muda, aduk rata.",
+            "Tambahkan air perasan jeruk nipis, aduk rata.",
+            "Masukkan kerukan kelapa muda, melon, dan selasih, aduk rata.",
+            "Tuang ke gelas saji, tambahkan es batu dan potongan jeruk nipis, lalu sajikan."
         ],
         "tips": [
-            "Sumber tidak mencantumkan takaran pasti, jadi takaran di sini perkiraan. Sesuaikan rasa asam, manis, dan pedasnya.",
-            "Loloh tanpa pengawet hanya tahan 1–2 hari di suhu ruang dan sekitar 5 hari di kulkas."
+            "Isian bisa diganti atau ditambah nutrijell, timun, dan leci.",
+            "Sajikan dingin saat cuaca panas agar rasa asam segarnya terasa."
         ],
         "sumber_resep": [
             {
-                "nama": "detikBali",
-                "url": "https://www.detik.com/bali/kuliner/d-6615840/khasiat-loloh-cemcem-yuk-bikin-sendiri-minuman-khas-bali"
+                "nama": "detikFood",
+                "url": "https://food.detik.com/info-kuliner/d-4776889/resep-es-kuwut-khas-bali-praktis-dan-menyegarkan"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Indonesiagood",
+            "lisensi": "CC BY 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Nikmatnya_Es_Kuwut.jpg"
+        }
     },
     {
         "id": "ayam-taliwang",
@@ -4005,69 +4059,64 @@
         }
     },
     {
-        "id": "nasi-bekepor",
-        "nama": "Nasi Bekepor",
+        "id": "gence-ruan",
+        "nama": "Gence Ruan",
         "daerah": "Kalimantan Timur",
         "kategori": "Makanan Berat",
         "waktu": "45 menit",
-        "porsi": "4 porsi",
-        "kesulitan": "Mudah",
-        "warna": "#5F7A3A",
-        "gambar": "assets/img/nasi-bekepor.jpg",
-        "deskripsi": "Nasi khas Kutai yang diaduk dengan kemangi, ikan asin, dan jeruk nipis, disajikan bersama sambal raja. Dulu dimasak dalam kenceng yang diputar di atas bara.",
+        "porsi": "3 porsi",
+        "kesulitan": "Sedang",
+        "warna": "#C0392B",
+        "gambar": "assets/img/gence-ruan.jpg",
+        "deskripsi": "Ikan gabus (ruan) bakar khas Kutai yang disiram sambal kasar dari cabai merah, tomat, dan bawang merah. Pedas, gurih, dan berwarna merah menggoda.",
         "bahan": [
             {
-                "grup": "Nasi bekepor",
+                "grup": "Bahan utama",
                 "isi": [
-                    "300 g beras",
-                    "600 ml air",
-                    "2 lembar daun salam",
-                    "1 lembar daun pandan",
-                    "1 ikat daun kemangi",
-                    "1 sdt garam",
-                    "1/4 buah jeruk nipis, peras airnya",
-                    "Ikan asin goreng secukupnya (sebagian disuwir)"
+                    "1 ekor ikan gabus (ruan/haruan) ukuran sedang",
+                    "Perasan 1 buah jeruk nipis",
+                    "Minyak secukupnya untuk menumis"
                 ]
             },
             {
-                "grup": "Sambal raja",
+                "grup": "Bumbu",
                 "isi": [
-                    "8 buah cabai merah keriting",
-                    "4 buah cabai rawit",
-                    "1/4 buah jeruk nipis, peras airnya",
-                    "1 sdt terasi bakar",
-                    "1 sdt garam",
-                    "1 sdt gula"
-                ]
-            },
-            {
-                "grup": "Pelengkap",
-                "isi": [
-                    "Kacang panjang, potong dan goreng sebentar",
-                    "Terong ungu, potong dadu dan goreng",
-                    "4 siung bawang merah, potong empat",
-                    "Telur rebus secukupnya"
+                    "5 siung bawang merah",
+                    "1 buah tomat merah, buang bijinya",
+                    "10 buah cabai merah besar, buang bijinya",
+                    "2 cm kunyit",
+                    "2 cm jahe",
+                    "Garam secukupnya",
+                    "Gula pasir secukupnya"
                 ]
             }
         ],
         "langkah": [
-            "Cuci beras, lalu masak dengan air, daun salam, daun pandan, dan garam sampai matang.",
-            "Haluskan cabai merah, cabai rawit, terasi, gula, dan garam untuk sambal raja.",
-            "Campur sambal dengan kacang panjang, terong goreng, bawang merah, dan air jeruk nipis.",
-            "Setelah nasi matang, aduk dengan daun kemangi, suwiran ikan asin, dan air jeruk nipis.",
-            "Sajikan hangat bersama telur rebus, ikan asin goreng, dan sambal raja."
+            "Haluskan semua bumbu kecuali bawang merah dan tomat (cabai merah, kunyit, jahe, garam, dan gula).",
+            "Belah ikan gabus utuh, bersihkan insang dan isi perutnya. Sisiknya jangan dibuang.",
+            "Lumuri ikan dengan perasan jeruk nipis, lalu balur dengan sebagian bumbu halus.",
+            "Bakar ikan di atas bara api sambil dibalik, jaga agar tidak hangus, sampai matang.",
+            "Rajang kasar bawang merah, lalu tumis dengan sedikit minyak sampai harum.",
+            "Masukkan sisa bumbu halus, tumis bersama rajangan bawang merah sampai matang.",
+            "Masukkan rajangan tomat, aduk sampai layu menjadi sambal.",
+            "Letakkan ikan bakar di piring, siram dengan sambal, lalu sajikan dengan nasi hangat."
         ],
         "tips": [
-            "Nama bekepor berasal dari cara memasak tradisional: kuali logam diputar perlahan di atas bara.",
-            "Tambahkan sedikit beras ketan agar nasi lebih pulen."
+            "Sambalnya sengaja tidak dihaluskan semua, jadi potongan bawang merah dan tomat masih terasa.",
+            "Sumber tidak menyebut jumlah jeruk nipis; 1 buah adalah perkiraan."
         ],
         "sumber_resep": [
             {
-                "nama": "detikKalimantan",
-                "url": "https://www.detik.com/kalimantan/kuliner/d-7912103/resep-nasi-bekepor-sambal-raja-khas-kutai-yang-kaya-rasa-dan-filosofi"
+                "nama": "detikFood",
+                "url": "https://food.detik.com/resep-kuliner-pusaka/d-1645139/masakan-khas-kutai-gence-ruan"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Ezagren",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Gence_Ruan.JPG"
+        }
     },
     {
         "id": "amplang",
@@ -4616,95 +4665,53 @@
         }
     },
     {
-        "id": "kue-tetu",
-        "nama": "Kue Tetu",
+        "id": "uta-kelo",
+        "nama": "Uta Kelo",
         "daerah": "Sulawesi Tengah",
-        "kategori": "Camilan",
-        "waktu": "40 menit",
-        "porsi": "10 buah",
-        "kesulitan": "Mudah",
-        "warna": "#4CAF50",
-        "gambar": "assets/img/kue-tetu.jpg",
-        "deskripsi": "Kue kukus dalam wadah daun pandan berbentuk perahu, berisi gula di dasar dan adonan santan terigu di atasnya. Kue wajib buka puasa di Palu.",
-        "bahan": [
-            {
-                "grup": "Bahan utama",
-                "isi": [
-                    "500 ml santan kental",
-                    "5 sdm tepung terigu",
-                    "Sejumput garam",
-                    "10 sdm gula pasir atau irisan gula merah",
-                    "Daun pandan panjang untuk wadah"
-                ]
-            }
-        ],
-        "langkah": [
-            "Lipat daun pandan membentuk wadah persegi panjang atau perahu kecil, semat dengan lidi.",
-            "Campur santan, tepung terigu, dan garam sampai licin, tidak terlalu cair dan tidak terlalu padat.",
-            "Panaskan kukusan sampai airnya mendidih.",
-            "Isi setiap wadah tetu dengan 1 sdm gula pasir atau irisan gula merah.",
-            "Tuang adonan santan ke dalam wadah.",
-            "Kukus sampai adonan memadat dan matang, lalu dinginkan sebelum disantap."
-        ],
-        "tips": [
-            "Wadah daun pandan penting karena aromanya membuat kue tetu harum.",
-            "Varian populer di Palu adalah rasa durian dan nangka; campurkan daging buah halus ke adonan sebelum dikukus."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "IDN Times Sulsel",
-                "url": "https://sulsel.idntimes.com/food/recipe/5-makanan-khas-palu-masaknya-praktis-dengan-rasa-nikmat-01-f3lw4-xkgds7"
-            }
-        ],
-        "foto": null
-    },
-    {
-        "id": "bau-peapi",
-        "nama": "Bau Peapi",
-        "daerah": "Sulawesi Barat",
         "kategori": "Sup & Soto",
-        "waktu": "40 menit",
+        "waktu": "25 menit",
         "porsi": "4 porsi",
         "kesulitan": "Mudah",
-        "warna": "#E2B33C",
-        "gambar": "assets/img/bau-peapi.jpg",
-        "deskripsi": "Ikan masak kuah kuning asam khas suku Mandar dengan belimbing wuluh, cabai, dan minyak kelapa. Biasa disantap bersama jepa (roti singkong).",
+        "warna": "#6B8E23",
+        "gambar": "assets/img/uta-kelo.jpg",
+        "deskripsi": "Sayur daun kelor berkuah santan khas suku Kaili, Palu, dengan aroma gurih ebi (udang kering). Biasa disantap dengan nasi dan sambal ikan teri (duo).",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "2 ekor ikan tongkol, potong-potong",
-                    "10 buah cabai rawit",
-                    "2 buah cabai keriting",
-                    "10 butir bawang merah, iris tipis",
-                    "5 buah belimbing wuluh, iris",
-                    "2 cm kunyit, haluskan",
-                    "1/2 sdt merica bubuk",
-                    "2 sdm minyak kelapa",
-                    "Garam dan gula secukupnya",
-                    "400 ml air"
+                    "200 g daun kelor, petik dari tangkainya, cuci bersih",
+                    "500 ml santan",
+                    "2 sdm ebi (udang kering), cuci",
+                    "5 buah cabai rawit (cabai segar), tumbuk kasar",
+                    "Garam secukupnya",
+                    "Penyedap rasa secukupnya"
                 ]
             }
         ],
         "langkah": [
-            "Bersihkan ikan, lalu potong sesuai selera.",
-            "Masukkan bawang merah, cabai, kunyit, merica, belimbing wuluh, dan minyak kelapa ke dalam panci.",
-            "Nyalakan kompor, lalu tuang air sedikit demi sedikit sambil diaduk.",
-            "Setelah mendidih, masukkan potongan ikan.",
-            "Bumbui garam dan gula, aduk perlahan, lalu masak sampai ikan matang.",
-            "Angkat dan sajikan selagi hangat."
+            "Cuci ebi, lalu masukkan ke panci bersama santan.",
+            "Masak santan dan ebi di atas api sedang sambil diaduk agar santan tidak pecah.",
+            "Saat santan mendidih, masukkan garam dan cabai yang sudah ditumbuk.",
+            "Masukkan daun kelor, aduk perlahan.",
+            "Masak sampai daun kelor melunak.",
+            "Koreksi rasa dengan garam dan penyedap, lalu angkat dan sajikan dengan nasi hangat."
         ],
         "tips": [
-            "Versi asli memakai bawang Mandar (lasuna) dan asam mangga (pammaisang) sebagai pengasam.",
-            "Ikan cakalang atau tuna juga sering dipakai."
+            "Sumber hanya menyebut bahan dan cara tanpa takaran, jadi takaran di sini perkiraan.",
+            "Ebi wajib dipakai karena perpaduan ebi, daun kelor, dan santan memberi aroma khas uta kelo."
         ],
         "sumber_resep": [
             {
                 "nama": "IDN Times",
-                "url": "https://www.idntimes.com/food/recipe/resep-olahan-ikan-masak-khas-mandar-c1c2-01-6wp18-t1450v"
+                "url": "https://sulsel.idntimes.com/food/recipe/5-makanan-khas-palu-masaknya-praktis-dengan-rasa-nikmat-01-f3lw4-xkgds7"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Syauqi_akib",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Uta_Kelo.jpg"
+        }
     },
     {
         "id": "coto-makassar",
@@ -4969,122 +4976,123 @@
         }
     },
     {
-        "id": "sanggara-bandang",
-        "nama": "Sanggara Bandang",
+        "id": "kasuami",
+        "nama": "Kasuami",
         "daerah": "Sulawesi Tenggara",
-        "kategori": "Camilan",
-        "waktu": "45 menit",
-        "porsi": "14 buah",
-        "kesulitan": "Mudah",
-        "warna": "#8BC34A",
-        "gambar": "assets/img/sanggara-bandang.jpg",
-        "deskripsi": "Kue khas Kendari dari singkong parut yang membalut pisang raja, dikukus lalu dibaluri kelapa parut dan gula. Takjil favorit saat Ramadan.",
+        "kategori": "Makanan Berat",
+        "waktu": "180 menit (3 jam)",
+        "porsi": "4 porsi",
+        "kesulitan": "Sedang",
+        "warna": "#E8D9A8",
+        "gambar": "assets/img/kasuami.jpg",
+        "deskripsi": "Makanan pokok pengganti nasi dari Buton, Muna, dan Wakatobi. Parutan singkong yang sudah diperas dikukus dalam cetakan kerucut hingga padat, lalu disantap dengan ikan dan sambal.",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "750 g singkong (ubi kayu)",
-                    "7 buah pisang raja",
-                    "150 g kelapa parut",
-                    "100 g gula pasir",
-                    "2 sdm garam (secukupnya untuk singkong dan kelapa)",
-                    "1 sdm pewarna makanan hijau pandan"
+                    "1 kg singkong (ubi kayu)"
+                ]
+            },
+            {
+                "grup": "Peralatan",
+                "isi": [
+                    "Kain atau kantong bersih untuk memeras",
+                    "Saringan anyaman bambu (lubang sekitar 0,3 cm)",
+                    "Cetakan kerucut dari anyaman daun kelapa atau bambu"
+                ]
+            },
+            {
+                "grup": "Pendamping",
+                "isi": [
+                    "Ikan parende, ikan asin, atau ikan bakar",
+                    "Sayur dan sambal"
                 ]
             }
         ],
         "langkah": [
-            "Kupas singkong, cuci, potong, lalu parut. Peras airnya dan beri sedikit garam.",
-            "Beri pewarna hijau pandan pada singkong parut, aduk rata.",
-            "Potong pisang raja menjadi 4 bagian.",
-            "Kukus kelapa parut dengan sedikit garam.",
-            "Balut setiap potongan pisang dengan singkong parut sampai rata.",
-            "Kukus selama 15–20 menit sampai matang.",
-            "Selagi hangat, baluri dengan kelapa parut kukus dan taburi gula."
+            "Kupas kulit singkong, cuci bersih, lalu parut atau giling.",
+            "Bungkus hasil parutan dengan kain atau kantong bersih.",
+            "Tekan bungkusan untuk membuang air dari singkong.",
+            "Diamkan 1–3 jam sampai air benar-benar habis dan ampas singkong kering.",
+            "Hancurkan ampas singkong dengan cara diremas-remas.",
+            "Saring ampas dengan saringan anyaman bambu (lubang sekitar 0,3 cm) agar butirannya halus dan cepat matang.",
+            "Masukkan ampas singkong ke cetakan kerucut dari anyaman daun kelapa.",
+            "Kukus sekitar 15 menit sampai ampas singkong menyatu.",
+            "Tusuk dengan tusuk sate; jika terasa padat, kasuami sudah matang. Sajikan dengan ikan dan sambal."
         ],
         "tips": [
-            "Peras singkong parut sampai cukup kering agar adonan mudah dibentuk.",
-            "Pewarna bisa diganti air daun suji."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "detikSulsel",
-                "url": "https://www.detik.com/sulsel/kuliner/d-6026212/resep-sanggara-bandang-dan-onde-onde-khas-kendari-banyak-dicari-saat-ramadan"
-            }
-        ],
-        "foto": null
-    },
-    {
-        "id": "nasi-lapola",
-        "nama": "Nasi Lapola",
-        "daerah": "Maluku",
-        "kategori": "Makanan Berat",
-        "waktu": "75 menit (1 jam 15 menit)",
-        "porsi": "4 porsi",
-        "kesulitan": "Sedang",
-        "warna": "#C8B88A",
-        "gambar": "assets/img/nasi-lapola.jpg",
-        "deskripsi": "Nasi khas Maluku yang dimasak dengan kacang tolo dan kelapa muda parut, disajikan dengan kohu-kohu dan sambal colo-colo.",
-        "bahan": [
-            {
-                "grup": "Nasi lapola",
-                "isi": [
-                    "200 g beras",
-                    "200 g kelapa muda parut",
-                    "150 g kacang tolo",
-                    "1 batang serai",
-                    "2 lembar daun jeruk",
-                    "Garam secukupnya"
-                ]
-            },
-            {
-                "grup": "Kohu-kohu",
-                "isi": [
-                    "3 batang kacang panjang",
-                    "50 g tauge",
-                    "1 buah mentimun",
-                    "1 sdm air jeruk nipis",
-                    "5 buah cabai keriting",
-                    "1 siung bawang putih",
-                    "3 butir bawang merah",
-                    "1 sdm rebon, goreng",
-                    "100 g kelapa muda parut, kukus",
-                    "100 g pindang ikan tongkol, goreng dan suwir",
-                    "Garam dan gula secukupnya"
-                ]
-            },
-            {
-                "grup": "Sambal colo-colo",
-                "isi": [
-                    "3 buah cabai rawit",
-                    "1 buah tomat",
-                    "2 butir bawang merah",
-                    "1 sdm air jeruk nipis",
-                    "1 sdm kecap manis",
-                    "2 sdm air matang",
-                    "Garam secukupnya"
-                ]
-            }
-        ],
-        "langkah": [
-            "Rebus kacang tolo sampai benar-benar empuk. Kukus kelapa muda parut.",
-            "Cuci beras, masak dengan air, serai, daun jeruk, dan garam sampai airnya tersisa sedikit (menjadi aron).",
-            "Masukkan kacang tolo dan kelapa parut, aduk sampai air habis, lalu kukus sekitar 30 menit sampai matang.",
-            "Kohu-kohu: haluskan cabai, bawang merah, bawang putih, dan rebon goreng, beri garam dan gula.",
-            "Campur bumbu dengan air jeruk nipis, sayuran yang sudah dipotong, ikan tongkol suwir, dan kelapa kukus.",
-            "Sambal colo-colo: potong kecil cabai rawit, tomat, dan bawang merah, lalu campur dengan kecap, air matang, dan air jeruk nipis.",
-            "Sajikan nasi lapola hangat dengan kohu-kohu dan sambal colo-colo."
-        ],
-        "tips": [
-            "Rebus kacang tolo terpisah sampai empuk sebelum dicampur agar matangnya bersamaan dengan nasi.",
-            "Sajikan selagi nasi hangat agar lebih nikmat."
+            "Sumber tidak menyebut takaran singkong, jadi 1 kg adalah perkiraan.",
+            "Kasuami tidak mudah basi dan bisa bertahan 14–20 hari, karena itu dulu jadi bekal para pelaut Buton."
         ],
         "sumber_resep": [
             {
                 "nama": "IDN Times",
-                "url": "https://www.idntimes.com/food/recipe/resep-nasi-lapola-khas-maluku-sedapnya-getarkan-lidahmu-01-mtn6k-s2pt1j"
+                "url": "https://sulsel.idntimes.com/food/dining-guide/mengenal-kasuami-kuliner-legendaris-khas-sulawesi-tenggara-01-hr5y9-2qhy15"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Arzan 88",
+            "lisensi": "CC BY-SA 3.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Kasuami.jpg"
+        }
+    },
+    {
+        "id": "ikan-asar",
+        "nama": "Ikan Asar",
+        "daerah": "Maluku",
+        "kategori": "Makanan Berat",
+        "waktu": "120 menit (2 jam)",
+        "porsi": "4 porsi",
+        "kesulitan": "Sedang",
+        "warna": "#8B4513",
+        "gambar": "assets/img/ikan-asar.jpg",
+        "deskripsi": "Ikan asap khas Maluku dari cakalang atau tuna yang dijepit bambu lalu diasapi di atas bara sampai matang. Tahan lama sehingga sering jadi oleh-oleh, nikmat dengan nasi dan sambal colo-colo.",
+        "bahan": [
+            {
+                "grup": "Bahan utama",
+                "isi": [
+                    "1 ekor (sekitar 1 kg) ikan cakalang atau tuna",
+                    "Bilah bambu untuk menjepit ikan"
+                ]
+            },
+            {
+                "grup": "Pendamping",
+                "isi": [
+                    "Nasi hangat",
+                    "Sambal colo-colo"
+                ]
+            }
+        ],
+        "langkah": [
+            "Bersihkan ikan: buang insang dan isi perutnya, lalu cuci bersih.",
+            "Potong atau belah ikan memanjang menjadi beberapa bagian.",
+            "Jepit setiap potongan ikan dengan bilah bambu agar tidak jatuh saat diasap.",
+            "Siapkan bara api kecil yang mengeluarkan banyak asap.",
+            "Asapi ikan di atas bara sambil sesekali dibalik sampai matang, kering, dan berwarna cokelat kemerahan.",
+            "Angkat, lepaskan dari bambu, dan sajikan dengan nasi hangat dan sambal colo-colo."
+        ],
+        "tips": [
+            "Sumber hanya menjelaskan cara secara umum tanpa takaran dan lama pengasapan, jadi takaran dan waktu di sini perkiraan.",
+            "Pakai cakalang atau tuna karena dagingnya tetap bagus selama dan sesudah diasap.",
+            "Ikan asar bisa disimpan sampai sekitar 7 hari."
+        ],
+        "sumber_resep": [
+            {
+                "nama": "IDN Times",
+                "url": "https://www.idntimes.com/food/diet/5-olahan-ikan-khas-maluku-yang-paling-enak-ada-favoritmu-01-813x8-hm2xhn"
+            },
+            {
+                "nama": "detik (20detik)",
+                "url": "https://20.detik.com/spot-wisata/20231018-231026011/memasak-ikan-asar-berbahan-dasar-tuna-dan-cakalang-ambon"
+            }
+        ],
+        "foto": {
+            "pembuat": "26Isabella",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Smoked_tuna_from_Maluku.jpg"
+        }
     },
     {
         "id": "bagea",
@@ -5142,50 +5150,66 @@
         }
     },
     {
-        "id": "kopi-rarobang",
-        "nama": "Kopi Rarobang",
+        "id": "rujak-natsepa",
+        "nama": "Rujak Natsepa",
         "daerah": "Maluku",
-        "kategori": "Minuman",
-        "waktu": "15 menit",
-        "porsi": "2 gelas",
+        "kategori": "Camilan",
+        "waktu": "20 menit",
+        "porsi": "4 porsi",
         "kesulitan": "Mudah",
-        "warna": "#4E342E",
-        "gambar": "assets/img/kopi-rarobang.jpg",
-        "deskripsi": "Kopi rempah khas Ambon dengan jahe dan cengkeh, dimaniskan madu, lalu ditaburi irisan kenari. Diminum hangat saat sarapan atau malam hari.",
+        "warna": "#8D5524",
+        "gambar": "assets/img/rujak-natsepa.jpg",
+        "deskripsi": "Rujak buah khas Ambon dengan sambal kental dari gula merah, kacang tanah, cabai rawit, dan parutan buah pala segar. Manis, pedas, dan segar.",
         "bahan": [
             {
-                "grup": "Bahan utama",
+                "grup": "Buah",
                 "isi": [
-                    "2 sdm kopi bubuk robusta",
-                    "3 cm jahe putih, iris tipis",
-                    "4 butir cengkeh",
-                    "1 batang kayu manis kecil (opsional)",
-                    "1 batang serai, memarkan (opsional)",
-                    "400 ml air mendidih",
-                    "2 sdm madu",
-                    "2 sdm kacang kenari, iris atau cincang",
-                    "Susu kental manis (opsional)"
+                    "1/4 buah pepaya setengah matang",
+                    "3 buah jambu air",
+                    "1 buah belimbing",
+                    "1 buah kedondong",
+                    "1 buah nanas kecil",
+                    "1 buah mangga muda",
+                    "1 buah mentimun"
+                ]
+            },
+            {
+                "grup": "Sambal",
+                "isi": [
+                    "200 g gula merah",
+                    "50 g buah pala segar, parut",
+                    "30 g kacang tanah goreng",
+                    "50 g nanas, potong kecil",
+                    "4 buah cabai rawit merah",
+                    "Garam secukupnya"
                 ]
             }
         ],
         "langkah": [
-            "Masukkan kopi bubuk, irisan jahe, dan cengkeh ke gelas atau teko.",
-            "Tambahkan kayu manis dan serai jika suka.",
-            "Seduh dengan air mendidih, aduk rata, lalu diamkan sebentar sampai ampas turun.",
-            "Tuang ke gelas (saring jika ingin tanpa ampas).",
-            "Tambahkan madu, lalu taburi irisan kenari sesaat sebelum disajikan."
+            "Kupas pepaya, kedondong, nanas, mangga muda, dan mentimun.",
+            "Potong semua buah sesuai selera, sisihkan.",
+            "Haluskan cabai rawit merah dan garam di cobek.",
+            "Tambahkan parutan pala segar, kacang tanah goreng, dan gula merah, lalu ulek sampai tercampur rata.",
+            "Masukkan potongan nanas untuk sambal agar bumbu sedikit basah, ulek lagi sebentar.",
+            "Masukkan semua potongan buah ke cobek, aduk sampai rata dengan bumbu.",
+            "Pindahkan ke piring saji dan hidangkan."
         ],
         "tips": [
-            "Sumber menjelaskan bahan dan caranya tanpa takaran, jadi takaran di sini perkiraan.",
-            "Kopi rarobang juga sering ditambah susu kental manis."
+            "Tambah cabai rawit jika ingin lebih pedas.",
+            "Nikmat disantap bersama kerupuk dan segelas es kelapa muda."
         ],
         "sumber_resep": [
             {
-                "nama": "detikFood",
-                "url": "https://food.detik.com/info-kuliner/d-4963264/sluuurp-hangat-gurih-kopi-rarobang-khas-ambon-dengan-jahe-dan-kenari"
+                "nama": "IDN Times",
+                "url": "https://www.idntimes.com/food/recipe/resep-rujak-nestapa-khas-ambon-c1c2-01-mtn6k-953zlb"
             }
         ],
-        "foto": null
+        "foto": {
+            "pembuat": "Trifosa18",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Rujak_Ambon.jpg"
+        }
     },
     {
         "id": "gohu-ikan",
@@ -5323,101 +5347,6 @@
             "situs": "Wikimedia Commons",
             "sumber": "https://commons.wikimedia.org/wiki/File:Papeda,_Kuah_Kuning,_Ikan_Tude_Bakar_2.jpg"
         }
-    },
-    {
-        "id": "kue-lontar",
-        "nama": "Kue Lontar",
-        "daerah": "Papua",
-        "kategori": "Camilan",
-        "waktu": "90 menit (1 jam 30 menit)",
-        "porsi": "1 pinggan",
-        "kesulitan": "Sedang",
-        "warna": "#F4D03F",
-        "gambar": "assets/img/kue-lontar.jpg",
-        "deskripsi": "Pai susu besar khas Papua yang disajikan saat hari raya. Namanya berasal dari kata Belanda yang sulit diucapkan sehingga menjadi \"lontar\".",
-        "bahan": [
-            {
-                "grup": "Kulit",
-                "isi": [
-                    "120 g margarin",
-                    "200 g tepung terigu",
-                    "1/2 sdt ekstrak vanili"
-                ]
-            },
-            {
-                "grup": "Isi",
-                "isi": [
-                    "8 butir kuning telur, kocok lepas",
-                    "250 ml krimer kental manis",
-                    "1 sdt esens rum",
-                    "300 ml air panas"
-                ]
-            }
-        ],
-        "langkah": [
-            "Campur semua bahan kulit, aduk sampai menggumpal dan bisa dibentuk.",
-            "Pipihkan adonan setebal 0,5 cm di piring lontar atau pinggan tahan panas yang sudah diolesi margarin.",
-            "Ratakan kulit, lalu buat motif di pinggirnya dengan pisau.",
-            "Campur semua bahan isi sampai rata, lalu saring.",
-            "Tuang isi ke dalam kulit.",
-            "Panggang 180°C selama 20 menit, lalu turunkan ke 160°C dan panggang lagi 40 menit sampai matang.",
-            "Dinginkan sebelum dipotong dan disajikan."
-        ],
-        "tips": [
-            "Menyaring isi membuat permukaan kue lebih halus tanpa gelembung.",
-            "Kue lontar biasa disajikan saat Lebaran, Natal, dan Tahun Baru."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "IDN Times",
-                "url": "https://www.idntimes.com/food/recipe/resep-kue-lontar-khas-papua-rasanya-lezat-dan-manis-legit-01-mtn6k-00jsvs"
-            }
-        ],
-        "foto": null
-    },
-    {
-        "id": "es-matoa",
-        "nama": "Es Matoa",
-        "daerah": "Papua",
-        "kategori": "Minuman",
-        "waktu": "15 menit",
-        "porsi": "6 gelas",
-        "kesulitan": "Mudah",
-        "warna": "#9C6644",
-        "gambar": "assets/img/es-matoa.jpg",
-        "deskripsi": "Es buah dari matoa, buah khas Papua yang rasanya seperti perpaduan lengkeng, rambutan, dan durian, dengan melon, selasih, dan nata de coco.",
-        "bahan": [
-            {
-                "grup": "Bahan utama",
-                "isi": [
-                    "20 buah matoa, kupas dan potong 2–4 bagian",
-                    "1/4 buah melon, potong dadu kecil",
-                    "250 ml sirup rasa melon",
-                    "500–600 ml air matang",
-                    "Nata de coco secukupnya",
-                    "Biji selasih secukupnya, seduh dengan air",
-                    "Gula pasir secukupnya",
-                    "Es batu secukupnya"
-                ]
-            }
-        ],
-        "langkah": [
-            "Kupas matoa, buang bijinya, lalu potong 2–4 bagian.",
-            "Di wadah besar, campur sirup melon, gula, dan air matang. Aduk sampai gula larut dan cicipi.",
-            "Masukkan matoa, melon, biji selasih, dan nata de coco.",
-            "Tambahkan es batu, aduk, lalu sajikan."
-        ],
-        "tips": [
-            "Pilih matoa yang kulitnya mulus dan harum.",
-            "Versi lain memakai teh melati dingin sebagai pengganti sirup."
-        ],
-        "sumber_resep": [
-            {
-                "nama": "IDN Times",
-                "url": "https://www.idntimes.com/food/recipe/kreasi-resep-buah-matoa-segar-00-mk1yf-0mk4kv"
-            }
-        ],
-        "foto": null
     },
     {
         "id": "ikan-bakar-manokwari",

@@ -47,14 +47,15 @@ Aturan:
 - `foto`: pembuat, lisensi, situs, dan link sumber foto (lihat `docs/SUMBER_GAMBAR.md`).
   Jika gambar tidak tersedia, card menampilkan blok warna (`warna`) agar layout tidak rusak.
 
-## Daftar Resep (89 resep dari 35 provinsi)
+## Daftar Resep (86 resep dari 34 provinsi)
 
 Target: satu makanan (Makanan Berat / Sup & Soto), satu camilan, dan satu minuman per provinsi.
-Provinsi yang belum lengkap tidak diisi asal-asalan karena belum ditemukan resep khas dengan sumber
-yang jelas: Aceh dan NTB (belum ada camilan); Sulawesi Utara, Kalimantan Tengah, Kalimantan Timur,
-Kalimantan Utara, Sulawesi Tengah, dan Sulawesi Tenggara (belum ada minuman); NTT (baru ada makanan);
-Maluku Utara, Sulawesi Barat, Papua Barat, dan Papua Pegunungan (baru ada makanan);
-Papua Barat Daya, Papua Tengah, dan Papua Selatan (belum ada).
+Setiap resep wajib punya foto berlisensi bebas; resep yang fotonya tidak ditemukan diganti dengan
+masakan lain dari provinsi yang sama atau dihapus. Provinsi yang belum lengkap: Aceh dan NTB
+(belum ada camilan); Bangka Belitung, Kalimantan Tengah, Kalimantan Timur, Kalimantan Utara,
+Sulawesi Utara, dan Maluku (belum ada minuman); NTT, Sulawesi Tengah, Sulawesi Tenggara,
+Maluku Utara, Papua, Papua Barat, dan Papua Pegunungan (baru ada makanan);
+Sulawesi Barat, Papua Barat Daya, Papua Tengah, dan Papua Selatan (belum ada).
 
 | No | id | Nama | Daerah | Kategori |
 |---|---|---|---|---|
@@ -86,7 +87,7 @@ Papua Barat Daya, Papua Tengah, dan Papua Selatan (belum ada).
 | 26 | serbat-kweni | Serbat Kweni | Lampung | Minuman |
 | 27 | lempah-kuning | Lempah Kuning | Kepulauan Bangka Belitung | Sup & Soto |
 | 28 | martabak-bangka | Martabak Bangka | Kepulauan Bangka Belitung | Camilan |
-| 29 | es-jeruk-kunci | Es Jeruk Kunci | Kepulauan Bangka Belitung | Minuman |
+| 29 | mie-ayam-bangka | Mie Ayam Bangka | Kepulauan Bangka Belitung | Makanan Berat |
 | 30 | soto-betawi | Soto Betawi | DKI Jakarta | Sup & Soto |
 | 31 | gado-gado | Gado-Gado | DKI Jakarta | Makanan Berat |
 | 32 | kerak-telor | Kerak Telor | DKI Jakarta | Camilan |
@@ -94,7 +95,7 @@ Papua Barat Daya, Papua Tengah, dan Papua Selatan (belum ada).
 | 34 | nasi-liwet | Nasi Liwet Sunda | Jawa Barat | Makanan Berat |
 | 35 | batagor | Batagor | Jawa Barat | Camilan |
 | 36 | es-cendol | Es Cendol | Jawa Barat | Minuman |
-| 37 | rabeg | Rabeg Banten | Banten | Makanan Berat |
+| 37 | sate-bandeng | Sate Bandeng | Banten | Makanan Berat |
 | 38 | jojorong | Kue Jojorong | Banten | Camilan |
 | 39 | es-sekemu | Es Sekemu | Banten | Minuman |
 | 40 | garang-asem | Garang Asem Ayam | Jawa Tengah | Sup & Soto |
@@ -109,7 +110,7 @@ Papua Barat Daya, Papua Tengah, dan Papua Selatan (belum ada).
 | 49 | angsle | Wedang Angsle | Jawa Timur | Minuman |
 | 50 | ayam-betutu | Ayam Betutu | Bali | Makanan Berat |
 | 51 | laklak | Jaje Laklak | Bali | Camilan |
-| 52 | loloh-cemcem | Loloh Cemcem | Bali | Minuman |
+| 52 | es-kuwut | Es Kuwut | Bali | Minuman |
 | 53 | ayam-taliwang | Ayam Taliwang | Nusa Tenggara Barat | Makanan Berat |
 | 54 | es-poteng | Es Poteng | Nusa Tenggara Barat | Minuman |
 | 55 | sei-sapi | Se'i Sapi | Nusa Tenggara Timur | Makanan Berat |
@@ -121,7 +122,7 @@ Papua Barat Daya, Papua Tengah, dan Papua Selatan (belum ada).
 | 61 | soto-banjar | Soto Banjar | Kalimantan Selatan | Sup & Soto |
 | 62 | bingka | Bingka Barandam | Kalimantan Selatan | Camilan |
 | 63 | es-buah-banjar | Es Buah Banjarmasin | Kalimantan Selatan | Minuman |
-| 64 | nasi-bekepor | Nasi Bekepor | Kalimantan Timur | Makanan Berat |
+| 64 | gence-ruan | Gence Ruan | Kalimantan Timur | Makanan Berat |
 | 65 | amplang | Amplang | Kalimantan Timur | Camilan |
 | 66 | kepiting-soka | Kepiting Soka Asam Manis | Kalimantan Utara | Makanan Berat |
 | 67 | lapis-cempedak | Kue Lapis Cempedak | Kalimantan Utara | Camilan |
@@ -131,19 +132,16 @@ Papua Barat Daya, Papua Tengah, dan Papua Selatan (belum ada).
 | 71 | kue-tobuu | Kue Tobu'u | Gorontalo | Camilan |
 | 72 | es-brenebon | Es Brenebon | Gorontalo | Minuman |
 | 73 | kaledo | Kaledo | Sulawesi Tengah | Sup & Soto |
-| 74 | kue-tetu | Kue Tetu | Sulawesi Tengah | Camilan |
-| 75 | bau-peapi | Bau Peapi | Sulawesi Barat | Sup & Soto |
-| 76 | coto-makassar | Coto Makassar | Sulawesi Selatan | Sup & Soto |
-| 77 | barongko | Barongko | Sulawesi Selatan | Camilan |
-| 78 | es-pisang-ijo | Es Pisang Ijo | Sulawesi Selatan | Minuman |
-| 79 | sinonggi | Sinonggi | Sulawesi Tenggara | Makanan Berat |
-| 80 | sanggara-bandang | Sanggara Bandang | Sulawesi Tenggara | Camilan |
-| 81 | nasi-lapola | Nasi Lapola | Maluku | Makanan Berat |
-| 82 | bagea | Bagea Kenari | Maluku | Camilan |
-| 83 | kopi-rarobang | Kopi Rarobang | Maluku | Minuman |
-| 84 | gohu-ikan | Gohu Ikan | Maluku Utara | Makanan Berat |
-| 85 | papeda | Papeda Kuah Kuning | Papua | Makanan Berat |
-| 86 | kue-lontar | Kue Lontar | Papua | Camilan |
-| 87 | es-matoa | Es Matoa | Papua | Minuman |
-| 88 | ikan-bakar-manokwari | Ikan Bakar Manokwari | Papua Barat | Makanan Berat |
-| 89 | udang-selingkuh | Udang Selingkuh Bakar | Papua Pegunungan | Makanan Berat |
+| 74 | uta-kelo | Uta Kelo | Sulawesi Tengah | Sup & Soto |
+| 75 | coto-makassar | Coto Makassar | Sulawesi Selatan | Sup & Soto |
+| 76 | barongko | Barongko | Sulawesi Selatan | Camilan |
+| 77 | es-pisang-ijo | Es Pisang Ijo | Sulawesi Selatan | Minuman |
+| 78 | sinonggi | Sinonggi | Sulawesi Tenggara | Makanan Berat |
+| 79 | kasuami | Kasuami | Sulawesi Tenggara | Makanan Berat |
+| 80 | ikan-asar | Ikan Asar | Maluku | Makanan Berat |
+| 81 | bagea | Bagea Kenari | Maluku | Camilan |
+| 82 | rujak-natsepa | Rujak Natsepa | Maluku | Camilan |
+| 83 | gohu-ikan | Gohu Ikan | Maluku Utara | Makanan Berat |
+| 84 | papeda | Papeda Kuah Kuning | Papua | Makanan Berat |
+| 85 | ikan-bakar-manokwari | Ikan Bakar Manokwari | Papua Barat | Makanan Berat |
+| 86 | udang-selingkuh | Udang Selingkuh Bakar | Papua Pegunungan | Makanan Berat |
