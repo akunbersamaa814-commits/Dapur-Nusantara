@@ -82,6 +82,7 @@ Semua foto dipotong landscape 1000×667 px (kecuali Kasuami 600×400 karena foto
 | Es Brenebon | `assets/img/es-brenebon.jpg` | Sofi Solihah | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_Brenebon_1.jpg) |
 | Kaledo | `assets/img/kaledo.jpg` | Crisco 1492 | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kaledo_soup,_Central_Sulawesi,_2018-09-16.jpg) |
 | Uta Kelo | `assets/img/uta-kelo.jpg` | Syauqi_akib | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Uta_Kelo.jpg) |
+| Kue Cucur | `assets/img/kue-cucur.jpg` | Ezagren | Attribution (atribusi) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kue_Cucur.jpg) |
 | Coto Makassar | `assets/img/coto-makassar.jpg` | muallim nur | Lisensi Pexels | [Pexels](https://www.pexels.com/photo/traditional-indonesian-coto-makassar-dish-in-bowl-32928771/) |
 | Barongko | `assets/img/barongko.jpg` | Gunarta | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Barongko_hendak_dimakan.jpg) |
 | Es Pisang Ijo | `assets/img/es-pisang-ijo.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Es_pisang_ijo_otentik_Makassar-3.jpg) |
@@ -93,7 +94,10 @@ Semua foto dipotong landscape 1000×667 px (kecuali Kasuami 600×400 karena foto
 | Gohu Ikan | `assets/img/gohu-ikan.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gohu_ikan-1.jpg) |
 | Papeda Kuah Kuning | `assets/img/papeda.jpg` | Gunawan Kartapranata | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Papeda,_Kuah_Kuning,_Ikan_Tude_Bakar_2.jpg) |
 | Ikan Bakar Manokwari | `assets/img/ikan-bakar-manokwari.jpg` | Charles Haynes | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/87232391@N00/4221478099) |
+| Ikan Kuah Kuning | `assets/img/ikan-kuah-kuning.jpg` | Oceanmuse | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ikan_Kuah_Kuning-2.jpg) |
+| Bakar Batu | `assets/img/bakar-batu.jpg` | Wahyudinkat | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nikmat_Bakar_Batu.jpg) |
 | Udang Selingkuh Bakar | `assets/img/udang-selingkuh.jpg` | Tatters ✾ | CC BY-SA 2.0 | [Flickr](https://www.flickr.com/photos/62938898@N00/12250342224) |
+| Sate Ulat Sagu | `assets/img/sate-ulat-sagu.jpg` | Kemenparekraf | Domain publik | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sate_ulat_sagu.webp) |
 
 
 ## Resep
@@ -177,6 +181,7 @@ tampil di modal setiap resep (field `sumber_resep`).
 | Es Brenebon | [IDN Times](https://www.idntimes.com/food/recipe/fina-wahibatun-nisa-1/resep-es-brenebon) |
 | Kaledo | [IDN Times](https://www.idntimes.com/food/recipe/resep-kaledo-khas-palu-sup-tulang-sapi-yang-super-gurih-dan-nikmat-1-c1c2-01-4xmhc-12ln9q) |
 | Uta Kelo | [IDN Times Sulsel](https://sulsel.idntimes.com/food/recipe/5-makanan-khas-palu-masaknya-praktis-dengan-rasa-nikmat-01-f3lw4-xkgds7) |
+| Kue Cucur | [detikFood](https://food.detik.com/kue/d-6020723/resep-kue-cucur-gula-merah-yang-legit-renyahnya-bikin-kangen), [detikSulsel](https://www.detik.com/sulsel/kuliner/d-6449948/20-makanan-khas-sulawesi-barat-yang-enak-dan-menggugah-selera) |
 | Coto Makassar | [detikFood](https://food.detik.com/daging/d-7241348/resep-coto-makassar-autentik-yang-berbumbu-rempah-mantap) |
 | Barongko | [IDN Times Sulsel](https://sulsel.idntimes.com/food/recipe/resep-barongko-pisang-kukus-khas-bugis-makassar-legit-bikin-nagih-01-3ln1w-nf6m5j) |
 | Es Pisang Ijo | [detikFood](https://food.detik.com/minuman/d-8706673/resep-es-pisang-ijo-khas-makassar-dengan-kuah-manis-creamy) |
@@ -188,10 +193,13 @@ tampil di modal setiap resep (field `sumber_resep`).
 | Gohu Ikan | [IDN Times](https://www.idntimes.com/food/recipe/resep-gohu-ikan-cakalang-khas-ternate-nikmatnya-bikin-lupa-segalanya-01-2jsqs-rc43vb) |
 | Papeda Kuah Kuning | [IDN Times](https://www.idntimes.com/food/recipe/resep-papeda-kuah-kuning-yang-gurih-dan-lezat-gampang-bikinnya-01-mr4bd-wwpmcq) |
 | Ikan Bakar Manokwari | [IDN Times](https://www.idntimes.com/food/recipe/melodyna-melody/resep-ikan-bakar-manokwari-c1c2) |
+| Ikan Kuah Kuning | [detikFood](https://food.detik.com/makanan-laut/d-7809182/resep-ikan-kuah-kuning-yang-berempah-gurih-menyegarkan), [detikTravel](https://travel.detik.com/domestic-destination/d-5993042/cara-memasak-ikan-kuah-kuning-kuliner-khas-papua-yang-sedap) |
+| Bakar Batu | [detikEdu](https://www.detik.com/edu/detikpedia/d-6410401/mengenal-tradisi-bakar-batu-dari-suku-dani-ritual-unik-di-papua), [detikEdu (daerah)](https://www.detik.com/edu/detikpedia/d-6435650/7-tradisi-unik-di-indonesia-ada-bakar-batu-kerik-gigi), [detikNews](https://news.detik.com/berita/d-2945234/bakar-batu-tradisi-muslim-papua-sambut-bulan-suci-ramadan) |
 | Udang Selingkuh Bakar | [IDN Times](https://www.idntimes.com/food/recipe/reza-iqbal/resep-udang-selingkuh-khas-wamena-papua) |
+| Sate Ulat Sagu | [detikTravel](https://travel.detik.com/domestic-destination/d-4842742/begini-rasanya-makan-ulat-sagu-di-papua), [detikTravel (ulat sagu)](https://travel.detik.com/domestic-destination/d-5277170/ulat-sagu-makanan-wajib-para-bumil-di-papua), [detikTravel (kuliner timur)](https://travel.detik.com/domestic-destination/d-3429910/kuliner-ekstrem-indonesia-timur-berani-coba) |
 
 Catatan: beberapa sumber hanya menjelaskan bahan dan cara tanpa takaran (mis. Es Poteng,
-Kue Jala, Lapis Cempedak, Sinonggi, Uta Kelo, Kasuami, Ikan Asar). Untuk resep tersebut takaran ditulis
+Kue Jala, Lapis Cempedak, Sinonggi, Uta Kelo, Kasuami, Ikan Asar, Bakar Batu, Sate Ulat Sagu). Untuk resep tersebut takaran ditulis
 sebagai perkiraan dan hal ini disebutkan di bagian tips resepnya.
 
 ## Peta

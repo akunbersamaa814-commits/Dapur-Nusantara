@@ -4714,6 +4714,76 @@
         }
     },
     {
+        "id": "kue-cucur",
+        "nama": "Kue Cucur",
+        "daerah": "Sulawesi Barat",
+        "kategori": "Camilan",
+        "waktu": "75 menit (1 jam 15 menit)",
+        "porsi": "20 buah",
+        "kesulitan": "Sedang",
+        "warna": "#8B4A1C",
+        "gambar": "assets/img/kue-cucur.jpg",
+        "deskripsi": "Kue tradisional yang selalu dihidangkan di acara hajatan masyarakat Sulawesi Barat. Bentuknya bulat pipih dengan pinggiran berenda yang renyah, bagian tengahnya empuk berserat, dan rasanya manis legit dari gula merah.",
+        "bahan": [
+            {
+                "grup": "Bahan adonan",
+                "isi": [
+                    "300 g tepung beras",
+                    "3 sdm tepung terigu",
+                    "1 sdt kayu manis bubuk",
+                    "1/2 sdt garam"
+                ]
+            },
+            {
+                "grup": "Larutan gula",
+                "isi": [
+                    "400 ml air",
+                    "200 g gula merah, sisir halus",
+                    "50 g gula pasir",
+                    "1 lembar daun pandan, potong-potong"
+                ]
+            },
+            {
+                "grup": "Untuk menggoreng",
+                "isi": [
+                    "Minyak goreng secukupnya"
+                ]
+            }
+        ],
+        "langkah": [
+            "Larutan gula: rebus air, gula merah, gula pasir, dan daun pandan hingga gula larut dan mendidih.",
+            "Angkat dan saring larutan gula, lalu biarkan hingga agak dingin.",
+            "Campur tepung beras, tepung terigu, kayu manis bubuk, garam, dan sebagian larutan gula. Aduk dengan tangan hingga tercampur rata.",
+            "Tuang sisa larutan gula, lalu pukul-pukul adonan dengan telapak tangan selama 30–40 menit hingga adonan terasa ringan.",
+            "Panaskan wajan besi, lalu tuang minyak hingga setengah tinggi wajan.",
+            "Tuang 1 sendok sayur adonan ke minyak panas dan biarkan hingga bagian pinggirnya membeku.",
+            "Siram-siram bagian tengah kue dengan minyak, lalu tusuk bagian tengahnya dengan lidi agar adonan mengalir ke tepi dan membentuk renda.",
+            "Goreng hingga matang seluruhnya, angkat, lalu tiriskan minyaknya dengan tisu dapur."
+        ],
+        "tips": [
+            "Gunakan gula aren yang warnanya cokelat gelap agar warna cucur cokelat pekat.",
+            "Pukul adonan dengan cukup kuat agar cucur berserat dan mengembang saat digoreng.",
+            "Selain wajan besi, bisa dipakai wajan cekung biasa.",
+            "Di Sulawesi Barat, cucur digoreng dengan minyak kelapa khas Mandar sehingga rasanya berbeda dengan cucur dari daerah lain."
+        ],
+        "sumber_resep": [
+            {
+                "nama": "detikFood",
+                "url": "https://food.detik.com/kue/d-6020723/resep-kue-cucur-gula-merah-yang-legit-renyahnya-bikin-kangen"
+            },
+            {
+                "nama": "detikSulsel",
+                "url": "https://www.detik.com/sulsel/kuliner/d-6449948/20-makanan-khas-sulawesi-barat-yang-enak-dan-menggugah-selera"
+            }
+        ],
+        "foto": {
+            "pembuat": "Ezagren",
+            "lisensi": "Attribution (atribusi)",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Kue_Cucur.jpg"
+        }
+    },
+    {
         "id": "coto-makassar",
         "nama": "Coto Makassar",
         "daerah": "Sulawesi Selatan",
@@ -5408,6 +5478,162 @@
         }
     },
     {
+        "id": "ikan-kuah-kuning",
+        "nama": "Ikan Kuah Kuning",
+        "daerah": "Papua Barat Daya",
+        "kategori": "Sup & Soto",
+        "waktu": "45 menit",
+        "porsi": "4 porsi",
+        "kesulitan": "Mudah",
+        "warna": "#D9A41E",
+        "gambar": "assets/img/ikan-kuah-kuning.jpg",
+        "deskripsi": "Ikan laut berkuah kuning dari kunyit yang segar, asam, dan pedas. Masakan masyarakat pesisir Papua ini menjadi menu rumah makan di Kota Sorong dan biasa disantap bersama papeda.",
+        "bahan": [
+            {
+                "grup": "Bahan utama",
+                "isi": [
+                    "1 ekor (700 g) ikan ekor kuning atau kakap",
+                    "1 liter air"
+                ]
+            },
+            {
+                "grup": "Bumbu halus",
+                "isi": [
+                    "5 butir bawang merah",
+                    "3 siung bawang putih",
+                    "3 cm kunyit",
+                    "1 cm jahe",
+                    "1/2 sdt merica butiran",
+                    "2 sdt garam"
+                ]
+            },
+            {
+                "grup": "Bumbu cemplung",
+                "isi": [
+                    "2 lembar daun salam",
+                    "2 cm lengkuas, memarkan",
+                    "2 lembar daun jeruk",
+                    "1 batang serai, memarkan"
+                ]
+            },
+            {
+                "grup": "Pelengkap",
+                "isi": [
+                    "1 buah tomat merah, iris kasar",
+                    "2 buah jeruk nipis, ambil airnya",
+                    "5 buah cabai rawit merah",
+                    "3 tangkai kemangi, ambil daunnya"
+                ]
+            }
+        ],
+        "langkah": [
+            "Bersihkan sisik dan isi perut ikan, potong menjadi 4 bagian, lalu cuci bersih dan tiriskan.",
+            "Didihkan air dalam panci bersama daun salam, daun jeruk, lengkuas, dan serai.",
+            "Masukkan bumbu halus, lalu didihkan kembali.",
+            "Masukkan potongan ikan, cabai rawit, tomat, dan air jeruk nipis.",
+            "Didihkan sebentar hingga ikan matang. Jangan terlalu lama agar daging ikan tidak hancur.",
+            "Angkat, taburi daun kemangi, lalu sajikan hangat bersama papeda atau nasi."
+        ],
+        "tips": [
+            "Gunakan ikan laut yang benar-benar segar, misalnya ekor kuning, tenggiri, atau kakap, agar tidak berbau anyir.",
+            "Di Papua, ikan bisa diganti ikan gabus, mujair, atau nila. Masyarakat setempat biasanya menumis bumbu halus lebih dulu sebelum ikan dan air dimasukkan.",
+            "Warna kuning berasal dari kunyit, yang sekaligus menghilangkan bau amis ikan dan bau sagu pada papeda."
+        ],
+        "sumber_resep": [
+            {
+                "nama": "detikFood",
+                "url": "https://food.detik.com/makanan-laut/d-7809182/resep-ikan-kuah-kuning-yang-berempah-gurih-menyegarkan"
+            },
+            {
+                "nama": "detikTravel",
+                "url": "https://travel.detik.com/domestic-destination/d-5993042/cara-memasak-ikan-kuah-kuning-kuliner-khas-papua-yang-sedap"
+            }
+        ],
+        "foto": {
+            "pembuat": "Oceanmuse",
+            "lisensi": "CC BY 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Ikan_Kuah_Kuning-2.jpg"
+        }
+    },
+    {
+        "id": "bakar-batu",
+        "nama": "Bakar Batu",
+        "daerah": "Papua Tengah",
+        "kategori": "Makanan Berat",
+        "waktu": "240 menit (4 jam)",
+        "porsi": "10 porsi",
+        "kesulitan": "Sulit",
+        "warna": "#6B4F3A",
+        "gambar": "assets/img/bakar-batu.jpg",
+        "deskripsi": "Cara memasak tradisional masyarakat pegunungan Papua, termasuk di Paniai dan Nabire, Papua Tengah. Ubi, jagung, pisang, sayur, dan ayam dimatangkan oleh panas batu yang dibakar hingga membara di dalam lubang tanah, lalu disantap bersama.",
+        "bahan": [
+            {
+                "grup": "Bahan utama",
+                "isi": [
+                    "2 kg ubi jalar",
+                    "1 kg keladi atau singkong",
+                    "5 tongkol jagung",
+                    "1 sisir pisang",
+                    "1 ekor ayam, potong-potong"
+                ]
+            },
+            {
+                "grup": "Sayuran",
+                "isi": [
+                    "2 ikat daun ubi jalar atau daun singkong",
+                    "1/2 buah labu, potong besar",
+                    "1 ikat daun pepaya"
+                ]
+            },
+            {
+                "grup": "Peralatan",
+                "isi": [
+                    "30–40 batu sungai seukuran kepalan tangan",
+                    "Kayu bakar",
+                    "Alang-alang atau rumput segar dan daun pisang untuk alas dan penutup",
+                    "Penjepit kayu (hikir) untuk mengangkat batu panas"
+                ]
+            }
+        ],
+        "langkah": [
+            "Susun batu sungai di atas tumpukan kayu bakar, tutup dengan dedaunan, lalu bakar sekitar 1 jam hingga batu merah membara.",
+            "Sambil menunggu, gali lubang berdiameter sekitar 1 meter, lalu lapisi dasarnya dengan alang-alang atau rumput segar dan daun pisang.",
+            "Angkat batu panas dengan penjepit kayu (hikir), jangan dengan tangan, lalu susun memenuhi dasar lubang.",
+            "Letakkan potongan ayam di atas lapisan daun, lalu tutup dengan dedaunan dan batu panas.",
+            "Susun ubi jalar, keladi, jagung, dan pisang di atasnya agar matang merata.",
+            "Letakkan sayuran di lapisan paling atas, lalu tutup dengan daun ubi jalar atau rumput tebal.",
+            "Taruh lagi batu panas di atas tumpukan, lalu tutup rapat.",
+            "Diamkan sekitar 3 jam hingga semua bahan matang. Bongkar tumpukan dan santap bersama selagi hangat."
+        ],
+        "tips": [
+            "Sumber tidak menyebut takaran. Jumlah bahan di atas adalah perkiraan untuk sekitar 10 orang.",
+            "Di Paniai tradisi ini disebut mogo apil, sedangkan di Wamena disebut kit oba isago.",
+            "Bakar batu biasanya dilakukan bersama-sama saat pernikahan, syukuran, atau menyambut tamu sebagai lambang gotong royong.",
+            "Hati-hati saat memindahkan batu panas, dan lakukan di tempat terbuka yang jauh dari bangunan."
+        ],
+        "sumber_resep": [
+            {
+                "nama": "detikEdu",
+                "url": "https://www.detik.com/edu/detikpedia/d-6410401/mengenal-tradisi-bakar-batu-dari-suku-dani-ritual-unik-di-papua"
+            },
+            {
+                "nama": "detikEdu (daerah)",
+                "url": "https://www.detik.com/edu/detikpedia/d-6435650/7-tradisi-unik-di-indonesia-ada-bakar-batu-kerik-gigi"
+            },
+            {
+                "nama": "detikNews",
+                "url": "https://news.detik.com/berita/d-2945234/bakar-batu-tradisi-muslim-papua-sambut-bulan-suci-ramadan"
+            }
+        ],
+        "foto": {
+            "pembuat": "Wahyudinkat",
+            "lisensi": "CC BY-SA 4.0",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Nikmat_Bakar_Batu.jpg"
+        }
+    },
+    {
         "id": "udang-selingkuh",
         "nama": "Udang Selingkuh Bakar",
         "daerah": "Papua Pegunungan",
@@ -5464,6 +5690,73 @@
             "situs": "Flickr",
             "sumber": "https://www.flickr.com/photos/62938898@N00/12250342224",
             "keterangan": "Foto ilustrasi: udang air tawar (Cherax)"
+        }
+    },
+    {
+        "id": "sate-ulat-sagu",
+        "nama": "Sate Ulat Sagu",
+        "daerah": "Papua Selatan",
+        "kategori": "Camilan",
+        "waktu": "20 menit",
+        "porsi": "2 porsi",
+        "kesulitan": "Mudah",
+        "warna": "#A9743A",
+        "gambar": "assets/img/sate-ulat-sagu.jpg",
+        "deskripsi": "Ulat sagu, larva kumbang dari batang pohon sagu yang tumbang, ditusuk seperti sate lalu dibakar di atas bara hingga gurih. Kuliner masyarakat pesisir dan dataran rendah Papua yang kaya sagu, termasuk suku Asmat di Papua Selatan.",
+        "bahan": [
+            {
+                "grup": "Bahan utama",
+                "isi": [
+                    "30 ekor ulat sagu segar"
+                ]
+            },
+            {
+                "grup": "Pelengkap",
+                "isi": [
+                    "Garam secukupnya (opsional)",
+                    "Papeda untuk teman makan"
+                ]
+            },
+            {
+                "grup": "Peralatan",
+                "isi": [
+                    "Tusuk sate dari bambu atau lidi",
+                    "Bara api dari kayu bakar atau arang"
+                ]
+            }
+        ],
+        "langkah": [
+            "Cuci ulat sagu dengan air bersih, lalu tiriskan.",
+            "Copot kepala ulat sagu karena bagian ini keras.",
+            "Tusuk 5–6 ekor ulat pada setiap tusuk sate.",
+            "Jika suka, taburi sedikit garam.",
+            "Bakar di atas bara api sambil dibolak-balik. Ulat akan mengeluarkan cairan kuning dan badannya tampak menggembung.",
+            "Angkat setelah kulitnya kecokelatan dan harum, lalu sajikan selagi hangat bersama papeda."
+        ],
+        "tips": [
+            "Ulat sagu tidak cocok digoreng karena kandungan lemaknya tinggi. Cara yang biasa dipakai adalah dibakar.",
+            "Variasi lain: campur ulat sagu dengan tepung sagu, bungkus daun pisang, lalu panggang di atas bara sekitar 30 menit agar lemaknya meresap ke sagu.",
+            "Sumber tidak menyebut takaran. 30 ekor (sekitar satu plastik di pasar) adalah perkiraan untuk 2 orang."
+        ],
+        "sumber_resep": [
+            {
+                "nama": "detikTravel",
+                "url": "https://travel.detik.com/domestic-destination/d-4842742/begini-rasanya-makan-ulat-sagu-di-papua"
+            },
+            {
+                "nama": "detikTravel (ulat sagu)",
+                "url": "https://travel.detik.com/domestic-destination/d-5277170/ulat-sagu-makanan-wajib-para-bumil-di-papua"
+            },
+            {
+                "nama": "detikTravel (kuliner timur)",
+                "url": "https://travel.detik.com/domestic-destination/d-3429910/kuliner-ekstrem-indonesia-timur-berani-coba"
+            }
+        ],
+        "foto": {
+            "pembuat": "Kemenparekraf",
+            "lisensi": "Domain publik",
+            "situs": "Wikimedia Commons",
+            "sumber": "https://commons.wikimedia.org/wiki/File:Sate_ulat_sagu.webp"
         }
     }
 ]

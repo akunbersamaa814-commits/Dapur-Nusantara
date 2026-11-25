@@ -1057,10 +1057,10 @@ svg {
     border-color: var(--accent-primary);
 }
 
-/* Tombol zoom sederhana di kanan bawah */
+/* Tombol zoom sederhana di kiri bawah (area laut, agar tidak menutupi penanda Papua) */
 .peta-zoom {
     position: absolute;
-    right: 16px;
+    left: 16px;
     bottom: 32px;
     z-index: 30;
     display: flex;
@@ -1401,6 +1401,6 @@ svg {
     }
 
     .peta-zoom {
-        right: 12px;
+        left: 12px;
     }
 }

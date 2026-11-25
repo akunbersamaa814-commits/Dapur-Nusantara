@@ -57,7 +57,8 @@ const KOORDINAT_DAERAH = [
 
 // Titik tampil penanda untuk daerah yang ibu kotanya terlalu dekat dengan daerah lain
 // (mis. Banten & DKI Jakarta), terlalu dekat tepi peta / kotak cari (Aceh, Kalimantan Utara),
-// atau ibu kotanya di garis pantai sehingga di gambar peta jatuh di laut (Kepulauan Riau, Bengkulu).
+// atau ibu kotanya di garis pantai sehingga di gambar peta jatuh di laut (Kepulauan Riau, Bengkulu,
+// Papua Barat Daya, Papua Tengah).
 // Setiap titik tetap berada di DARATAN provinsinya (sudah dicek dengan gambar peta),
 // hanya digeser secukupnya agar penanda (26px) tidak bertumpuk.
 // Daerah yang tidak ada di sini memakai titik ibu kota dari KOORDINAT_DAERAH.
@@ -74,6 +75,8 @@ const TITIK_TAMPIL = [
     'Sulawesi Selatan'    => [-5.15, 119.53],
     'Maluku'              => [-3.60, 128.23],
     'Papua Barat'         => [-1.01, 134.01],
+    'Papua Barat Daya'    => [-1.10, 131.55],
+    'Papua Tengah'        => [-3.55, 135.50],
     'Papua'               => [-2.68, 140.57],
 ];
 
