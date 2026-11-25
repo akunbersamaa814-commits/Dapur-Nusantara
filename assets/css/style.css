@@ -1393,10 +1393,12 @@ svg {
         padding: 40px 20px 10px;
     }
 
+    /* Di layar kecil kotak cari tidak mengambang, tetapi menjadi bar di atas peta
+       agar tidak menutupi penanda di bagian atas peta (Aceh, Sumatera Utara). */
     .peta-cari {
-        top: 12px;
-        left: 12px;
-        width: calc(100% - 24px);
+        position: static;
+        width: auto;
+        margin: 12px;
         transform: none;
     }
 
