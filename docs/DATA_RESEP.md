@@ -96,7 +96,7 @@ Papua Tengah, Papua Pegunungan, dan Papua Selatan (baru ada makanan); Sulawesi B
 | 34 | nasi-liwet | Nasi Liwet Sunda | Jawa Barat | Makanan Berat |
 | 35 | batagor | Batagor | Jawa Barat | Camilan |
 | 36 | es-cendol | Es Cendol | Jawa Barat | Minuman |
-| 37 | sate-bandeng | Sate Bandeng | Banten | Makanan Berat |
+| 37 | rabeg | Rabeg | Banten | Makanan Berat |
 | 38 | jojorong | Kue Jojorong | Banten | Camilan |
 | 39 | es-sekemu | Es Sekemu | Banten | Minuman |
 | 40 | soto-kudus | Soto Kudus | Jawa Tengah | Sup & Soto |
@@ -133,7 +133,7 @@ Papua Tengah, Papua Pegunungan, dan Papua Selatan (baru ada makanan); Sulawesi B
 | 71 | kue-tobuu | Kue Tobu'u | Gorontalo | Camilan |
 | 72 | es-brenebon | Es Brenebon | Gorontalo | Minuman |
 | 73 | kaledo | Kaledo | Sulawesi Tengah | Sup & Soto |
-| 74 | uta-kelo | Uta Kelo | Sulawesi Tengah | Sup & Soto |
+| 74 | ayam-panggang-biromaru | Ayam Panggang Biromaru | Sulawesi Tengah | Makanan Berat |
 | 75 | sambusa | Sambusa | Sulawesi Barat | Camilan |
 | 76 | coto-makassar | Coto Makassar | Sulawesi Selatan | Sup & Soto |
 | 77 | barongko | Barongko | Sulawesi Selatan | Camilan |

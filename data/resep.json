@@ -2316,69 +2316,67 @@
         }
     },
     {
-        "id": "sate-bandeng",
-        "nama": "Sate Bandeng",
+        "id": "rabeg",
+        "nama": "Rabeg",
         "daerah": "Banten",
         "kategori": "Makanan Berat",
-        "waktu": "90 menit (1 jam 30 menit)",
-        "porsi": "6 porsi",
-        "kesulitan": "Sulit",
-        "warna": "#8D6E3F",
-        "gambar": "assets/img/sate-bandeng.jpg",
-        "deskripsi": "Ikan bandeng yang dagingnya dikeluarkan dari kulit, digiling halus bersama durinya dan bumbu, lalu dimasukkan kembali ke kulitnya dan dibakar. Gurih, sedikit manis, dan bebas duri.",
+        "waktu": "120 menit (2 jam)",
+        "porsi": "8 porsi",
+        "kesulitan": "Sedang",
+        "warna": "#4A2A1A",
+        "gambar": "assets/img/rabeg.jpg",
+        "deskripsi": "Semur daging kambing khas Serang, Banten, yang rasanya lebih mantap dari semur biasa karena dimasak dengan banyak rempah: pala, kayu manis, jahe, lengkuas, dan lada putih.",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "2 ekor bandeng ukuran sedang (masing-masing 500–600 g)",
-                    "Santan kental dari 1/2 butir kelapa"
+                    "1 kg daging kambing dan tulang iga (bisa juga sampil, tulang paha belakang kambing yang ada sumsumnya)"
                 ]
             },
             {
                 "grup": "Bumbu",
                 "isi": [
-                    "200 g bawang merah, iris tipis",
-                    "100 g bawang putih, iris tipis",
-                    "2 sdm ketumbar",
-                    "2 sdm gula merah"
-                ]
-            },
-            {
-                "grup": "Lainnya",
-                "isi": [
-                    "Minyak untuk menggoreng bawang",
-                    "Tusukan bambu besar",
-                    "Daun pisang untuk membungkus"
+                    "100 g bawang merah",
+                    "100 g bawang putih",
+                    "3 sdm lada putih",
+                    "10 buah cabai rawit",
+                    "1 butir biji pala",
+                    "2 cm lengkuas",
+                    "2 cm jahe",
+                    "3 cm kayu manis",
+                    "5 sdm kecap manis (atau gula merah)",
+                    "1 batang serai, memarkan",
+                    "3 lembar daun salam"
                 ]
             }
         ],
         "langkah": [
-            "Bersihkan sisik ikan, keluarkan insang dan isi perutnya.",
-            "Remas-remas badan ikan agar dagingnya lembek dan terlepas dari kulit serta tulang utama.",
-            "Keluarkan tulang dan daging bandeng dengan hati-hati supaya kulit dan kepalanya tetap utuh (mirip membalik baju). Buang tulang utama, simpan dagingnya, lalu rapikan kembali kulit dan kepala ikan.",
-            "Goreng irisan bawang merah dan bawang putih sampai garing, angkat dan tiriskan.",
-            "Rebus santan kental sampai matang.",
-            "Masukkan daging bandeng (termasuk duri halusnya), santan, bawang merah goreng, bawang putih goreng, ketumbar, dan gula merah ke blender. Giling sampai halus hingga duri halus ikut hancur.",
-            "Isikan adonan daging ke dalam kulit bandeng sampai kembali berbentuk seperti ikan utuh. Sisakan sedikit adonan untuk membalut bagian luar ikan.",
-            "Tusuk ikan dengan tusukan bambu besar, lalu bungkus dengan daun pisang.",
-            "Bakar di atas bara api sambil dibolak-balik sampai matang dan kering.",
-            "Angkat dan sajikan hangat dengan nasi putih."
+            "Rajang bawang merah dan bawang putih. Memarkan jahe, lengkuas, dan biji pala.",
+            "Tumis semua bumbu, kecuali daun salam dan serai, sampai harum.",
+            "Rebus daging dan tulang kambing bersama daun salam dan serai memakai air dingin dengan api sedang. Buang buih yang muncul di permukaan.",
+            "Setelah daging matang tetapi belum empuk, angkat dan tiriskan.",
+            "Masukkan tumisan bumbu ke sisa air rebusan, lalu rebus.",
+            "Potong-potong daging dan tulang iga, lalu masukkan kembali ke dalam masakan.",
+            "Masak sampai daging empuk, bumbu meresap, dan kuahnya mengental.",
+            "Sajikan hangat."
         ],
         "tips": [
-            "Duri halus ikut digiling bersama daging sehingga tidak terasa saat dimakan.",
-            "Kerjakan langkah mengeluarkan daging dengan pelan agar kulit ikan tidak sobek."
+            "Rebus daging dengan air dingin dan api sedang serta buang buihnya agar masakan tidak berbau prengus (bau kambing).",
+            "Resep ini berasal dari rumah makan rabeg khas Serang yang dimuat detikFood.",
+            "Sumber tidak menyebut lama memasak; 2 jam adalah perkiraan sampai daging kambing empuk."
         ],
         "sumber_resep": [
             {
                 "nama": "detikFood",
-                "url": "https://food.detik.com/resep-kuliner-pusaka/d-1656015/sate-bandeng-khas-banten"
+                "url": "https://food.detik.com/resep-kuliner-pusaka/d-1888763/resep-daging-rabeg-asli-banten"
             }
         ],
         "foto": {
-            "pembuat": "Gunawan Kartapranata",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Sate_Bandeng_2.jpg"
+            "pembuat": "Sokat Rachman",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/indonesian-tongseng-with-satay-on-rustic-table-36943015/",
+            "keterangan": "Foto ilustrasi: semur kambing berempah"
         }
     },
     {
@@ -4315,11 +4313,11 @@
             }
         ],
         "foto": {
-            "pembuat": "anwarsiak***sibuk***",
-            "lisensi": "CC BY 2.0",
-            "situs": "Flickr",
-            "sumber": "https://www.flickr.com/photos/43928101@N02/6082727821",
-            "keterangan": "Foto ilustrasi: buah cempedak"
+            "pembuat": "Tiya Nh",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/traditional-indonesian-kuih-lapis-dessert-display-37208763/",
+            "keterangan": "Foto ilustrasi: kue lapis kukus"
         }
     },
     {
@@ -4703,53 +4701,75 @@
         }
     },
     {
-        "id": "uta-kelo",
-        "nama": "Uta Kelo",
+        "id": "ayam-panggang-biromaru",
+        "nama": "Ayam Panggang Biromaru",
         "daerah": "Sulawesi Tengah",
-        "kategori": "Sup & Soto",
-        "waktu": "25 menit",
+        "kategori": "Makanan Berat",
+        "waktu": "70 menit (1 jam 10 menit)",
         "porsi": "4 porsi",
-        "kesulitan": "Mudah",
-        "warna": "#6B8E23",
-        "gambar": "assets/img/uta-kelo.jpg",
-        "deskripsi": "Sayur daun kelor berkuah santan khas suku Kaili, Palu, dengan aroma gurih ebi (udang kering). Biasa disantap dengan nasi dan sambal ikan teri (duo).",
+        "kesulitan": "Sedang",
+        "warna": "#9C4A1F",
+        "gambar": "assets/img/ayam-panggang-biromaru.jpg",
+        "deskripsi": "Ayam kampung khas suku Kaili dari Biromaru, Sigi, dekat Kota Palu. Ayam dimasak dalam bumbu santan pedas hingga mengental, lalu dipanggang sambil diolesi bumbunya dan disantap dengan ketupat, sambal rawit ulek, serta uta dada (kuah santan).",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "200 g daun kelor, petik dari tangkainya, cuci bersih",
-                    "500 ml santan",
-                    "2 sdm ebi (udang kering), cuci",
-                    "5 buah cabai rawit (cabai segar), tumbuk kasar",
-                    "Garam secukupnya",
-                    "Penyedap rasa secukupnya"
+                    "1 ekor ayam kampung, potong sesuai selera",
+                    "500 ml santan kental",
+                    "2 batang serai, memarkan",
+                    "Garam dan penyedap secukupnya",
+                    "Minyak goreng secukupnya",
+                    "Kecap dan sambal botol (opsional)"
+                ]
+            },
+            {
+                "grup": "Bumbu halus",
+                "isi": [
+                    "10 siung bawang merah",
+                    "5 siung bawang putih",
+                    "5 butir kemiri",
+                    "20 buah cabai rawit",
+                    "10 buah cabai keriting",
+                    "2 cm jahe",
+                    "1 cm kunyit"
+                ]
+            },
+            {
+                "grup": "Pelengkap",
+                "isi": [
+                    "Ketupat",
+                    "Sambal cabai rawit ulek",
+                    "Uta dada (kuah santan khas Kaili)"
                 ]
             }
         ],
         "langkah": [
-            "Cuci ebi, lalu masukkan ke panci bersama santan.",
-            "Masak santan dan ebi di atas api sedang sambil diaduk agar santan tidak pecah.",
-            "Saat santan mendidih, masukkan garam dan cabai yang sudah ditumbuk.",
-            "Masukkan daun kelor, aduk perlahan.",
-            "Masak sampai daun kelor melunak.",
-            "Koreksi rasa dengan garam dan penyedap, lalu angkat dan sajikan dengan nasi hangat."
+            "Haluskan bawang merah, bawang putih, kemiri, cabai rawit, cabai keriting, jahe, dan kunyit, lalu tambahkan garam dan penyedap secukupnya.",
+            "Panaskan minyak, tumis bumbu halus bersama serai hingga wangi.",
+            "Masukkan potongan ayam, aduk rata dengan bumbu.",
+            "Tuang santan sedikit demi sedikit sambil terus diaduk.",
+            "Masak hingga ayam matang dan bumbu mengental. Cicipi, lalu tambahkan kecap dan sambal botol jika perlu.",
+            "Angkat ayam dan sisihkan sisa bumbu santan yang sudah mengental.",
+            "Panggang atau bakar ayam sambil diolesi sisa bumbu hingga meresap dan kecokelatan.",
+            "Angkat, campurkan dengan sisa bumbu, lalu sajikan bersama ketupat, sambal rawit ulek, dan uta dada."
         ],
         "tips": [
-            "Sumber hanya menyebut bahan dan cara tanpa takaran, jadi takaran di sini perkiraan.",
-            "Ebi wajib dipakai karena perpaduan ebi, daun kelor, dan santan memberi aroma khas uta kelo."
+            "Setiap warung ayam panggang biromaru punya resep rahasianya sendiri; resep ini adalah resep dasarnya.",
+            "Sumber tidak menyebut lama memasak dan jumlah porsi; 70 menit dan 4 porsi adalah perkiraan."
         ],
         "sumber_resep": [
             {
                 "nama": "IDN Times",
-                "url": "https://sulsel.idntimes.com/food/recipe/5-makanan-khas-palu-masaknya-praktis-dengan-rasa-nikmat-01-f3lw4-xkgds7"
+                "url": "https://idntimes.com/food/recipe/nurul-hardina-a-mai/resep-ayam-panggang-biromaru-c1c2"
             }
         ],
         "foto": {
-            "pembuat": "Nunun Dy",
+            "pembuat": "Ega Morgan",
             "lisensi": "Lisensi Pexels",
             "situs": "Pexels",
-            "sumber": "https://www.pexels.com/photo/authentic-indonesian-vegetable-curry-on-rustic-table-33435595/",
-            "keterangan": "Foto ilustrasi: sayur daun bersantan"
+            "sumber": "https://www.pexels.com/photo/spicy-indonesian-grilled-chicken-with-chilies-37179941/",
+            "keterangan": "Foto ilustrasi: ayam panggang"
         }
     },
     {
@@ -4962,7 +4982,7 @@
             "pembuat": "Gunarta",
             "lisensi": "CC BY-SA 4.0",
             "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Barongko_hendak_dimakan.jpg"
+            "sumber": "https://commons.wikimedia.org/wiki/File:Barongko_di_atas_piring.jpg"
         }
     },
     {
