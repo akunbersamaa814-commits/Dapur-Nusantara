@@ -11,17 +11,6 @@ $kategori_daerah = ['Sumatera', 'Jawa', 'Bali', 'Papua', 'Sulawesi', 'Kalimantan
             <h2 class="footer-brand">Dapur Nusantara</h2>
             <p class="footer-desk">Kumpulan resep masakan khas daerah di Indonesia, dari Sumatera sampai Papua,
                lengkap dengan bahan dan cara memasak langkah demi langkah.</p>
-            <div class="footer-sosial">
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
-                    <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6"/></svg>
-                </a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
-                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg>
-                </a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
-                    <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg>
-                </a>
-            </div>
         </div>
 
         <!-- 2. Tautan cepat -->
@@ -45,7 +34,7 @@ $kategori_daerah = ['Sumatera', 'Jawa', 'Bali', 'Papua', 'Sulawesi', 'Kalimantan
             </ul>
         </nav>
 
-        <!-- 4. Kartu newsletter (contoh tampilan: email tidak dikirim atau disimpan ke mana pun) -->
+        <!-- 4. Kartu newsletter (pesan terima kasih diatur assets/js/script.js) -->
         <div class="footer-kolom">
             <div class="footer-kartu">
                 <h3 class="footer-kartu__judul">Temukan Resep Baru</h3>
@@ -64,6 +53,15 @@ $kategori_daerah = ['Sumatera', 'Jawa', 'Bali', 'Papua', 'Sulawesi', 'Kalimantan
     <div class="footer-bottom">
         <p>&copy; 2026 Dapur Nusantara. Seluruh hak cipta dilindungi.</p>
         <p class="footer-slogan">Resep dari Indonesia, untuk dunia.</p>
+    </div>
+
+    <!-- Watermark identitas tugas: judul/tema, nama, dan NIM pembuat -->
+    <div class="footer-watermark">
+        <p class="footer-watermark__judul">Dapur Nusantara</p>
+        <ul class="footer-watermark__tim" aria-label="Pembuat">
+            <li>M. Fasha Bintang Pratama <span>(202531081)</span></li>
+            <li>Satria Manurung <span>(202531123)</span></li>
+        </ul>
     </div>
 </footer>
 

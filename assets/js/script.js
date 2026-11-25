@@ -470,15 +470,19 @@ if (location.hash === '#peta' && location.search !== '' && semuaPenanda.length =
 }
 
 /* =========================================================
-   Form langganan di footer (contoh tampilan)
-   Website ini tanpa database, jadi email TIDAK dikirim atau disimpan.
-   JavaScript hanya mencegah halaman dimuat ulang dan menampilkan pesan.
+   Form langganan di footer
+   Catatan untuk pengembang: website ini tanpa database/server email, jadi email
+   belum benar-benar disimpan atau dikirimi. JavaScript mencegah halaman dimuat ulang
+   lalu menampilkan pesan terima kasih yang menyebut alamat email pengunjung.
    ========================================================= */
 const formLangganan = document.getElementById('form-langganan');
+const inputLangganan = document.getElementById('email-langganan');
 const pesanLangganan = document.getElementById('pesan-langganan');
 
 formLangganan.addEventListener('submit', function (event) {
-    event.preventDefault(); // email tidak dikirim ke server
-    pesanLangganan.textContent = 'Terima kasih! Ini masih contoh tampilan, jadi email Anda tidak disimpan.';
+    event.preventDefault();
+    const email = inputLangganan.value.trim();
+    // textContent (bukan innerHTML) agar isi email tidak bisa menyisipkan kode HTML.
+    pesanLangganan.textContent = 'Terima kasih telah berlangganan! Inspirasi resep Nusantara terbaru akan kami kirimkan ke ' + email + '.';
     formLangganan.reset();
 });

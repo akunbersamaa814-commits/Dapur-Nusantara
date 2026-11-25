@@ -32,6 +32,9 @@ Kalau perintah `php` belum dikenal tetapi MAMP sudah terpasang, pakai PHP bawaan
 - [Prompt Mulai](PROMPT_MULAI.md)
 
 ## Identitas
-- Nama: ...
-- NIM: ...
-- Kelas: ...
+Tema: **Dapur Nusantara**
+
+| Nama | NIM |
+|---|---|
+| M. Fasha Bintang Pratama | 202531081 |
+| Satria Manurung | 202531123 |

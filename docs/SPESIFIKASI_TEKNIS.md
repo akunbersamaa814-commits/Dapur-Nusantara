@@ -102,8 +102,9 @@ Parameter URL:
 - `bukaModal(card)`: isi foto + badge, nama, deskripsi, meta (ikon + label lewat `buatItemMeta()`), bahan per kelompok, `<ol>` langkah, tips, dan kredit sumber resep/foto; `showModal()`; fokus ke tombol tutup. Scroll halaman dikunci oleh CSS `body:has(.modal[open])`.
 - Tutup lewat tombol ✕, klik backdrop, atau `Escape`; fokus kembali ke tombol card yang diklik.
 - Tombol hamburger (layar < 768px) membuka/menutup menu navbar dengan class `active` dan `aria-expanded`.
-- Form langganan di footer (`#form-langganan`) hanya contoh tampilan: JS mencegah submit (`preventDefault`)
-  dan menampilkan pesan di `#pesan-langganan` (aria-live). Email tidak dikirim atau disimpan ke mana pun.
+- Form langganan di footer (`#form-langganan`): JS mencegah submit (`preventDefault`) lalu menampilkan pesan
+  terima kasih yang menyebut alamat email di `#pesan-langganan` (aria-live, memakai `textContent`).
+  Catatan: proyek ini tanpa database/server email, jadi email belum benar-benar disimpan atau dikirimi.
 
 ### Peta Daerah
 - Gambar peta: `assets/img/peta-indonesia.svg` (proyeksi equirectangular, batas di `BATAS_PETA`).

@@ -22,10 +22,11 @@ Dapur Nusantara (HTML + CSS + vanilla JS + PHP).
 
 Urutan latar: hero krem → peta putih → kategori & resep putih → footer krem, dipisah garis tipis.
 
-Footer (krem `#FAF8F5`): nama brand Poppins Bold karamel, deskripsi, ikon Instagram/Facebook/YouTube
-dalam lingkaran bergaris keemasan; kolom "Tautan Cepat" dan "Kategori" (judul SemiBold kapital dengan
-jarak huruf); kartu newsletter putih (radius 14px, border, shadow lembut) dengan input + tombol "Daftar";
-garis tipis lalu copyright (kiri) dan slogan "Resep dari Indonesia, untuk dunia." (kanan).
+Footer (krem `#FAF8F5`): nama brand Poppins Bold karamel dan deskripsi; kolom "Tautan Cepat" dan "Kategori"
+(judul SemiBold kapital dengan jarak huruf); kartu newsletter putih (radius 14px, border, shadow lembut) dengan
+input + tombol "Daftar"; garis tipis lalu copyright (kiri) dan slogan "Resep dari Indonesia, untuk dunia." (kanan).
+Paling bawah: watermark identitas tugas (kotak lembut bergaris putus-putus) berisi tema "Dapur Nusantara",
+M. Fasha Bintang Pratama (202531081), dan Satria Manurung (202531123).
 Responsif: 4 kolom → tablet 2 kolom (brand & newsletter selebar penuh) → HP sama dengan tablet, bagian bawah bertumpuk.
 Peta SVG diwarnai terang: laut `#EEF1EF`, daratan Indonesia `#E5CFB3`, negara tetangga `#E4E1DC`.
 
@@ -43,7 +44,7 @@ Kontras (WCAG AA ≥ 4.5:1) sudah dicek: `#29231F` di putih 15.5:1, `#77716B` di
 │ Chip kategori (pil, tengah)                                            │
 │ "Semua Resep" (tengah)                                                 │
 │ Grid card 3 kolom: foto 3:2 + badge | judul | deskripsi 3 baris | meta │
-│ Footer 4 kolom: brand + sosial | tautan cepat | kategori | newsletter  │
+│ Footer 4 kolom: brand | tautan cepat | kategori | newsletter + watermark│
 └────────────────────────────────────────────────────────────────────────┘
 Modal detail: foto 3:2 (maks. 460px) + badge, judul besar, meta ber-ikon, Bahan (kotak ✦ per
 kelompok), Cara Memasak (kotak bernomor lingkaran gradien), Tips, kredit.

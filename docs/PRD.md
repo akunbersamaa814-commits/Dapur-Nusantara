@@ -77,7 +77,7 @@ dan **membuka detail** resep (bahan + cara memasak) dengan mengklik card.
   ├─ Chip kategori (opsional)
   ├─ Info hasil pencarian
   ├─ Grid card resep ──klik──► [Modal detail resep (JS)]
-  └─ Footer (brand & sosial, tautan cepat, kategori pulau, kartu newsletter contoh, copyright)
+  └─ Footer (brand, tautan cepat, kategori pulau, kartu newsletter, copyright, watermark nama & NIM)
 ```
 
 Alur pencarian:
