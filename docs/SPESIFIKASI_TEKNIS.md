@@ -115,7 +115,7 @@ Parameter URL:
   (warna bergantian); label nama daerah tampil saat disorot/difokus keyboard.
 - Klik/Enter pada penanda → `bukaPopup()`: popup berisi kartu setiap masakan dari daerah itu (foto,
   label daerah, kredit foto, nama, deskripsi 3 baris, tombol **Lihat Resep** → `bukaModal(id, tombol)`).
-  `posisikanPopup()` menaruh popup di atas / bawah / samping penanda (yang muat). Di layar < 560px
+  `posisikanPopup()` menaruh popup di atas / bawah / samping penanda (yang muat) dan menganggap kotak cari sebagai penghalang: posisi yang menabrak kotak cari dilewati (popup digeser atau diturunkan ke bawah kotak cari; jika ruang tetap kurang, tinggi daftar resep dibatasi). Kotak cari (z-index 30) selalu di atas popup (25). Di layar < 560px
   popup dipindah ke `#peta-panel` di bawah peta. Tutup: tombol ✕, `Escape`, klik area kosong peta.
 - Zoom sederhana `aturZoom()`: tombol +, −, reset (1×–4×). Lebar `#peta-lapisan` = lebar dasar × zoom;
   penanda ikut karena posisinya persen; area `#peta-area` bisa di-scroll saat diperbesar.

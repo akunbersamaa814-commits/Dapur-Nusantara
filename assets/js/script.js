@@ -264,6 +264,8 @@ function posisikanPopup() {
     const tempat = sempit ? petaPanel : petaLapisan;
     if (popup.parentElement !== tempat) tempat.appendChild(popup);
     popup.classList.toggle('panel', sempit);
+    const daftar = popup.querySelector('.popup-daftar');
+    if (daftar) daftar.style.maxHeight = ''; // kembali ke tinggi maksimal bawaan CSS
     if (sempit) {
         popup.style.left = '';
         popup.style.top = '';
@@ -273,36 +275,91 @@ function posisikanPopup() {
 
     const TINGGI_PENANDA = 26;
     const JARAK = 10;
-    const RUANG_CARI = 76; // ruang di atas peta yang tertutup kotak cari
+    const batasi = function (nilai, min, maks) { return Math.max(min, Math.min(nilai, maks)); };
 
     // Posisi ujung bawah penanda di dalam lapisan peta (piksel)
     const x = parseFloat(penandaAktif.style.left) / 100 * petaLapisan.offsetWidth;
     const y = parseFloat(penandaAktif.style.top) / 100 * petaLapisan.offsetHeight;
     const lebar = popup.offsetWidth;
-    const tinggi = popup.offsetHeight;
+    let tinggi = popup.offsetHeight;
 
     // Bagian peta yang sedang terlihat (ikut posisi scroll)
     const kiriTerlihat = petaArea.scrollLeft + 8;
     const atasTerlihat = petaArea.scrollTop + 8;
     const kananTerlihat = petaArea.scrollLeft + petaArea.clientWidth - 8;
     const bawahTerlihat = petaArea.scrollTop + petaArea.clientHeight - 8;
-    const batasi = function (nilai, min, maks) { return Math.max(min, Math.min(nilai, maks)); };
+
+    // Kotak cari mengambang di atas peta = penghalang. Posisinya diubah ke koordinat lapisan peta
+    // (ditambah jarak 12px), supaya popup tidak menutupi atau menembus kotak cari.
+    let halangan = null;
+    const kotakCari = document.querySelector('.peta-cari');
+    if (kotakCari) {
+        const rc = kotakCari.getBoundingClientRect();
+        const rl = petaLapisan.getBoundingClientRect();
+        const ra = petaArea.getBoundingClientRect();
+        // Hanya dianggap penghalang jika kotak cari memang berada di atas area peta (desktop/tablet lebar).
+        if (rc.bottom > ra.top && rc.top < ra.bottom) {
+            halangan = {
+                kiri: rc.left - rl.left - 12,
+                kanan: rc.right - rl.left + 12,
+                atas: rc.top - rl.top - 12,
+                bawah: rc.bottom - rl.top + 12
+            };
+        }
+    }
+    const menabrak = function (k, a) {
+        return halangan !== null &&
+            k < halangan.kanan && k + lebar > halangan.kiri &&
+            a < halangan.bawah && a + tinggi > halangan.atas;
+    };
+    const muat = function (k, a) {
+        return k >= kiriTerlihat - 0.5 && k + lebar <= kananTerlihat + 0.5 &&
+            a >= atasTerlihat - 0.5 && a + tinggi <= bawahTerlihat + 0.5;
+    };
+    // Pilihan posisi kiri untuk popup di atas/bawah penanda: di tengah penanda, atau digeser
+    // ke kanan/kiri kotak cari (panahnya tetap harus bisa menunjuk penanda).
+    const pilihanKiri = function () {
+        const hasil = [batasi(x - lebar / 2, kiriTerlihat, kananTerlihat - lebar)];
+        if (halangan) {
+            hasil.push(halangan.kanan, halangan.kiri - lebar);
+        }
+        return hasil.filter(function (k) { return x >= k + 16 && x <= k + lebar - 16; });
+    };
 
     let kiri, atas, arah;
-    if (y - TINGGI_PENANDA - JARAK - tinggi >= atasTerlihat + RUANG_CARI) {
-        arah = 'atas';
-        atas = y - TINGGI_PENANDA - JARAK - tinggi;
-    } else if (y + JARAK + tinggi <= bawahTerlihat) {
-        arah = 'bawah';
-        atas = y + JARAK;
-    } else {
-        // Tidak muat di atas/bawah: taruh di samping, sejajar dengan tengah penanda
+    const coba = function (k, a, ar) {
+        if (arah === undefined && muat(k, a) && !menabrak(k, a)) {
+            kiri = k; atas = a; arah = ar;
+        }
+    };
+
+    // 1. Di atas penanda, 2. di bawah penanda
+    pilihanKiri().forEach(function (k) { coba(k, y - TINGGI_PENANDA - JARAK - tinggi, 'atas'); });
+    pilihanKiri().forEach(function (k) { coba(k, y + JARAK, 'bawah'); });
+
+    // 3. Di samping penanda (kanan lalu kiri), sejajar tengah penanda; jika menabrak kotak cari,
+    //    turunkan sampai tepat di bawah kotak cari.
+    ['kanan', 'kiri'].forEach(function (ar) {
+        const k = (ar === 'kanan') ? x + 24 + JARAK : x - 24 - JARAK - lebar;
+        const a = batasi(y - TINGGI_PENANDA / 2 - tinggi / 2, atasTerlihat, bawahTerlihat - tinggi);
+        coba(k, a, ar);
+        if (halangan) coba(k, Math.max(a, halangan.bawah), ar);
+    });
+
+    // 4. Cadangan jika ruang sempit: taruh di samping penanda tepat di bawah kotak cari,
+    //    lalu batasi tinggi daftar resep agar popup tetap di dalam peta (isinya bisa di-scroll).
+    if (arah === undefined) {
         arah = (x + 24 + JARAK + lebar <= kananTerlihat) ? 'kanan' : 'kiri';
-        kiri = (arah === 'kanan') ? x + 24 + JARAK : x - 24 - JARAK - lebar;
-        atas = batasi(y - TINGGI_PENANDA / 2 - tinggi / 2, atasTerlihat, bawahTerlihat - tinggi);
-    }
-    if (arah === 'atas' || arah === 'bawah') {
-        kiri = batasi(x - lebar / 2, kiriTerlihat, kananTerlihat - lebar);
+        kiri = batasi((arah === 'kanan') ? x + 24 + JARAK : x - 24 - JARAK - lebar, kiriTerlihat, kananTerlihat - lebar);
+        // Jika popup sejajar (kiri–kanan) dengan kotak cari, mulai tepat di bawahnya.
+        const sejajarKotakCari = halangan !== null && kiri < halangan.kanan && kiri + lebar > halangan.kiri;
+        atas = sejajarKotakCari ? Math.max(atasTerlihat, halangan.bawah) : atasTerlihat;
+        const ruang = bawahTerlihat - atas;
+        if (daftar && tinggi > ruang) {
+            daftar.style.maxHeight = Math.max(120, ruang - (tinggi - daftar.offsetHeight)) + 'px';
+            tinggi = popup.offsetHeight;
+        }
+        atas = Math.min(atas, bawahTerlihat - tinggi);
     }
 
     popup.style.left = kiri + 'px';

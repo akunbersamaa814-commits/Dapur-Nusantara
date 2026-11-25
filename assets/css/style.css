@@ -1549,7 +1549,8 @@ svg {
 /* Popup kartu masakan */
 .peta-popup {
     position: absolute;
-    z-index: 35;          /* di atas kotak cari & tombol zoom (30) agar popup tidak tertutup */
+    z-index: 25;          /* di bawah kotak cari & tombol zoom (30): kotak cari selalu terlihat;
+                             posisi popup diatur JS agar tidak bertumpuk dengan kotak cari */
     width: 256px;
     background: #FFFFFF;
     border: 1px solid var(--border-color);
