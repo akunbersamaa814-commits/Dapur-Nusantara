@@ -55,6 +55,22 @@ const KOORDINAT_DAERAH = [
     'Papua Selatan'             => [-8.4932, 140.4018],  // Merauke
 ];
 
+// Pengelompokan provinsi per pulau/wilayah. Dipakai saat kata kunci pencarian persis nama pulau
+// (mis. link "Jawa" di footer), supaya hasilnya resep dari provinsi di pulau itu saja —
+// tidak ikut resep lain yang kebetulan memakai bahan "asam jawa" atau "gula jawa".
+const PULAU = [
+    'Sumatera'   => ['Aceh', 'Sumatera Utara', 'Sumatera Barat', 'Riau', 'Kepulauan Riau', 'Jambi',
+                     'Sumatera Selatan', 'Bengkulu', 'Lampung', 'Kepulauan Bangka Belitung'],
+    'Jawa'       => ['DKI Jakarta', 'Jawa Barat', 'Banten', 'Jawa Tengah', 'Yogyakarta', 'Jawa Timur'],
+    'Bali'       => ['Bali'],
+    'Kalimantan' => ['Kalimantan Barat', 'Kalimantan Tengah', 'Kalimantan Selatan', 'Kalimantan Timur',
+                     'Kalimantan Utara'],
+    'Sulawesi'   => ['Sulawesi Utara', 'Gorontalo', 'Sulawesi Tengah', 'Sulawesi Barat', 'Sulawesi Selatan',
+                     'Sulawesi Tenggara'],
+    'Papua'      => ['Papua', 'Papua Barat', 'Papua Barat Daya', 'Papua Tengah', 'Papua Pegunungan',
+                     'Papua Selatan'],
+];
+
 // Titik tampil penanda untuk daerah yang ibu kotanya terlalu dekat dengan daerah lain
 // (mis. Banten & DKI Jakarta), terlalu dekat tepi peta / kotak cari (Aceh, Kalimantan Utara),
 // atau ibu kotanya di garis pantai sehingga di gambar peta jatuh di laut (Kepulauan Riau, Bengkulu,
@@ -159,6 +175,15 @@ function cari_resep(array $semua, string $q = '', string $kategori = ''): array
         // 2. Jika tidak ada kata kunci, resep langsung masuk hasil.
         if ($q === '') {
             $hasil[] = $resep;
+            continue;
+        }
+
+        // 2b. Jika kata kunci persis nama pulau (mis. "Jawa"), cocokkan berdasarkan provinsinya saja.
+        $pulau = ucwords(strtolower($q));
+        if (isset(PULAU[$pulau])) {
+            if (in_array($resep['daerah'], PULAU[$pulau], true)) {
+                $hasil[] = $resep;
+            }
             continue;
         }
 

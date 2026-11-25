@@ -454,3 +454,17 @@ window.addEventListener('resize', function () {
 
 // Ukuran awal: zoom 1, pusat peta di tengah.
 aturZoom(0, { x: 0.5, y: 0.5 });
+
+/* =========================================================
+   Form langganan di footer (contoh tampilan)
+   Website ini tanpa database, jadi email TIDAK dikirim atau disimpan.
+   JavaScript hanya mencegah halaman dimuat ulang dan menampilkan pesan.
+   ========================================================= */
+const formLangganan = document.getElementById('form-langganan');
+const pesanLangganan = document.getElementById('pesan-langganan');
+
+formLangganan.addEventListener('submit', function (event) {
+    event.preventDefault(); // email tidak dikirim ke server
+    pesanLangganan.textContent = 'Terima kasih! Ini masih contoh tampilan, jadi email Anda tidak disimpan.';
+    formLangganan.reset();
+});

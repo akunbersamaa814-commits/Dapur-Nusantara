@@ -18,9 +18,9 @@ peta daerah dibuat dari gambar SVG + JavaScript murni.
 projek_pemweb/
 ├── index.php                 # Halaman utama: hero, form cari, grid card, modal
 ├── includes/
-│   ├── data.php              # ambil_semua_resep(), cari_resep(), KOORDINAT_DAERAH (titik peta)
+│   ├── data.php              # ambil_semua_resep(), cari_resep(), KOORDINAT_DAERAH (titik peta), PULAU
 │   ├── header.php            # <head>, navbar
-│   ├── footer.php            # footer + <script>
+│   ├── footer.php            # footer (brand, tautan, kategori pulau, newsletter) + <script>
 │   └── card.php              # Template satu card resep (foto, badge, judul, meta)
 ├── data/
 │   └── resep.json            # Data seluruh resep (lihat docs/DATA_RESEP.md)
@@ -70,6 +70,9 @@ function cari_resep(array $semua, string $q = '', string $kategori = ''): array;
 function pisah_waktu(string $waktu): array;
 // "75 menit (1 jam 15 menit)" → ['75 menit', '1 jam 15 menit'] untuk tampilan waktu di card
 
+// Catatan: jika $q persis nama pulau di konstanta PULAU (Sumatera, Jawa, Bali, Kalimantan,
+// Sulawesi, Papua), resep dicocokkan berdasarkan provinsinya saja (dipakai link "Kategori" di footer).
+
 function e(string $teks): string;
 // Helper: htmlspecialchars($teks, ENT_QUOTES, 'UTF-8')
 ```
@@ -86,6 +89,8 @@ Parameter URL:
 - `bukaModal(card)`: isi foto + badge, nama, deskripsi, meta (ikon + label lewat `buatItemMeta()`), bahan per kelompok, `<ol>` langkah, tips, dan kredit sumber resep/foto; `showModal()`; fokus ke tombol tutup. Scroll halaman dikunci oleh CSS `body:has(.modal[open])`.
 - Tutup lewat tombol ✕, klik backdrop, atau `Escape`; fokus kembali ke tombol card yang diklik.
 - Tombol hamburger (layar < 768px) membuka/menutup menu navbar dengan class `active` dan `aria-expanded`.
+- Form langganan di footer (`#form-langganan`) hanya contoh tampilan: JS mencegah submit (`preventDefault`)
+  dan menampilkan pesan di `#pesan-langganan` (aria-live). Email tidak dikirim atau disimpan ke mana pun.
 
 ### Peta Daerah
 - Gambar peta: `assets/img/peta-indonesia.svg` (proyeksi equirectangular, batas di `BATAS_PETA`).

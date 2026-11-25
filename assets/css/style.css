@@ -855,59 +855,206 @@ svg {
 /* ---------- 9. Footer ---------- */
 .footer {
     margin-top: 80px;
-    padding: 60px 40px 30px;
-    background: var(--bg-secondary);
+    padding: 72px 40px 32px;
+    background: var(--bg-secondary);          /* krem lembut #FAF8F5 */
     border-top: 1px solid var(--border-color);
+    font-family: var(--font);
 }
 
+/* 4 kolom: brand | tautan cepat | kategori | kartu newsletter */
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1.6fr 1fr 1fr 1.6fr;
+    gap: 48px;
+    align-items: start;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.footer-section h3 {
-    margin-bottom: 16px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.footer-section .footer-brand {
-    font-size: 1.4rem;
+/* Kolom brand */
+.footer-brand {
+    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 700;                          /* Poppins Bold */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
     color: var(--accent-primary);
 }
 
-.footer-section p {
+.footer-desk {
+    max-width: 380px;
+    margin-bottom: 22px;
     font-size: 0.95rem;
-    line-height: 1.7;
-    color: var(--text-muted);
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--text-secondary);
 }
 
-.footer-section a {
-    display: block;
-    padding: 4px 0;
+/* Ikon media sosial dalam lingkaran bergaris tipis keemasan */
+.footer-sosial {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-sosial a {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--accent-secondary);
+    border-radius: 50%;
+    color: var(--accent-primary);
+    transition: var(--transition);
+}
+
+.footer-sosial a:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: var(--text-on-accent);
+    transform: translateY(-2px);
+}
+
+.footer-sosial svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Judul kolom: SemiBold, huruf kapital kecil dengan jarak huruf ringan */
+.footer-judul {
+    margin: 10px 0 20px;
+    font-size: 0.8rem;
+    font-weight: 600;                          /* Poppins SemiBold */
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+.footer-daftar {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+
+.footer-daftar a {
+    display: inline-block;
+    padding: 2px 0;
     font-size: 0.95rem;
-    color: var(--text-muted);
+    font-weight: 400;
+    color: var(--text-secondary);
     text-decoration: none;
     transition: var(--transition);
 }
 
-.footer-section a:hover {
-    color: var(--accent-primary);
+.footer-daftar a:hover {
+    color: var(--accent-hover);
     transform: translateX(4px);
 }
 
-.footer-bottom {
-    max-width: 1200px;
-    margin: 40px auto 0;
-    padding-top: 30px;
-    border-top: 1px solid var(--border-color);
-    text-align: center;
+/* Kartu newsletter putih */
+.footer-kartu {
+    padding: 28px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+.footer-kartu__judul {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--text-primary);
+}
+
+.footer-kartu__desk {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Input dan tombol menyatu dalam satu baris */
+.footer-langganan {
+    display: flex;
+}
+
+.footer-langganan input {
+    flex: 1;
+    min-width: 0;
+    min-height: 46px;
+    padding: 0 14px;
+    border: 1px solid var(--border-color);
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    background: #FFFFFF;
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.footer-langganan input::placeholder {
+    color: var(--text-secondary);
+}
+
+.footer-langganan input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(166, 94, 50, 0.18);
+}
+
+.footer-langganan__tombol {
+    flex-shrink: 0;
+    min-height: 46px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    background: var(--accent-primary);
+    color: var(--text-on-accent);
+    font-family: var(--font);
+    font-size: 0.9rem;
+    font-weight: 600;                          /* Poppins SemiBold */
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.footer-langganan__tombol:hover {
+    background: var(--accent-hover);
+}
+
+/* Pesan setelah tombol Daftar ditekan (diisi JavaScript) */
+.footer-langganan__pesan {
+    margin-top: 10px;
     font-size: 0.85rem;
-    color: var(--text-muted);
+    line-height: 1.5;
+    color: var(--accent-hover);
+}
+
+.footer-langganan__pesan:empty {
+    display: none;
+}
+
+/* Bagian bawah: garis tipis, copyright di kiri, slogan di kanan */
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px 24px;
+    max-width: 1200px;
+    margin: 48px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.footer-slogan {
+    font-weight: 600;
+    color: var(--accent-primary);
 }
 
 /* ---------- 10. Animasi ---------- */
@@ -941,8 +1088,19 @@ svg {
 
 /* ---------- 11. Responsif ---------- */
 @media (max-width: 992px) {
+    /* Tablet: brand & newsletter selebar penuh, dua kolom link di tengah */
     .footer-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 40px 32px;
+    }
+
+    .footer-kolom--brand,
+    .footer-grid > .footer-kolom:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-desk {
+        max-width: 560px;
     }
 }
 
@@ -1028,9 +1186,28 @@ svg {
         height: 32px;
     }
 
+    /* HP: footer bertumpuk satu kolom */
+    .footer {
+        padding: 48px 20px 28px;
+    }
+
     .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 24px;
+    }
+
+    .footer-brand {
+        font-size: 1.7rem;
+    }
+
+    .footer-kartu {
+        padding: 22px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 36px;
     }
 }
 
