@@ -55,13 +55,13 @@ masakan lain dari provinsi yang sama atau dihapus. Semua 38 provinsi sudah punya
 Provinsi yang belum lengkap: Aceh dan NTB (belum ada camilan); Bangka Belitung, Kalimantan Tengah,
 Kalimantan Timur, Kalimantan Utara, Sulawesi Utara, dan Maluku (belum ada minuman); NTT,
 Sulawesi Tengah, Sulawesi Tenggara, Maluku Utara, Papua, Papua Barat, Papua Barat Daya,
-Papua Tengah, dan Papua Pegunungan (baru ada makanan); Sulawesi Barat dan Papua Selatan
+Papua Tengah, Papua Pegunungan, dan Papua Selatan (baru ada makanan); Sulawesi Barat
 (baru ada camilan).
 
 | No | id | Nama | Daerah | Kategori |
 |---|---|---|---|---|
 | 1 | mie-aceh | Mie Aceh | Aceh | Makanan Berat |
-| 2 | es-timun-serut | Es Timun Serut | Aceh | Minuman |
+| 2 | kopi-sanger | Kopi Sanger | Aceh | Minuman |
 | 3 | arsik | Arsik Ikan Mas | Sumatera Utara | Makanan Berat |
 | 4 | bika-ambon | Bika Ambon | Sumatera Utara | Camilan |
 | 5 | teh-susu-telur | Teh Susu Telur | Sumatera Utara | Minuman |
@@ -99,7 +99,7 @@ Papua Tengah, dan Papua Pegunungan (baru ada makanan); Sulawesi Barat dan Papua 
 | 37 | sate-bandeng | Sate Bandeng | Banten | Makanan Berat |
 | 38 | jojorong | Kue Jojorong | Banten | Camilan |
 | 39 | es-sekemu | Es Sekemu | Banten | Minuman |
-| 40 | garang-asem | Garang Asem Ayam | Jawa Tengah | Sup & Soto |
+| 40 | soto-kudus | Soto Kudus | Jawa Tengah | Sup & Soto |
 | 41 | klepon | Klepon | Jawa Tengah | Camilan |
 | 42 | wedang-ronde | Wedang Ronde | Jawa Tengah | Minuman |
 | 43 | gudeg | Gudeg | Yogyakarta | Makanan Berat |
@@ -128,13 +128,13 @@ Papua Tengah, dan Papua Pegunungan (baru ada makanan); Sulawesi Barat dan Papua 
 | 66 | kepiting-soka | Kepiting Soka Asam Manis | Kalimantan Utara | Makanan Berat |
 | 67 | lapis-cempedak | Kue Lapis Cempedak | Kalimantan Utara | Camilan |
 | 68 | tinutuan | Tinutuan (Bubur Manado) | Sulawesi Utara | Makanan Berat |
-| 69 | klappertaart | Klappertaart | Sulawesi Utara | Camilan |
+| 69 | panada | Panada | Sulawesi Utara | Camilan |
 | 70 | binte-biluhuta | Binte Biluhuta | Gorontalo | Sup & Soto |
 | 71 | kue-tobuu | Kue Tobu'u | Gorontalo | Camilan |
 | 72 | es-brenebon | Es Brenebon | Gorontalo | Minuman |
 | 73 | kaledo | Kaledo | Sulawesi Tengah | Sup & Soto |
 | 74 | uta-kelo | Uta Kelo | Sulawesi Tengah | Sup & Soto |
-| 75 | kue-cucur | Kue Cucur | Sulawesi Barat | Camilan |
+| 75 | sambusa | Sambusa | Sulawesi Barat | Camilan |
 | 76 | coto-makassar | Coto Makassar | Sulawesi Selatan | Sup & Soto |
 | 77 | barongko | Barongko | Sulawesi Selatan | Camilan |
 | 78 | es-pisang-ijo | Es Pisang Ijo | Sulawesi Selatan | Minuman |
@@ -149,4 +149,4 @@ Papua Tengah, dan Papua Pegunungan (baru ada makanan); Sulawesi Barat dan Papua 
 | 87 | ikan-kuah-kuning | Ikan Kuah Kuning | Papua Barat Daya | Sup & Soto |
 | 88 | bakar-batu | Bakar Batu | Papua Tengah | Makanan Berat |
 | 89 | udang-selingkuh | Udang Selingkuh Bakar | Papua Pegunungan | Makanan Berat |
-| 90 | sate-ulat-sagu | Sate Ulat Sagu | Papua Selatan | Camilan |
+| 90 | sate-rusa | Sate Rusa | Papua Selatan | Makanan Berat |

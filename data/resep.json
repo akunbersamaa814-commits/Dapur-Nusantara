@@ -75,53 +75,54 @@
         }
     },
     {
-        "id": "es-timun-serut",
-        "nama": "Es Timun Serut",
+        "id": "kopi-sanger",
+        "nama": "Kopi Sanger",
         "daerah": "Aceh",
         "kategori": "Minuman",
-        "waktu": "15 menit",
-        "porsi": "3 gelas",
+        "waktu": "10 menit",
+        "porsi": "2 gelas",
         "kesulitan": "Mudah",
-        "warna": "#7CB342",
-        "gambar": "assets/img/es-timun-serut.jpg",
-        "deskripsi": "Minuman segar dari timun yang diserut panjang, biji selasih, sirup, dan perasan jeruk nipis. Mudah ditemui di rumah makan Aceh dan saat berbuka puasa.",
+        "warna": "#7B4A2B",
+        "gambar": "assets/img/kopi-sanger.jpg",
+        "deskripsi": "Kopi khas warung kopi Aceh: kopi pekat dicampur susu kental manis, lalu dituang bolak-balik dari tempat tinggi (\"ditarik\") hingga berbuih halus. Namanya disebut berasal dari \"sama-sama ngerti\".",
         "bahan": [
             {
-                "grup": "Bahan utama",
+                "grup": "Bahan",
                 "isi": [
-                    "2 buah timun ukuran sedang, cuci bersih",
-                    "1 sdm biji selasih",
-                    "200 ml air matang",
-                    "100 g gula pasir, larutkan dalam air hangat",
-                    "100 ml sirup melon",
-                    "1 buah jeruk nipis, ambil airnya",
-                    "Es batu secukupnya"
+                    "4 sdm kopi bubuk Aceh",
+                    "500 ml air mendidih",
+                    "6 sdm susu kental manis putih",
+                    "1 sdm gula pasir"
                 ]
             }
         ],
         "langkah": [
-            "Kupas timun, lalu serut memanjang tipis dengan parutan atau serutan khusus buah.",
-            "Rendam biji selasih dalam air hangat beberapa menit sampai mengembang.",
-            "Di wadah besar, campur timun serut, selasih, dan air matang.",
-            "Masukkan larutan gula dan sirup melon, aduk rata.",
-            "Peras jeruk nipis ke dalam campuran agar ada rasa asam yang menyeimbangkan manisnya.",
-            "Isi gelas dengan es batu, tuang campuran timun, aduk, dan sajikan."
+            "Taruh kopi bubuk dalam cangkir besar.",
+            "Tuangi air panas dan diamkan selama 3 menit.",
+            "Siapkan dua wadah besar yang ukurannya sama, lalu saring kopi ke salah satu wadah.",
+            "Tambahkan susu kental manis dan gula, aduk hingga larut.",
+            "Pindahkan larutan kopi ke wadah lainnya.",
+            "Tuang kembali kopi ke wadah semula sambil mengangkat wadah tinggi-tinggi agar terbentuk buih halus di permukaan kopi.",
+            "Ulangi menuang bolak-balik 2–3 kali, lalu tuang ke 2 gelas saji.",
+            "Sajikan segera selagi hangat."
         ],
         "tips": [
-            "Pilih timun segar berwarna hijau cerah dan tidak terlalu tua.",
-            "Potong bagian pangkal timun agar es tidak terasa pahit."
+            "Kopi bisa memakai arabika atau robusta Gayo, atau jenis lain sesuai selera. Kepekatan dan rasa manis juga bisa disesuaikan.",
+            "Untuk mendapatkan buih halus, angkat wadah tinggi-tinggi saat menuangkan kopi ke wadah lain.",
+            "Nikmati kopi sanger selagi hangat agar rasanya lebih nikmat."
         ],
         "sumber_resep": [
             {
-                "nama": "IDN Times",
-                "url": "https://www.idntimes.com/food/recipe/resep-es-timun-serut-yang-segar-ampuh-lawan-hawa-panas-01-3kz8p-gssjck"
+                "nama": "detikFood",
+                "url": "https://food.detik.com/info-kuliner/d-5216347/hangatkan-pagi-dengan-kopi-sanger-khas-aceh-racikan-sendiri"
             }
         ],
         "foto": {
-            "pembuat": "Fitri Penyalai",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Es_Timun_Serut_Cincau.jpg"
+            "pembuat": "thiago japyassu",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/a-clear-glass-mug-with-coffee-12856206/",
+            "keterangan": "Foto ilustrasi: kopi susu berbuih"
         }
     },
     {
@@ -656,11 +657,11 @@
             }
         ],
         "foto": {
-            "pembuat": "anoldent",
-            "lisensi": "CC BY-SA 2.0",
-            "situs": "Flickr",
-            "sumber": "https://www.flickr.com/photos/8563790@N08/50152539353",
-            "keterangan": "Foto ilustrasi: mangga dengan kuah santan"
+            "pembuat": "Galiya Tenisheva",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/yellow-fruit-juice-20590286/",
+            "keterangan": "Foto ilustrasi: minuman mangga dan kelapa"
         }
     },
     {
@@ -851,10 +852,10 @@
             }
         ],
         "foto": {
-            "pembuat": "Cendy00",
-            "lisensi": "CC BY 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Es_teh_manis.jpg"
+            "pembuat": "Reynaldo Yodia",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/clear-drinking-glass-with-brown-liquid-on-brown-wooden-table-13495013/"
         }
     },
     {
@@ -1309,10 +1310,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Naval Scene",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Pendap_from_Bengkulu_-_IMG_20220210_181317_298.jpg"
+            "pembuat": "icon0 com",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/dish-with-spice-216560/",
+            "keterangan": "Foto ilustrasi: ikan bumbu dibungkus daun"
         }
     },
     {
@@ -1416,10 +1418,11 @@
             }
         ],
         "foto": {
-            "pembuat": "believekevin",
-            "lisensi": "CC BY-SA 2.0",
-            "situs": "Flickr",
-            "sumber": "https://www.flickr.com/photos/63313714@N00/1237656225"
+            "pembuat": "César O'neill",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/refreshing-glass-of-yellow-fruit-juice-isolated-35020135/",
+            "keterangan": "Foto ilustrasi: jus jeruk"
         }
     },
     {
@@ -1490,10 +1493,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Raflinoer32",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Sambal_seruit_dan_ikan_bakar.jpg"
+            "pembuat": "Scenehaus Production",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/spicy-grilled-fish-with-fresh-salad-on-plate-33434048/",
+            "keterangan": "Foto ilustrasi: ikan bakar dengan sambal dan lalapan"
         }
     },
     {
@@ -1653,10 +1657,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Taman Renyah",
-            "lisensi": "CC BY-SA 3.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Lempah_kuning.JPG"
+            "pembuat": "Rika Amani",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/spicy-fish-curry-with-fresh-herbs-40785747/",
+            "keterangan": "Foto ilustrasi: ikan berkuah kuning"
         }
     },
     {
@@ -2031,10 +2036,10 @@
             }
         ],
         "foto": {
-            "pembuat": "Yuriandrian85",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Kerak_Telor_Khas_Betawi_2.jpg"
+            "pembuat": "Tiya Nh",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/indonesian-omelette-on-leafy-greens-setting-37282490/"
         }
     },
     {
@@ -2373,7 +2378,7 @@
             "pembuat": "Gunawan Kartapranata",
             "lisensi": "CC BY-SA 4.0",
             "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Sate_Bandeng_1.jpg"
+            "sumber": "https://commons.wikimedia.org/wiki/File:Sate_Bandeng_2.jpg"
         }
     },
     {
@@ -2483,79 +2488,94 @@
             }
         ],
         "foto": {
-            "pembuat": "Prayitno / Thank you for (12 millions +) view",
-            "lisensi": "CC BY 2.0",
-            "situs": "Flickr",
-            "sumber": "https://www.flickr.com/photos/34128007@N04/8524287175",
+            "pembuat": "Augustinus Martinus Noppé",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/coconut-fruit-on-wooden-table-12580173/",
             "keterangan": "Foto ilustrasi: es kelapa muda"
         }
     },
     {
-        "id": "garang-asem",
-        "nama": "Garang Asem Ayam",
+        "id": "soto-kudus",
+        "nama": "Soto Kudus",
         "daerah": "Jawa Tengah",
         "kategori": "Sup & Soto",
-        "waktu": "60 menit (1 jam)",
-        "porsi": "4 porsi",
-        "kesulitan": "Sedang",
-        "warna": "#A1887F",
-        "gambar": "assets/img/garang-asem.jpg",
-        "deskripsi": "Ayam kampung berkuah santan asam pedas dengan belimbing sayur dan tomat hijau, dibungkus daun pisang lalu dikukus.",
+        "waktu": "45 menit",
+        "porsi": "10 porsi",
+        "kesulitan": "Mudah",
+        "warna": "#C9A24A",
+        "gambar": "assets/img/soto-kudus.jpg",
+        "deskripsi": "Soto ayam kampung berkuah bening dari Kudus yang gurih ringan dengan sedikit kecap manis. Khas disajikan dalam mangkuk kecil bersama tauge, suwiran ayam, dan lauk seperti sate telur puyuh.",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "1 ekor ayam kampung, potong 8–10 bagian",
-                    "8 butir bawang merah, iris tipis",
-                    "4 siung bawang putih, iris tipis",
-                    "3 lembar daun salam",
-                    "3 lembar daun jeruk",
-                    "3 cm lengkuas, memarkan",
-                    "10 buah belimbing sayur, iris kasar",
-                    "10 buah tomat hijau, potong-potong",
-                    "10 buah cabai rawit merah, iris kasar",
-                    "300 ml air",
-                    "300 ml santan kelapa",
-                    "1 sdm kaldu ayam/jamur",
-                    "Daun kemangi",
-                    "Daun pisang dan lidi untuk membungkus"
+                    "1 ekor ayam kampung, potong dua",
+                    "2 cm lengkuas, memarkan",
+                    "2 lembar daun salam",
+                    "2 batang serai, memarkan",
+                    "1 sdm garam",
+                    "4 sdm kecap manis"
                 ]
             },
             {
                 "grup": "Bumbu halus",
                 "isi": [
-                    "5 siung bawang putih",
-                    "2 cm jahe",
-                    "3 cm kunyit",
-                    "3 butir kemiri",
+                    "8 butir bawang merah",
+                    "4 siung bawang putih",
+                    "1/2 sdt merica butiran",
                     "2 sdt garam"
+                ]
+            },
+            {
+                "grup": "Pelengkap",
+                "isi": [
+                    "200 g tauge, bersihkan",
+                    "6 batang kucai, iris halus",
+                    "2 batang daun bawang, iris halus",
+                    "2 batang seledri, iris halus",
+                    "3 sdm bawang putih goreng",
+                    "3 sdm bawang merah goreng",
+                    "3 butir jeruk nipis"
+                ]
+            },
+            {
+                "grup": "Lauk pelengkap",
+                "isi": [
+                    "Perkedel kentang",
+                    "Telur pindang",
+                    "Sate kerang",
+                    "Sate telur puyuh"
                 ]
             }
         ],
         "langkah": [
-            "Cuci potongan ayam sampai bersih, lalu tiriskan.",
-            "Lumuri ayam dengan bumbu halus sampai rata, diamkan sebentar.",
-            "Tambahkan air, santan, kaldu, daun salam, daun jeruk, dan lengkuas, aduk rata.",
-            "Siapkan 2 lembar daun pisang, letakkan ayam berikut kuahnya di atasnya.",
-            "Tambahkan bawang merah, bawang putih, tomat hijau, belimbing sayur, cabai rawit, dan kemangi.",
-            "Lipat daun pisang dan semat dengan lidi.",
-            "Kukus dalam kukusan panas selama 45 menit sampai ayam lunak dan kaldunya keluar. Sajikan hangat."
+            "Potong ayam menjadi 4 bagian.",
+            "Didihkan air secukupnya, lalu masukkan ayam bersama lengkuas, daun salam, serai, dan bumbu halus.",
+            "Rebus dengan api kecil hingga ayam lunak.",
+            "Angkat ayam dan tiriskan hingga kering.",
+            "Didihkan kembali kaldu dengan api kecil, tambahkan kecap manis, masak hingga mendidih lalu angkat.",
+            "Goreng ayam dalam minyak panas yang banyak hingga agak kering, angkat, lalu suwir-suwir dagingnya.",
+            "Penyajian: taruh tauge, suwiran ayam, dan pelengkap lainnya dalam mangkuk saji.",
+            "Siram dengan kaldu panas dan sajikan bersama lauk pelengkap."
         ],
         "tips": [
-            "Gunakan wadah tahan panas di bawah bungkusan agar kuah tidak tumpah saat dikukus.",
-            "Ada juga versi tanpa santan yang lebih ringan."
+            "Pilih ayam kampung yang muda dan gemuk agar kuahnya sedikit berminyak dan gurih.",
+            "Ayam juga bisa tidak digoreng: setelah ditiriskan, langsung suwir-suwir dagingnya.",
+            "Pelengkap bisa dipilih sesuai selera, misalnya sate telur puyuh, perkedel kentang, atau sate jeroan ayam."
         ],
         "sumber_resep": [
             {
                 "nama": "detikFood",
-                "url": "https://food.detik.com/ayam/d-8611583/resep-garang-asem-ayam-kampung-kuah-santan-yang-gurih"
+                "url": "https://food.detik.com/ayam/d-5219405/resep-soto-kudus-yang-hangat-gurihnya-nagih"
             }
         ],
         "foto": {
-            "pembuat": "Risanprasetyo/Febri Ady Prasetyo",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Garang_asem.jpg"
+            "pembuat": "Dwi Rizqi F",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/delicious-indonesian-chicken-soto-soup-in-yogyakarta-37193497/",
+            "keterangan": "Foto ilustrasi: soto ayam kuah bening"
         }
     },
     {
@@ -2676,10 +2696,10 @@
             }
         ],
         "foto": {
-            "pembuat": "Daniatin",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Wedang_Ronde_di_Malioboro.jpg"
+            "pembuat": "Jauhar Musthofal Qulub",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/delicious-tangyuan-soup-with-nuts-and-seeds-36865965/"
         }
     },
     {
@@ -2955,10 +2975,10 @@
             }
         ],
         "foto": {
-            "pembuat": "Daniel Lee",
+            "pembuat": "Syam Arif",
             "lisensi": "Lisensi Pexels",
             "situs": "Pexels",
-            "sumber": "https://www.pexels.com/photo/traditional-indonesian-black-soup-with-side-dishes-36547527/"
+            "sumber": "https://www.pexels.com/photo/delicious-indonesian-rawon-soup-with-rice-39648420/"
         }
     },
     {
@@ -3093,10 +3113,10 @@
             }
         ],
         "foto": {
-            "pembuat": "Supardisahabu",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Onde-Onde_Wijen.jpg"
+            "pembuat": "Theodore Nguyen",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/snack-balls-with-seeds-26225563/"
         }
     },
     {
@@ -3348,10 +3368,10 @@
             }
         ],
         "foto": {
-            "pembuat": "Indonesiagood",
-            "lisensi": "CC BY 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Nikmatnya_Es_Kuwut.jpg"
+            "pembuat": "anggit priyandani",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/refreshing-es-kuwut-with-indonesian-cuisine-37338716/"
         }
     },
     {
@@ -3539,10 +3559,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Kembangraps",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Sei_sapi_Pj_DSC_2925.jpg"
+            "pembuat": "Gil Goldman",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/slicing-brisket-12645502/",
+            "keterangan": "Foto ilustrasi: daging sapi asap"
         }
     },
     {
@@ -3698,10 +3719,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Cun Cun",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Choipan.jpg"
+            "pembuat": "Change C.C",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/dim-sum-plater-in-bamboo-steamers-32393813/",
+            "keterangan": "Foto ilustrasi: kue kukus berkulit tipis (dim sum)"
         }
     },
     {
@@ -3749,10 +3771,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Gunawan Kartapranata",
-            "lisensi": "CC BY-SA 3.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Es_Lidah_Buaya.JPG"
+            "pembuat": "Yoka",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/refreshing-green-drink-with-basil-seeds-on-table-38503190/",
+            "keterangan": "Foto ilustrasi: minuman hijau dengan biji selasih"
         }
     },
     {
@@ -4051,11 +4074,11 @@
             }
         ],
         "foto": {
-            "pembuat": "knittymarie",
-            "lisensi": "CC BY-SA 2.0",
-            "situs": "Flickr",
-            "sumber": "https://www.flickr.com/photos/14671121@N03/11025009356",
-            "keterangan": "Foto ilustrasi: es buah"
+            "pembuat": "Tiya Nh",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/indonesian-es-campur-dessert-with-avocado-37105588/",
+            "keterangan": "Foto ilustrasi: es campur buah"
         }
     },
     {
@@ -4364,67 +4387,79 @@
         }
     },
     {
-        "id": "klappertaart",
-        "nama": "Klappertaart",
+        "id": "panada",
+        "nama": "Panada",
         "daerah": "Sulawesi Utara",
         "kategori": "Camilan",
-        "waktu": "80 menit (1 jam 20 menit)",
-        "porsi": "6 ramekin",
+        "waktu": "90 menit (1 jam 30 menit)",
+        "porsi": "15 buah",
         "kesulitan": "Sedang",
-        "warna": "#F3E5AB",
-        "gambar": "assets/img/klappertaart.jpg",
-        "deskripsi": "Kue kelapa muda bertekstur lembut seperti puding, warisan Belanda yang menjadi kue khas Manado, dengan taburan kismis, kenari, dan kayu manis.",
+        "warna": "#C8863A",
+        "gambar": "assets/img/panada.jpg",
+        "deskripsi": "Camilan khas Manado berupa roti goreng berbentuk setengah lingkaran seperti pastel, tetapi kulitnya dari adonan roti yang tebal dan empuk. Isinya ikan cakalang suwir berbumbu pedas.",
         "bahan": [
             {
-                "grup": "Adonan",
+                "grup": "Adonan kulit",
                 "isi": [
-                    "90 ml air kelapa",
-                    "Daging dari 2 butir kelapa muda",
-                    "180 ml susu cair",
-                    "4 butir kuning telur",
-                    "1 butir putih telur",
-                    "120 g gula pasir",
-                    "30 g tepung maizena",
-                    "35 g tepung terigu",
-                    "1 sdt ekstrak vanili",
-                    "40 g mentega"
+                    "500 g tepung terigu protein tinggi",
+                    "1 sdt ragi",
+                    "1 sdm gula pasir",
+                    "1 sdm garam",
+                    "1 sdt baking powder",
+                    "1 butir telur",
+                    "100 ml susu tawar hangat",
+                    "1 sdm margarin"
                 ]
             },
             {
-                "grup": "Topping",
+                "grup": "Isian",
                 "isi": [
-                    "2 butir putih telur",
-                    "40 g gula pasir",
-                    "50 g kismis",
-                    "50 g kenari kupas",
-                    "1/2 sdt kayu manis bubuk"
+                    "200 g cakalang suwir pedas",
+                    "2 sdm mayones"
+                ]
+            },
+            {
+                "grup": "Untuk menggoreng",
+                "isi": [
+                    "Minyak goreng secukupnya"
                 ]
             }
         ],
         "langkah": [
-            "Campur susu, air kelapa, maizena, dan vanili, aduk dengan whisk.",
-            "Masak dengan api kecil sambil diaduk sampai mengental, lalu masukkan mentega dan aduk rata. Olesi ramekin dengan margarin.",
-            "Kocok putih telur, kuning telur, dan gula sampai larut. Tambahkan terigu, lalu tuang campuran susu panas sambil diaduk.",
-            "Masukkan daging kelapa muda, aduk, lalu tuang ke ramekin.",
-            "Letakkan ramekin di loyang berisi air, panggang 170°C selama 30 menit.",
-            "Kocok putih telur dan gula sampai agak kaku, letakkan di atas klappertaart, lalu taburi kismis, kenari, dan kayu manis.",
-            "Panggang lagi 25 menit sampai kecokelatan. Dinginkan di kulkas dan sajikan dingin."
+            "Campurkan tepung terigu, gula, garam, ragi, dan baking powder, lalu aduk rata.",
+            "Tambahkan telur, aduk kembali, lalu tuang susu hangat sedikit demi sedikit.",
+            "Uleni sambil menambahkan margarin hingga adonan kalis.",
+            "Tutup adonan dan diamkan sekitar 45 menit hingga mengembang.",
+            "Kempiskan adonan, uleni lagi, lalu bagi dan bentuk bulat-bulat.",
+            "Campur cakalang suwir dengan mayones untuk isian.",
+            "Pipihkan setiap bulatan adonan, beri isian, lalu lipat menjadi setengah lingkaran dan cubit-cubit pinggirnya agar rapat.",
+            "Diamkan lagi 15–20 menit agar mengembang.",
+            "Panaskan minyak yang banyak, lalu goreng panada hingga kecokelatan dan matang merata.",
+            "Angkat, tiriskan, dan sajikan hangat."
         ],
         "tips": [
-            "Memanggang di atas wadah berisi air (au bain-marie) membuat teksturnya lembut dan tidak pecah.",
-            "Klappertaart sering disajikan saat Natal di Manado."
+            "Gunakan tepung protein tinggi agar kulit panada empuk dan sedikit kenyal seperti roti.",
+            "Pastikan ragi masih aktif: campur dengan air hangat dan gula, jika berbuih setelah 5–10 menit berarti siap dipakai.",
+            "Goreng dengan minyak banyak (deep fry) agar matang merata dan tidak terlalu menyerap minyak.",
+            "Isian khas Manado biasanya cakalang berbumbu pampis: dimasak dengan bawang merah, cabai merah, daun bawang, daun jeruk, dan kemangi.",
+            "Sumber tidak menyebut jumlah hasil; 15 buah adalah perkiraan."
         ],
         "sumber_resep": [
             {
                 "nama": "IDN Times",
-                "url": "https://www.idntimes.com/food/recipe/resep-klapertart-khas-manado-q9t01-00-cqkqh-qk3nsr"
+                "url": "https://www.idntimes.com/food/recipe/resep-panada-ikan-cakalang-00-p3rq2-dj15pn"
+            },
+            {
+                "nama": "detikFood",
+                "url": "https://food.detik.com/berita-boga/d-5982412/ke-manado-jangan-lupa-cobain-panada-isi-ikan-yang-menggoyang-lidah"
             }
         ],
         "foto": {
-            "pembuat": "Supardisahabu",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Klappertaart_Khas_Manado.jpg"
+            "pembuat": "Kent Ng",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/high-angle-shot-of-empanadas-5881017/",
+            "keterangan": "Foto ilustrasi: kue goreng berisi (curry puff)"
         }
     },
     {
@@ -4480,10 +4515,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Supardisahabu",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Binte_Biluhuta.jpg"
+            "pembuat": "Kunal Lakhotia",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/delicious-sweet-corn-soup-and-salad-display-29631481/",
+            "keterangan": "Foto ilustrasi: sup jagung"
         }
     },
     {
@@ -4541,10 +4577,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Supardisahabu",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Tobu%27u.jpg"
+            "pembuat": "AMANDA LIM",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/sliced-cake-pieces-on-a-banana-leaf-8179011/",
+            "keterangan": "Foto ilustrasi: kue lapis pandan"
         }
     },
     {
@@ -4658,10 +4695,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Crisco 1492",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Kaledo_soup,_Central_Sulawesi,_2018-09-16.jpg"
+            "pembuat": "Tamba Budiarsana",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/authentic-indonesian-sop-buntut-in-bali-setting-37106521/",
+            "keterangan": "Foto ilustrasi: sup tulang sapi"
         }
     },
     {
@@ -4707,69 +4745,71 @@
             }
         ],
         "foto": {
-            "pembuat": "Syauqi_akib",
-            "lisensi": "CC BY-SA 4.0",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Uta_Kelo.jpg"
+            "pembuat": "Nunun Dy",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/authentic-indonesian-vegetable-curry-on-rustic-table-33435595/",
+            "keterangan": "Foto ilustrasi: sayur daun bersantan"
         }
     },
     {
-        "id": "kue-cucur",
-        "nama": "Kue Cucur",
+        "id": "sambusa",
+        "nama": "Sambusa",
         "daerah": "Sulawesi Barat",
         "kategori": "Camilan",
-        "waktu": "75 menit (1 jam 15 menit)",
-        "porsi": "20 buah",
-        "kesulitan": "Sedang",
-        "warna": "#8B4A1C",
-        "gambar": "assets/img/kue-cucur.jpg",
-        "deskripsi": "Kue tradisional yang selalu dihidangkan di acara hajatan masyarakat Sulawesi Barat. Bentuknya bulat pipih dengan pinggiran berenda yang renyah, bagian tengahnya empuk berserat, dan rasanya manis legit dari gula merah.",
+        "waktu": "40 menit",
+        "porsi": "10 buah",
+        "kesulitan": "Mudah",
+        "warna": "#D4A257",
+        "gambar": "assets/img/sambusa.jpg",
+        "deskripsi": "Camilan goreng berbentuk segitiga khas Mamuju. Sekilas mirip samosa India, tetapi isinya daging ikan tuna yang dimasak dengan bawang, daun bawang, dan merica, lalu dibungkus kulit tipis yang renyah.",
         "bahan": [
             {
-                "grup": "Bahan adonan",
+                "grup": "Isian",
                 "isi": [
-                    "300 g tepung beras",
-                    "3 sdm tepung terigu",
-                    "1 sdt kayu manis bubuk",
-                    "1/2 sdt garam"
+                    "200 g ikan tuna kalengan, tiriskan",
+                    "1 buah bawang bombay, cincang halus",
+                    "2 siung bawang putih, cincang halus",
+                    "1 batang daun bawang, iris tipis",
+                    "1 sdt garam",
+                    "1 sdt merica",
+                    "1 sdt bubuk kari (opsional)"
                 ]
             },
             {
-                "grup": "Larutan gula",
+                "grup": "Kulit dan menggoreng",
                 "isi": [
-                    "400 ml air",
-                    "200 g gula merah, sisir halus",
-                    "50 g gula pasir",
-                    "1 lembar daun pandan, potong-potong"
-                ]
-            },
-            {
-                "grup": "Untuk menggoreng",
-                "isi": [
+                    "10 lembar kulit lumpia",
                     "Minyak goreng secukupnya"
+                ]
+            },
+            {
+                "grup": "Pelengkap",
+                "isi": [
+                    "Saus sambal atau cabai rawit"
                 ]
             }
         ],
         "langkah": [
-            "Larutan gula: rebus air, gula merah, gula pasir, dan daun pandan hingga gula larut dan mendidih.",
-            "Angkat dan saring larutan gula, lalu biarkan hingga agak dingin.",
-            "Campur tepung beras, tepung terigu, kayu manis bubuk, garam, dan sebagian larutan gula. Aduk dengan tangan hingga tercampur rata.",
-            "Tuang sisa larutan gula, lalu pukul-pukul adonan dengan telapak tangan selama 30–40 menit hingga adonan terasa ringan.",
-            "Panaskan wajan besi, lalu tuang minyak hingga setengah tinggi wajan.",
-            "Tuang 1 sendok sayur adonan ke minyak panas dan biarkan hingga bagian pinggirnya membeku.",
-            "Siram-siram bagian tengah kue dengan minyak, lalu tusuk bagian tengahnya dengan lidi agar adonan mengalir ke tepi dan membentuk renda.",
-            "Goreng hingga matang seluruhnya, angkat, lalu tiriskan minyaknya dengan tisu dapur."
+            "Panaskan sedikit minyak, tumis bawang bombay hingga layu, lalu tambahkan bawang putih dan tumis hingga harum.",
+            "Masukkan tuna yang sudah ditiriskan, aduk rata.",
+            "Tambahkan garam, merica, dan bubuk kari (jika suka), masak hingga bumbu meresap.",
+            "Masukkan daun bawang, aduk rata, lalu angkat dan dinginkan isian.",
+            "Letakkan 1 sdm isian di salah satu sudut kulit lumpia, lalu lipat bertahap menjadi segitiga hingga isian tertutup rapat.",
+            "Oleskan sedikit air di ujung kulit untuk merekatkan lipatan.",
+            "Goreng dalam minyak panas dengan api sedang hingga kedua sisi kecokelatan dan renyah.",
+            "Angkat, tiriskan di atas kertas minyak, dan sajikan hangat dengan saus sambal."
         ],
         "tips": [
-            "Gunakan gula aren yang warnanya cokelat gelap agar warna cucur cokelat pekat.",
-            "Pukul adonan dengan cukup kuat agar cucur berserat dan mengembang saat digoreng.",
-            "Selain wajan besi, bisa dipakai wajan cekung biasa.",
-            "Di Sulawesi Barat, cucur digoreng dengan minyak kelapa khas Mandar sehingga rasanya berbeda dengan cucur dari daerah lain."
+            "Tiriskan tuna dengan baik agar isian tidak lembek.",
+            "Lipat sambusa dengan rapat dan rekatkan ujungnya agar isian tidak keluar saat digoreng.",
+            "Pastikan minyak sudah panas agar sambusa matang merata dan tidak menyerap banyak minyak.",
+            "Versi khas Mamuju memakai daging tuna segar yang dihaluskan, ditambah seledri dan bawang merah (detikSulsel)."
         ],
         "sumber_resep": [
             {
-                "nama": "detikFood",
-                "url": "https://food.detik.com/kue/d-6020723/resep-kue-cucur-gula-merah-yang-legit-renyahnya-bikin-kangen"
+                "nama": "IDN Times",
+                "url": "https://www.idntimes.com/food/recipe/resep-samosa-tuna-yang-lezatnya-sulit-ditolak-01-5ltmv-582tl9"
             },
             {
                 "nama": "detikSulsel",
@@ -4777,10 +4817,11 @@
             }
         ],
         "foto": {
-            "pembuat": "Ezagren",
-            "lisensi": "Attribution (atribusi)",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Kue_Cucur.jpg"
+            "pembuat": "Sutee Pheera",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/a-fried-dish-on-white-ceramic-plate-5031949/",
+            "keterangan": "Foto ilustrasi: samosa"
         }
     },
     {
@@ -5627,10 +5668,10 @@
             }
         ],
         "foto": {
-            "pembuat": "Wahyudinkat",
+            "pembuat": "Keenan63",
             "lisensi": "CC BY-SA 4.0",
             "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Nikmat_Bakar_Batu.jpg"
+            "sumber": "https://commons.wikimedia.org/wiki/File:Bakar_Batu.jpg"
         }
     },
     {
@@ -5693,70 +5734,79 @@
         }
     },
     {
-        "id": "sate-ulat-sagu",
-        "nama": "Sate Ulat Sagu",
+        "id": "sate-rusa",
+        "nama": "Sate Rusa",
         "daerah": "Papua Selatan",
-        "kategori": "Camilan",
-        "waktu": "20 menit",
-        "porsi": "2 porsi",
-        "kesulitan": "Mudah",
-        "warna": "#A9743A",
-        "gambar": "assets/img/sate-ulat-sagu.jpg",
-        "deskripsi": "Ulat sagu, larva kumbang dari batang pohon sagu yang tumbang, ditusuk seperti sate lalu dibakar di atas bara hingga gurih. Kuliner masyarakat pesisir dan dataran rendah Papua yang kaya sagu, termasuk suku Asmat di Papua Selatan.",
+        "kategori": "Makanan Berat",
+        "waktu": "60 menit (1 jam)",
+        "porsi": "4 porsi",
+        "kesulitan": "Sedang",
+        "warna": "#6E3B26",
+        "gambar": "assets/img/sate-rusa.jpg",
+        "deskripsi": "Sate daging rusa yang menjadi kuliner malam primadona di Merauke, Papua Selatan. Dagingnya empuk dengan bumbu manis gurih, disajikan dengan kecap, bawang goreng, bawang merah segar, dan cabai rawit.",
         "bahan": [
             {
                 "grup": "Bahan utama",
                 "isi": [
-                    "30 ekor ulat sagu segar"
+                    "500 g daging rusa, potong dadu (bisa diganti daging kambing, sapi, atau ayam)",
+                    "Tusuk sate secukupnya",
+                    "3 sdm minyak goreng"
                 ]
             },
             {
-                "grup": "Pelengkap",
+                "grup": "Bumbu",
                 "isi": [
-                    "Garam secukupnya (opsional)",
-                    "Papeda untuk teman makan"
+                    "5 buah cabai merah keriting",
+                    "2 siung bawang putih",
+                    "1 buah tomat",
+                    "1 sdm gula merah, iris",
+                    "1 sdt garam",
+                    "3 sdm kecap manis",
+                    "4 sdm minyak goreng"
                 ]
             },
             {
-                "grup": "Peralatan",
+                "grup": "Penyajian ala Merauke",
                 "isi": [
-                    "Tusuk sate dari bambu atau lidi",
-                    "Bara api dari kayu bakar atau arang"
+                    "Kecap manis",
+                    "Bawang goreng",
+                    "Bawang merah segar, iris",
+                    "Cabai rawit",
+                    "Lontong atau nasi"
                 ]
             }
         ],
         "langkah": [
-            "Cuci ulat sagu dengan air bersih, lalu tiriskan.",
-            "Copot kepala ulat sagu karena bagian ini keras.",
-            "Tusuk 5–6 ekor ulat pada setiap tusuk sate.",
-            "Jika suka, taburi sedikit garam.",
-            "Bakar di atas bara api sambil dibolak-balik. Ulat akan mengeluarkan cairan kuning dan badannya tampak menggembung.",
-            "Angkat setelah kulitnya kecokelatan dan harum, lalu sajikan selagi hangat bersama papeda."
+            "Rendam tusuk sate dalam air selama 30 menit agar tidak mudah terbakar.",
+            "Rebus cabai merah, bawang putih, dan tomat sampai layu, lalu angkat dan tiriskan.",
+            "Haluskan bumbu yang direbus bersama gula merah dan garam.",
+            "Campur bumbu halus dengan kecap manis dan minyak goreng.",
+            "Masukkan potongan daging rusa, aduk rata, dan diamkan 20 menit agar bumbu meresap.",
+            "Tusukkan daging ke tusuk sate.",
+            "Bakar di atas bara api sambil sesekali diolesi sisa bumbu hingga matang.",
+            "Sajikan dengan siraman kecap, bawang goreng, bawang merah segar, cabai rawit, dan lontong atau nasi."
         ],
         "tips": [
-            "Ulat sagu tidak cocok digoreng karena kandungan lemaknya tinggi. Cara yang biasa dipakai adalah dibakar.",
-            "Variasi lain: campur ulat sagu dengan tepung sagu, bungkus daun pisang, lalu panggang di atas bara sekitar 30 menit agar lemaknya meresap ke sagu.",
-            "Sumber tidak menyebut takaran. 30 ekor (sekitar satu plastik di pasar) adalah perkiraan untuk 2 orang."
+            "Pilih daging rusa yang segar dan empuk. Di Merauke hanya dagingnya yang diolah karena hatinya lembek dan mudah hancur.",
+            "Bakar di atas bara yang sudah membara agar aroma panggangnya harum.",
+            "Bumbu mengikuti resep sate rusa (sate payau) IDN Times, sedangkan cara penyajian mengikuti sate rusa di warung malam Merauke (detikTravel)."
         ],
         "sumber_resep": [
             {
+                "nama": "IDN Times",
+                "url": "https://www.idntimes.com/food/recipe/resep-sate-payau-khas-kalimantan-timur-kuliner-langka-daging-rusa-01-6cnpl-rjgqdk"
+            },
+            {
                 "nama": "detikTravel",
-                "url": "https://travel.detik.com/domestic-destination/d-4842742/begini-rasanya-makan-ulat-sagu-di-papua"
-            },
-            {
-                "nama": "detikTravel (ulat sagu)",
-                "url": "https://travel.detik.com/domestic-destination/d-5277170/ulat-sagu-makanan-wajib-para-bumil-di-papua"
-            },
-            {
-                "nama": "detikTravel (kuliner timur)",
-                "url": "https://travel.detik.com/domestic-destination/d-3429910/kuliner-ekstrem-indonesia-timur-berani-coba"
+                "url": "https://travel.detik.com/cerita-perjalanan/d-5402580/yummy-nikmatnya-menyantap-sate-rusa-kuliner-malam-merauke"
             }
         ],
         "foto": {
-            "pembuat": "Kemenparekraf",
-            "lisensi": "Domain publik",
-            "situs": "Wikimedia Commons",
-            "sumber": "https://commons.wikimedia.org/wiki/File:Sate_ulat_sagu.webp"
+            "pembuat": "Scenehaus Production",
+            "lisensi": "Lisensi Pexels",
+            "situs": "Pexels",
+            "sumber": "https://www.pexels.com/photo/delicious-indonesian-satay-skewers-with-peanut-sauce-33434049/",
+            "keterangan": "Foto ilustrasi: sate daging"
         }
     }
 ]
