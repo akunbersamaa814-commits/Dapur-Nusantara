@@ -1,21 +1,31 @@
 # Keputusan Desain — Dapur Nusantara
 
-Desain mengikuti web referensi pilihan pengguna (situs resep "Lezzet Dünyası"):
-tema gelap, aksen gradien oranye–kuning, font Poppins. Yang ditiru hanya gaya tampilannya;
-konten, fitur, dan kode tetap milik Dapur Nusantara (HTML + CSS + vanilla JS + PHP).
+Tata letak tetap mengikuti web referensi awal (situs resep "Lezzet Dünyası", font Poppins).
+Warnanya kini memakai konsep **Warm Food Aesthetic** (referensi FoodBlog): bersih, hangat, elegan —
+latar putih & krem, teks cokelat gelap, aksen cokelat karamel. Konten, fitur, dan kode tetap milik
+Dapur Nusantara (HTML + CSS + vanilla JS + PHP).
 
 ## Warna (CSS variables di `assets/css/style.css`)
 
 | Token | Nilai | Peran |
 |---|---|---|
-| `--bg-primary` | `#0f0f0f` | latar halaman |
-| `--bg-secondary` | `#1a1a1a` | latar footer |
-| `--bg-card` | `rgba(255,255,255,.05)` | latar card, kotak bahan & langkah |
-| `--accent-primary` | `#ff8c42` | oranye: kategori, hover, garis aktif |
-| `--accent-secondary` | `#ffd166` | kuning: judul bagian modal, fokus keyboard |
-| `--accent-gradient` | oranye → kuning | judul hero, logo, tombol utama, nomor langkah |
-| `--text-primary` / `--text-secondary` / `--text-muted` | `#f5f5f5` / `#ccc` / `#a3a3a3` | teks |
-| Badge kesulitan | Mudah hijau, Sedang emas, Sulit merah | label di foto (warna + teks) |
+| `--bg-primary` | `#FFFFFF` | latar utama, navbar, kartu, modal |
+| `--bg-secondary` | `#FAF8F5` | latar section krem (hero, footer), tombol kategori |
+| `--bg-soft` | `#F3E9DF` | latar hover tombol kategori |
+| `--text-primary` | `#29231F` | teks utama, menu navbar, judul resep |
+| `--text-secondary` / `--text-muted` | `#77716B` | deskripsi & teks sekunder |
+| `--accent-primary` | `#A65E32` | cokelat karamel: logo, tombol utama, kategori aktif, link, fokus keyboard |
+| `--accent-secondary` | `#D99A63` | cokelat keemasan: aksen dekoratif (sorotan hover, garis tips) |
+| `--accent-hover` | `#874923` | hover tombol dan teks hover |
+| `--border-color` | `#EAE3DC` | border kartu, kotak, pemisah section |
+| Badge kesulitan | Mudah hijau muda, Sedang krem jingga, Sulit merah muda (teks gelap) | label di foto (warna + teks) |
+
+Urutan latar: hero krem → peta putih → kategori & resep putih → footer krem, dipisah garis tipis.
+Peta SVG diwarnai terang: laut `#EEF1EF`, daratan Indonesia `#E5CFB3`, negara tetangga `#E4E1DC`.
+
+Kontras (WCAG AA ≥ 4.5:1) sudah dicek: `#29231F` di putih 15.5:1, `#77716B` di krem 4.5:1,
+`#A65E32` di putih 4.9:1, teks putih di tombol `#A65E32` 4.9:1 (hover `#874923` 7:1).
+`#D99A63` hanya 2.4:1 di putih, jadi **tidak dipakai untuk teks** — hanya untuk aksen dekoratif.
 
 ## Tipografi
 - **Poppins** 300–700 untuk semua teks. Hero 3.5rem, judul bagian 2rem, isi 18px (16px di HP).

@@ -208,5 +208,5 @@ sebagai perkiraan dan hal ini disebutkan di bagian tips resepnya.
 ## Peta
 `assets/img/peta-indonesia.svg` berasal dari [Indonesia location map.svg](https://commons.wikimedia.org/wiki/File:Indonesia_location_map.svg)
 oleh **Uwe Dedering**, lisensi **CC BY-SA 3.0**, via Wikimedia Commons. Dimodifikasi: warna disesuaikan
-dengan tema gelap website dan layer sungai dihapus. Sesuai lisensi CC BY-SA, versi modifikasi ini juga
+dengan tema terang website (putih–krem) dan layer sungai dihapus. Sesuai lisensi CC BY-SA, versi modifikasi ini juga
 berlisensi CC BY-SA 3.0. Keterangan sumber tampil di pojok kiri bawah peta dan di footer.
