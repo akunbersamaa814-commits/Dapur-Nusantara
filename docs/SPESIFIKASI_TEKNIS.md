@@ -30,7 +30,7 @@ projek_pemweb/
 │   ├── js/script.js          # Logika modal detail
 │   └── img/                  # Gambar makanan (atau pakai URL gambar)
 ├── docs/                     # Dokumen perencanaan (PRD, spesifikasi, data)
-├── CLAUDE.md                 # Aturan kerja untuk Claude
+├── CLAUDE.md                 # Aturan kerja untuk Dapur Nusantara
 ├── PROMPT_MULAI.md           # Prompt untuk membangun website sekali jalan
 └── README.md
 ```

@@ -1,6 +1,6 @@
 # Prompt Mulai Projek
 
-Salin seluruh isi blok di bawah ini ke Claude Code (di folder `projek_pemweb`) untuk membangun
+Salin seluruh isi blok di bawah ini ke Dapur Nusantara (di folder `projek_pemweb`) untuk membangun
 website sekali jalan.
 
 ---
@@ -63,4 +63,4 @@ cara menjalankan website.
 | `/ui-ux-pro-max` | Pilih gaya, palet warna, font, pola UX card & modal, aksesibilitas |
 | `/frontend-design` | Arah visual yang khas, tidak generik |
 | `/simplify` | Merapikan kode setelah selesai agar mudah dijelaskan saat presentasi |
-| Browser bawaan Claude | Mengecek website langsung setelah dibuat |
+| Browser bawaan Dapur Nusantara | Mengecek website langsung setelah dibuat |

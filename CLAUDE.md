@@ -1,4 +1,4 @@
-# CLAUDE.md — Aturan Projek Dapur Nusantara
+# Aturan Projek Dapur Nusantara
 
 Projek tugas kuliah Pemrograman Web: website resep makanan Nusantara.
 
